@@ -38,8 +38,52 @@
     <title>Vigour {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+      <!-- Start of Navbar and hero-banner section -->
+      <section>
+        <header class="container-fluid fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">                        
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="#">Vigour</a></li>
+                    </ul>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Workouts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nourishments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-side">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOG iN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SIGN UP</a>
+                        </li>
 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- end of Navbar and hero-banner section -->  
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
