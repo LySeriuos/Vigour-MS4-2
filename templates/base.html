@@ -38,7 +38,20 @@
     <title>Vigour {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header class="container-fluid fixed-top"></header>
+
+    {% if messages %}
+        <div class="message-container"></div>
+    {% endif %}
+
+    {% block page_header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block postloadjs %}
+    {% endblock %}
 
  
   </body>
