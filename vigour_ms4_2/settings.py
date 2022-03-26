@@ -63,7 +63,8 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -80,6 +81,24 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# authentithication using email or username
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+# email is required for the registration
+ACCOUNT_EMAIL_REQUIRED = True
+# checking if user uses real email by sending confirmation email to check that
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+# this requires to enter email two times to check if there is any typos
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+# url address redirected after login.
+# to check if function works need to use 'success/'"
+LOGIN_REDIRECT_URL = '/'
+
+WSGI_APPLICATION = 'Vigour.wsgi.application'
 
 WSGI_APPLICATION = 'vigour_ms4_2.wsgi.application'
 
