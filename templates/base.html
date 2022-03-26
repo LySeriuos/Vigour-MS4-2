@@ -42,15 +42,21 @@
       <section>
         <header class="container-fluid fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Vigour</a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">                        
-                            <li class="nav-item">
-                                <a class="navbar-brand" href="#">Vigour</a></li>
-                    </ul>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="#">Vigour</a>
+                        </li>
+                    </ul> -->
+                    <ul class="navbar-nav mx-auto navbar-main">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -62,6 +68,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Nourishments</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">User page</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Our Members</a>
@@ -69,15 +80,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">FAQ</a>
                         </li>
-                    </ul>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-side">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">LOG iN</a>
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-lg-0 navbar-side float-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOG IN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">REGISTER</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">SIGN UP</a>
                         </li>
-
                     </ul>
                 </div>
             </nav>
@@ -96,7 +112,41 @@
 
     {% block postloadjs %}
     {% endblock %}
-
- 
+    <!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-10 mx-auto">
+					<ul class="list-inline text-center">
+						<li class="list-inline-item">
+							<a href="https://twitter.com/" target="_blank">
+								<span class="fa-stack fa-lg">
+	                  <i class="fas fa-circle fa-stack-2x"></i>
+	                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+	                </span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://facebook.com/" target="_blank">
+								<span class="fa-stack fa-lg">
+	                  <i class="fas fa-circle fa-stack-2x"></i>
+	                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+	                </span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://github.com/" target="_blank">
+								<span class="fa-stack fa-lg">
+	                  <i class="fas fa-circle fa-stack-2x"></i>
+	                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+	                </span>
+							</a>
+						</li>
+					</ul>
+					<p class="copyright text-muted">Copyright &copy; Vigour 2022<span id="copyright"></span></p>
+				</div>
+			</div>
+		</div>
+	</footer> 
   </body>
 </html>
