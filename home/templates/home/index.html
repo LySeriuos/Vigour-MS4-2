@@ -1,28 +1,31 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}    
-{% endblock %}
+{% block page_header %}
+ <!-- ***** Main Banner Area Start ***** -->
+ <section id="main-banner bg-image top" class="main-banner">
+  <div class="container my-5">
+      <div class="row pb-0 pe-lg-0 align-items-center justify-content-center caption">
+          <div class="col-lg-5 p-3 p-lg-5 pt-lg-3">
+              <h2 class=" fw-bold lh-1 main-banner-text">Get the best part of your day<br><em>-you fit here.</em></h2>
+              <h6 id="banner-h6">We provide serious training and diet plans for everybody!</h6>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 main-button scroll-to-section">
+                  <a href="#our-program" class="banner-button">JOIN NOW</a>                      
+              </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <!-- Can't load the image from media file -->
+              <img class="rounded-lg-3" src="media/logan-weaver-R4V1WIY9n-8-unsplash-girl-boxing-main.jpg" alt="">
+          </div>
+      </div>
+  </div>
+</section>
+<!-- ***** Main Banner Area End ***** -->    
+ {% endblock %}
 
 {% block content %}
-    <!-- ***** Main Banner Area Start ***** -->
-    <section id="main-banner bg-image top" class="main-banner">
-        <div class="container my-5">
-            <div class="row pb-0 pe-lg-0 align-items-center caption">
-                <div class="col-lg-5 p-3 p-lg-5 pt-lg-3">
-                    <h2 class=" fw-bold lh-1 main-banner-text">Get the best part of your day-<em>you fit here</em></h2>
-                    <h6>We provide serious training and diet plans for everybody!</h6>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 main-button scroll-to-section">
-                        <a href="#our-program">Join Now!</a>                      
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-lg-1 p-0 overflow-hidden d-none d-md-block">
-                    <img class="rounded-lg-3" src="media/logan-weaver-R4V1WIY9n-8-unsplash-main-bigger-size-boxing-girl.jpg" alt="" width="720">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Main Banner Area End ***** -->
+   
 
     <!-- ***** Section About Start ***** -->
     <section class="section" id="about-us">
@@ -30,13 +33,16 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading">
-                        <h2>Our <em>Mission</em></h2>
+                        <h2>Our Mission<em>.</em></h2>
                         <img src="media/line-dec.png" alt="">
                         <p>
                             We are distinguished by our unsurpassed motivating atmosphere, knowledgeable staff, which supports our members in meeting their individual fitness goals.
                         </p>
                         <p> 
                             The strength of our heart-felt identity is utilized to inspire every person that steps foot into their new healthy and stronger life.
+                        </p>
+                        <p>
+                          <a href="#our-program" class="banner-button">JOIN NOW</a>
                         </p>
                     </div>
                 </div>
@@ -52,7 +58,7 @@
           <div class="subcontainer">
               <div class="slider-wrapper">
                   <div class="text-center">
-                      <h2>Training Programs.</h2>
+                      <h2>Training Programs<em>.</em></h2>
                   </div>
                   <br>
                   <div class="my-slider">
@@ -117,7 +123,7 @@
 <section>
   <div>
     <div>
-      <h2>Meal Diet.</h2>
+      <h2>Meal Diet<em>.</em></h2>
   </div>
     <div class="row">
       <div class="col-sm-4">
@@ -161,7 +167,7 @@
     <section>
       <div>
           <div>
-              <h2>Pricing Plans.</h2>
+              <h2>Pricing Plans<em>.</em></h2>
           </div>
           <div class="row">
               <div class="col-sm-4">
@@ -219,7 +225,7 @@
         <div class="subcontainer">
             <div class="slider-wrapper">
                 <div>
-                    <h2>Community.</h2>
+                    <h2>Community<em>.</em></h2>
                 </div>
                 <br>
                 <div class="my-slider">
@@ -266,6 +272,9 @@
 <!-- ***** Section of FAQ Start  ***** -->
 
 <section>
+  <div>
+    <h2>FAQ<em>.</em></h2>
+</div>
     <div class="accordion" id="accordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
@@ -361,4 +370,5 @@
 <!-- ***** Section of FAQ End  ***** -->
 
     
+
 {% endblock %}

@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% endblock %}
 
     {% block extra_css %}
@@ -29,6 +30,7 @@
     {% endblock %}
 
     {% block corejs %}
+    <script src="https://kit.fontawesome.com/d5e7c656ac.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>    
@@ -44,14 +46,16 @@
       <!-- Start of Navbar and hero-banner section -->
       <section>
         <header class="container-fluid fixed-top">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">
                     <li class="nav-item">
-                        <a class="navbar-brand" href="#">Vigour</a>
+                        <a class="navbar-brand" href="#">Vig<em>our</em></a>
                     </li>
                 </ul>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>             
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">
@@ -94,7 +98,7 @@
                             <a class="nav-link" href="#">Contacts</a>
                         </li>
                     </ul>                   
-                    <ul class="navbar-nav mt-lg-0 navbar-side float-right">
+                    <ul class="navbar-nav mt-lg-0 navbar-side float-right align-items-center">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                               My Account 

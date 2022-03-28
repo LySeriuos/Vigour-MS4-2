@@ -1,0 +1,112 @@
+/* global css */
+html, body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    background: black;
+  }
+  /* end of global css */
+
+  /* Main header */
+
+.main-banner, header, .navbar, nav a {
+  background-color: black;
+  color: #FFFFFF;
+}
+
+em {
+  color: #4AE290;
+}
+
+.nav-link, .btn {
+  padding: 10px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;  
+  color: rgba(255, 255, 255, 0.9);  
+}
+
+.nav-link:active {
+  font-size: 130%;
+}
+
+.active {
+  background-color: #FFFFFF;
+  border: 1px solid #4AE290;
+}
+
+.nav-link:hover, 
+.navbar-brand:hover,
+.dropdown-item:hover {
+  color: #4AE290;
+}
+
+.navbar-toggler {
+    background-color: #4AE290;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+  }
+  
+  .navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: #fff;
+  }
+  
+  .navbar-toggler span + span {
+   margin-top: 4px;
+   width: 18px;
+   margin-left: 4px;
+    }
+
+    .banner-button {
+        color: black;
+        background-color: white;
+        padding: 5px 27px;
+        font-size: revert;
+        font-weight: 600;
+    }
+
+    .main-banner-text {
+      font-weight: 700;
+      padding-bottom: 20px;
+    }
+  
+   #banner-h6{
+     font-weight: 300;
+   }
+
+   .rounded-lg-3 {
+     position: relative;
+     max-width: 80%;
+     max-height: auto;
+   }
+
+   .fixed-top {
+    max-width: 1300px;
+   }
+   
+
+
+
+  
+  
+
+
+
+
+  
