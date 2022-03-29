@@ -130,7 +130,7 @@ margin: 15px;
 }
 
 #slider {
-  height: 700px;
+  height: 500px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -150,7 +150,8 @@ margin: 15px;
 
   .slide-img {
     width: 100%;
-    height: 275px;
+    height: 350px;
+    max-width: 300px;
     border-radius: 5px;
     background-position: center;
     background-size: cover;
@@ -159,7 +160,50 @@ margin: 15px;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+  
+  }
 
+  .slide-img:hover{
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.767) inset;
+      }
+
+   .slide-img a{
+     opacity: 0;
+     text-decoration: none;
+     transform: scale(0);
+     transition: 0.8s;
+     font-size: 1.5rem;
+   }   
+
+   .slide-img:hover a{
+     opacity: 1;
+     transform: scale(1);
+   }
+
+  .img-1 {
+    background-image: url("/media/evan-wise-body-pump-small.jpg");
+    margin: 0;
+  }
+  .img-2 {
+    background-image: url("/media/sonnie-hiles-yoga-small.jpg");
+  }
+  .img-3 {
+    background-image: url("/media/lorenzo-hamers-full-body-small.jpg");
+  }
+  .img-4 {
+    background-image: url("/media/logan-weaver-boxing-small.jpg");
+  }
+  .img-5 {
+    background-image: url("/media/graham-mansfield-hiit-small.jpg");
+  }
+  .img-6 {
+    background-image: url("/media/jack-lemon-running-small.jpg");
+  }
+  .img-7 {
+    background-image: url("/media/thomas-yohei-dance-small.jpg");
+  }
+  .img-8 {
+    background-image: url("/media/corey-young-crossfit-small.jpg");
   }
  
   @media(max-width:1600px){
