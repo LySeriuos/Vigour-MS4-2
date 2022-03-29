@@ -165,10 +165,12 @@ margin: 15px;
   
 
    .slide-img a,
-   .btn-training{
-     
-    font-size: x-large;
-    color:white;
+   .btn-training{     
+    font-size: 1rem;
+    color:black;
+    border: 1px solid black;
+    background-color: white;
+    padding-left: 10px;
    }   
 
    
@@ -202,6 +204,25 @@ margin: 15px;
       width: 100%;
     }
   }
+
+  /* Meal Diet Section styles */
+  
+  .card {
+    width: 280px;
+    height: auto;    
+  }
+
+  .meal {
+    font-size: 1rem;
+    color:black;
+    border: 1px solid black;
+    background-color: white;
+    width:fit-content;
+    padding: 5px;
+  }
+
+  /* End of Meal section */
+  
   
   
 
