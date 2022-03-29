@@ -130,8 +130,7 @@ margin: 15px;
 }
 
 #slider {
-  height: 500px;
-  border: 1px solid black;
+  height: 500px;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,45 +143,37 @@ margin: 15px;
 }
 
 .subcontainer {
-  width: 85%;
+  width: 90%;
   margin: auto;
   }
 
   .slide-img {
     width: 100%;
     height: 350px;
-    max-width: 300px;
+    max-width: 500px;
     border-radius: 5px;
     background-position: center;
     background-size: cover;
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+    align-items: end;
+    transition: 0.5s;    
   
   }
 
-  .slide-img:hover{
-    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.767) inset;
-      }
+  
 
-   .slide-img a{
-     opacity: 0;
-     text-decoration: none;
-     transform: scale(0);
-     transition: 0.8s;
-     font-size: 1.5rem;
+   .slide-img a,
+   .btn-training{
+     
+    font-size: x-large;
+    color:white;
    }   
 
-   .slide-img:hover a{
-     opacity: 1;
-     transform: scale(1);
-   }
-
+   
   .img-1 {
-    background-image: url("/media/evan-wise-body-pump-small.jpg");
-    margin: 0;
+    background-image: url("/media/evan-wise-body-pump-small.jpg");    
   }
   .img-2 {
     background-image: url("/media/sonnie-hiles-yoga-small.jpg");
