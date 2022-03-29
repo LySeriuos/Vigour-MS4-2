@@ -129,7 +129,44 @@ margin: 15px;
   font-weight: 900;
 }
 
+#slider {
+  height: 700px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+  }
+
+  .slide-img {
+    width: 100%;
+    height: 275px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+  }
  
+  @media(max-width:1600px){
+    .container{
+      width: 100%;
+    }
+  }
   
   
 
