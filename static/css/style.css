@@ -48,8 +48,10 @@ em {
 
 .nav-link:hover, 
 .navbar-brand:hover,
-.dropdown-item:hover {
+.dropdown-item:hover,
+.banner-button:hover {
   color: #4AE290;
+  text-decoration: none;
 }
 
 .navbar-toggler {
@@ -99,10 +101,35 @@ em {
    .fixed-top {
     max-width: 1300px;
    }
-   
+ 
 
+/* from Bulma */
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
+.fa-circle-chevron-right {
+  color: #4AE290;
+}
 
+.fab {
+  margin-top: 20px;
+}
+
+.fa-solid, .fa-circle-chevron-right{
+margin: 15px;
+}
+
+.dot{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+ 
   
   
 
