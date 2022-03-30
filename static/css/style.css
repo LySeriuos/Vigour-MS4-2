@@ -336,3 +336,54 @@ em {
 .fa-question {
   color: #4AE290;
 }
+ .faq {
+   margin:50px;
+ }
+
+ /* End of FAQ section */
+
+ /* Start of Footer section */
+
+
+ footer {
+  height: 100px;
+  background-color: black;
+  
+}
+
+footer .list-inline a {
+  margin: 0;
+  padding: 0;
+  color:#4AE290;
+}
+
+
+
+footer .copyright {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fa-stack-1x, .fa-stack-2x{
+  line-height: initial !important;
+}
+
+.copyright, 
+.copyright a {
+  font-size: 1.5rem;
+  color:white;
+}
+
+footer .row{
+  margin: 0;
+}
+
+.fa-angles-up{
+  color:#4AE290;
+}
+
+footer .list-inline-item a:hover{
+  font-size: 120%;
+}
+
