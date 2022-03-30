@@ -208,7 +208,7 @@ margin: 15px;
   /* Meal Diet Section styles */
   
   .card {
-    width: 280px;
+    max-width: 300px;
     height: auto;    
   }
 
@@ -219,6 +219,26 @@ margin: 15px;
     background-color: white;
     width:fit-content;
     padding: 5px;
+  }
+
+  .card-img-overlay {
+    position: absolute;
+    top: 82%; 
+    right: 10%;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+    border-radius: calc(0.25rem - 1px);
+  }
+
+  .row-meal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-food {
+    margin: 15px;
   }
 
   /* End of Meal section */
