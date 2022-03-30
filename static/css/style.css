@@ -1,30 +1,25 @@
 /* global css */
 html, body {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    background-color: #fff;
-    font-size: 16px;
-    -ms-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  html {
-    background: black;
-  }
-  /* end of global css */
-
-  /* Main header */
-
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  background: black;
+}
+/* end of global css */
+/* Main header */
 .main-banner, header, .navbar, nav a {
   background-color: black;
   color: #FFFFFF;
 }
-
 em {
   color: #4AE290;
 }
-
 .nav-link, .btn {
   padding: 10px;
   font-family: Inter;
@@ -33,76 +28,60 @@ em {
   font-size: 16px;
   line-height: 18px;
   display: flex;
-  align-items: center;  
-  color: rgba(255, 255, 255, 0.9);  
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
 }
-
 .nav-link:active {
   font-size: 130%;
 }
-
 .active {
   background-color: #FFFFFF;
   border: 1px solid #4AE290;
 }
-
-.nav-link:hover, 
-.navbar-brand:hover,
-.dropdown-item:hover,
-.banner-button:hover {
+.nav-link:hover, .navbar-brand:hover, .dropdown-item:hover, .banner-button:hover {
   color: #4AE290;
   text-decoration: none;
 }
-
 .navbar-toggler {
-    background-color: #4AE290;
-    border: none;
-    padding: 10px 6px;
-    outline: none;
-  }
-  
-  .navbar-toggler span {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border: 1px;
-    background: #fff;
-  }
-  
-  .navbar-toggler span + span {
-   margin-top: 4px;
-   width: 18px;
-   margin-left: 4px;
-    }
-
-    .banner-button {
-        color: black;
-        background-color: white;
-        padding: 5px 27px;
-        font-size: revert;
-        font-weight: 600;
-    }
-
-    .main-banner-text {
-      font-weight: 700;
-      padding-bottom: 20px;
-    }
-  
-   #banner-h6{
-     font-weight: 300;
-   }
-
-   .rounded-lg-3 {
-     position: relative;
-     max-width: 80%;
-     max-height: auto;
-   }
-
-   .fixed-top {
-    max-width: 1300px;
-   }
- 
-
+  background-color: #4AE290;
+  border: none;
+  padding: 10px 6px;
+  outline: none;
+}
+.navbar-toggler span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border: 1px;
+  background: #fff;
+}
+.navbar-toggler span + span {
+  margin-top: 4px;
+  width: 18px;
+  margin-left: 4px;
+}
+.banner-button {
+  color: black;
+  background-color: white;
+  padding: 5px 27px;
+  font-size: revert;
+  font-weight: 600;
+}
+.main-banner-text {
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+#banner-h6{
+  font-weight: 300;
+}
+.rounded-lg-3 {
+  position: relative;
+  max-width: 80%;
+  max-height: auto;
+}
+.fixed-top {
+  max-width: 1300px;
+}
 /* from Bulma */
 .icon {
   align-items: center;
@@ -111,142 +90,146 @@ em {
   height: 1.5rem;
   width: 1.5rem;
 }
-
 .fa-circle-chevron-right {
   color: #4AE290;
 }
-
 .fab {
   margin-top: 20px;
 }
-
 .fa-solid, .fa-circle-chevron-right{
-margin: 15px;
+  margin: 15px;
 }
-
 .dot{
   font-size: 30px;
   font-weight: 900;
 }
-
 #slider {
-  height: 500px;  
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
 .container {
   width: 1600px;
   margin: auto;
 }
-
 .subcontainer {
   width: 90%;
   margin: auto;
-  }
-
-  .slide-img {
-    width: 100%;
-    height: 350px;
-    max-width: 500px;
-    border-radius: 5px;
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    transition: 0.5s;    
-  
-  }
-
-  
-
-   .slide-img a,
-   .btn-training{     
-    font-size: 1rem;
-    color:black;
-    border: 1px solid black;
-    background-color: white;
-    padding-left: 10px;
-   }   
-
-   
-  .img-1 {
-    background-image: url("/media/evan-wise-body-pump-small.jpg");    
-  }
-  .img-2 {
-    background-image: url("/media/sonnie-hiles-yoga-small.jpg");
-  }
-  .img-3 {
-    background-image: url("/media/lorenzo-hamers-full-body-small.jpg");
-  }
-  .img-4 {
-    background-image: url("/media/logan-weaver-boxing-small.jpg");
-  }
-  .img-5 {
-    background-image: url("/media/graham-mansfield-hiit-small.jpg");
-  }
-  .img-6 {
-    background-image: url("/media/jack-lemon-running-small.jpg");
-  }
-  .img-7 {
-    background-image: url("/media/thomas-yohei-dance-small.jpg");
-  }
-  .img-8 {
-    background-image: url("/media/corey-young-crossfit-small.jpg");
-  }
- 
-  @media(max-width:1600px){
-    .container{
+}
+.slide-img {
+  width: 100%;
+  height: 350px;
+  max-width: 500px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  transition: 0.5s;
+}
+.slide-img a, .btn-training{
+  font-size: 1rem;
+  color:black;
+  border: 1px solid black;
+  background-color: white;
+  padding-left: 10px;
+}
+.slide-img a:hover {
+  color: #4AE290;
+  text-decoration: none;
+}
+.slide-img .fa-circle-arrow-right {
+  color: #4AE290;
+}
+.img-1 {
+  background-image: url("/media/evan-wise-body-pump-small.jpg");
+}
+.img-2 {
+  background-image: url("/media/sonnie-hiles-yoga-small.jpg");
+}
+.img-3 {
+  background-image: url("/media/lorenzo-hamers-full-body-small.jpg");
+}
+.img-4 {
+  background-image: url("/media/logan-weaver-boxing-small.jpg");
+}
+.img-5 {
+  background-image: url("/media/graham-mansfield-hiit-small.jpg");
+}
+.img-6 {
+  background-image: url("/media/jack-lemon-running-small.jpg");
+}
+.img-7 {
+  background-image: url("/media/thomas-yohei-dance-small.jpg");
+}
+.img-8 {
+  background-image: url("/media/corey-young-crossfit-small.jpg");
+}
+@media(max-width:1600px){
+  .container{
       width: 100%;
-    }
-  }
+ }
+}
+/* Meal Diet Section styles */
+.card {
+  max-width: 300px;
+  height: auto;
+}
+.meal {
+  font-size: 1rem;
+  color:black;
+  border: 1px solid black;
+  background-color: white;
+  width:fit-content;
+  padding: 5px;
+}
+.card-img-overlay {
+  position: absolute;
+  top: 82%;
+  right: 10%;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+  border-radius: calc(0.25rem - 1px);
+}
+.card-food {
+  margin: 15px;
+}
+/* End of Meal section */
 
-  /* Meal Diet Section styles */
-  
-  .card {
-    max-width: 300px;
-    height: auto;    
-  }
-
-  .meal {
-    font-size: 1rem;
-    color:black;
-    border: 1px solid black;
-    background-color: white;
-    width:fit-content;
-    padding: 5px;
-  }
-
-  .card-img-overlay {
-    position: absolute;
-    top: 82%; 
-    right: 10%;
-    bottom: 0;
-    left: 0;
-    padding: 1.25rem;
-    border-radius: calc(0.25rem - 1px);
-  }
-
-  .row-meal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-food {
-    margin: 15px;
-  }
-
-  /* End of Meal section */
-  
-  
-  
-
-
-
-
-  
+/* Start of Pricing section */
+.row-pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-1, .card-2, .card-3 {
+  margin: 15px;
+}
+.card-2 {
+  background-color: black;
+  color: #FFFFFF;
+}
+.row-pricing .card-title {
+  margin-bottom: 30px;
+}
+.card-link {
+  color: black;
+  border: solid 1px black;
+  padding: 10px;
+}
+.card-link-2{
+  color: white;
+  border: solid 1px white;
+  padding: 10px;
+}
+.card-link .fa-hand-point-right {
+  color: #4AE290;
+}
+.card-link:hover {
+  color: #4AE290;
+}
