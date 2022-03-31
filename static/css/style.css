@@ -116,7 +116,7 @@ em {
 }
 .subcontainer {
   width: 80%;
-  margin: auto;
+  margin: 50px auto;
 }
 .slide-img {
   width: 100%;
@@ -130,6 +130,7 @@ em {
   justify-content: center;
   align-items: end;
   transition: 0.5s;
+  margin: auto;
 }
 .slide-img a, .btn-training{
   font-size: 1rem;
@@ -272,6 +273,7 @@ margin: 0;
   align-items: end;
   transition: 0.5s;
   color: white;  
+  margin: auto;
 }
 .com-img-1 {
   background-image: url("/media/gordon-cowie-mark-a.jpg");
@@ -317,6 +319,12 @@ margin: 0;
   .container{
       width: 100%;
  }
+}
+
+@media(max-width:1200px){
+  .tns-controls {
+    text-align-last: center;
+  }
 }
 
 
