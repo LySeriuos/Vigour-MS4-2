@@ -418,3 +418,24 @@ footer .list-inline-item a:hover{
   font-size: 120%;
 }
 
+
+/* End Of INDEX.HTML */
+
+
+/* Start of SHOP.HTML */
+
+/* Content nav bar  */
+
+.form-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-shop{
+  background-color: white;
+}

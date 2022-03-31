@@ -10,11 +10,13 @@
           <h2 class=" fw-bold lh-1 main-banner-text">Our products-<em>Yours Goals</em></h2>
               <h6>In our shop you will find main things for active life, outside at the gym or at home.</h6>                  
               <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 main-button scroll-to-section">
-              <!-- <a href="#our-program">Join Now!</a>                       -->
+              <!-- <a href="#our-program">Join Now!</a> -->
               </div>
           </div>
         <div class="col-lg-6 offset-lg-1 p-0 overflow-hidden d-none d-md-block">
-            <img class="rounded-lg-3" href="{% static '/media/logan-weaver-R4V1WIY9n-8-unsplash-main-bigger-size-boxing-girl.jpg' %}" alt="" width="720">
+          <!-- Photo by <a href="https://unsplash.com/@pedroaraujo74?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pedro Araújo</a> on 
+            <a href="https://unsplash.com/s/photos/gym?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+            <img class="rounded-lg-3" src="/media/pedro-araujo-gym-gear-good.jpg" alt="" width="720">
         </div>
       </div>
     </div>
@@ -29,15 +31,75 @@
   <div class="container h-100">
     <div class="row h-100">
         <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-black">
-                The new collections are here!
-            </h1>
+          <nav class="navbar navbar-expand-lg navbar-shop">
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto navbar-shop">
+                <li class="nav-item dropdown navbar-shop">
+                  <a class="nav-link dropdown-toggle" href="#" id="foodDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Food Suplements
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="foodDropdown">
+                    <a class="dropdown-item" href="#">For Healthy Diet</a>
+                    <a class="dropdown-item" href="#">Proteins</a>                  
+                    <a class="dropdown-item" href="#">Amino Acids</a>
+                    <a class="dropdown-item" href="#">Health Supplements</a>
+                    <a class="dropdown-item" href="#">Supplements For Slimming</a>
+                    <a class="dropdown-item" href="#">All other Supplements Supplements</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="accDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Gym Accessories
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="accDropdown">
+                    <a class="dropdown-item" href="#">Waterbottles / Flasks </a>
+                    <a class="dropdown-item" href="#">Supports / Sweatbands </a>                  
+                    <a class="dropdown-item" href="#">Bags</a>
+                    <a class="dropdown-item" href="#">Towels</a>
+                    <a class="dropdown-item" href="#">Other Accessories</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="accDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Gym Equipment
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="accDropdown">
+                    <a class="dropdown-item" href="#">Weights </a>
+                    <a class="dropdown-item" href="#">Sloves </a>                  
+                    <a class="dropdown-item" href="#">Fitness Ribbons</a>
+                    <a class="dropdown-item" href="#">Yoga Equipment</a>
+                    <a class="dropdown-item" href="#">Other Equipment</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="accDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Outlet
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="accDropdown">
+                    <a class="dropdown-item" href="#">Gym Equipment </a>
+                    <a class="dropdown-item" href="#">Gym Accessories </a>                  
+                    <a class="dropdown-item" href="#">Food Suplements</a>
+                  </div>
+                </li>
+               
+              </ul>
+              
+            </div>
+          </nav>
             <div class="my-5">
                 <h4>
                     <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
                 </h4>
             </div>
         </div>
+        <div class="col-5 col-md-6 float-left">
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn card-link my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            
+          </form>
+        </div>
+
     </div>
 </div>
   </section>
