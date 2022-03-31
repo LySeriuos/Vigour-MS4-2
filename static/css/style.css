@@ -103,7 +103,7 @@ em {
   font-size: 30px;
   font-weight: 900;
 }
-#slider {
+#slider1 {
   height: 500px;
   display: flex;
   justify-content: center;
@@ -115,7 +115,7 @@ em {
   margin: auto;
 }
 .subcontainer {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 .slide-img {
@@ -145,6 +145,19 @@ em {
 .slide-img .fa-circle-arrow-right {
   color: #4AE290;
 }
+
+.prev,
+.next {
+background-color: #fff;
+border: none;
+padding: 0;
+margin: 0;
+}
+
+.next .fa-circle-chevron-right {
+  color: black;
+}
+
 .img-1 {
   background-image: url("/media/evan-wise-body-pump-small.jpg");
 }
@@ -174,6 +187,8 @@ em {
       width: 100%;
  }
 }
+/* End of Training plans Section */
+
 /* Meal Diet Section styles */
 .card {
   max-width: 300px;
@@ -236,20 +251,18 @@ em {
 
 /* Start of community section */
 
-
-
-.container-community {
-  width: 1600px;
-  margin: auto;
+#slider2{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.subcontainer-community {
-  width: 90%;
-  margin: auto;
-}
+
 .slide-img-community {
   width: 100%;
-  height: 450px;
-  max-width: 500px;
+  height: 350px;
+  max-width: 400px;
   border-radius: 5px;
   background-position: center;
   background-size: cover;
@@ -258,57 +271,52 @@ em {
   justify-content: center;
   align-items: end;
   transition: 0.5s;
-}
-
-.slide-img-community a:hover {
-  color: #4AE290;
-  text-decoration: none;
-}
-.slide-img-community {
-  color: #4AE290;
+  color: white;  
 }
 .com-img-1 {
-  background-image: url("/media/evan-wise-body-pump-small.jpg");
+  background-image: url("/media/gordon-cowie-mark-a.jpg");
 }
 .com-img-2 {
-  background-image: url("/media/sonnie-hiles-yoga-small.jpg");
+  background-image: url("/media/taylor-lauren-k.jpg");
 }
 .com-img-3 {
-  background-image: url("/media/lorenzo-hamers-full-body-small.jpg");
+  background-image: url("/media/josh-duke-tom-j.jpg");
 }
-.com-img-4 {
-  background-image: url("/media/logan-weaver-boxing-small.jpg");
+.com-img-4{
+  background-image: url("/media/subtle-cinematics-ema-b.jpg");
 }
 .com-img-5 {
-  background-image: url("/media/graham-mansfield-hiit-small.jpg");
-}
-.com-img-6 {
-  background-image: url("/media/jack-lemon-running-small.jpg");
-}
-.com-img-7 {
-  background-image: url("/media/thomas-yohei-dance-small.jpg");
+  background-image: url("/media/sushil-ghimire-ashley.jpg");
 }
 .com-img-8 {
-  background-image: url("/media/corey-young-crossfit-small.jpg");
-}
-@media(max-width:1600px){
-  .container-community{
-      width: 100%;
- }
+  background-image: url("/media/alexandra-tran-vigour.jpg");
 }
 
-.slide-community .slide-img {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    transition: 0.5s;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-end;
+.slide-img-community p {
+padding: 0 0 0 10px;
+background-color: #000000a2;
 }
-.slide-community .slide-img p{
-  color: white;
-  background-color: #000000a6;
+
+.tns-controls {
+  text-align-last: end;
+  background-color: #fff;
+}
+.prev-com,
+.next-com {
+background-color: #fff;
+border: none;
+padding: 0;
+margin: 0;
+}
+
+.next-com .fa-circle-chevron-right {
+  color: black;
+}
+
+@media(max-width:1600px){
+  .container{
+      width: 100%;
+ }
 }
 
 
