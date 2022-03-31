@@ -28,7 +28,7 @@
    
 
     <!-- ***** Section About Start ***** -->
-    <section class="section pb-5" id="about-us">
+    <section class="section" id="about-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
@@ -68,7 +68,7 @@
                             <!-- Photo by <a href="https://unsplash.com/@evanthewise?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Evan Wise</a> on 
                               <a href="https://unsplash.com/s/photos/gym?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
                               <div class="slide-img img-1">
-                                  <a href="#" id="check">Body Pump<i class="fa-solid fa-circle-arrow-right"></i></a>
+                                  <a type="button" class="btn-training" id="check" data-target="#bodyPumpModal" data-toggle="modal">Body Pump<i class="fa-solid fa-circle-arrow-right"></i></a>
                               </div>
                           </div>
                           </div>
@@ -86,7 +86,7 @@
                             <!-- Photo by <a href="https://unsplash.com/@lorenzohamers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lorenzo Hamers</a> on 
                               <a href="https://unsplash.com/s/photos/gym?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
                               <div class="slide-img img-3">
-                                  <a href="#">Full Body<i class="fa-solid fa-circle-arrow-right"></i></a>
+                                  <a type="button" class="btn-training" data-toggle="modal" data-target="#fullBodyModal">Full Body<i class="fa-solid fa-circle-arrow-right"></i></a>
                               </div>                           
                         </div>
                         </div>
@@ -95,7 +95,7 @@
                             <!-- Photo by <a href="https://unsplash.com/@lgnwvr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">LOGAN WEAVER</a> on 
                               <a href="https://unsplash.com/s/photos/boxing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
                               <div class="slide-img img-4">
-                                  <a href="#">Boxing<i class="fa-solid fa-circle-arrow-right"></i></a>
+                                  <a type="button" class="btn-training" data-toggle="modal" data-target="#boxingModal">Boxing<i class="fa-solid fa-circle-arrow-right"></i></a>
                               </div>                           
                         </div>
                         </div>
@@ -104,7 +104,7 @@
                             <!-- Photo by <a href="https://unsplash.com/@grahammansfield1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">GRAHAM MANSFIELD</a> on 
                               <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>  -->
                               <div class="slide-img img-5">
-                                  <a href="#">HIIT<i class="fa-solid fa-circle-arrow-right"></i></a>
+                                  <a type="button" class="btn-training" data-toggle="modal" data-target="#hiitModal">HIIT<i class="fa-solid fa-circle-arrow-right"></i></a>
                               </div>                            
                           </div>
                         </div>
@@ -113,7 +113,7 @@
                             <!-- Photo by <a href="https://unsplash.com/@thomasyohei?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas Yohei</a> on 
                               <a href="https://unsplash.com/s/photos/trail-running?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
                               <div class="slide-img img-6">
-                                  <a href="#">Running<i class="fa-solid fa-circle-arrow-right"></i></a>
+                                  <a type="button" class="btn-training" data-toggle="modal" data-target="#runningModal">Running<i class="fa-solid fa-circle-arrow-right"></i></a>
                               </div>                           
                         </div>
                         </div>
@@ -122,7 +122,7 @@
                             <!-- Photo by <a href="https://unsplash.com/@thomasyohei?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas Yohei</a> on 
                               <a href="https://unsplash.com/s/photos/dance-workout?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
                               <div class="slide-img img-7">
-                                  <a href="#">Dance Workout<i class="fa-solid fa-circle-arrow-right"></i></a>
+                                  <a type="button" class="btn-training" data-toggle="modal" data-target="#danceModal">Dance Workout<i class="fa-solid fa-circle-arrow-right"></i></a>
                               </div>                             
                           </div>
                         </div>
@@ -131,7 +131,7 @@
                             <!-- Photo by <a href="https://unsplash.com/@corey_untitled?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Corey Young</a> on 
                               <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
                               <div class="slide-img img-8">
-                                  <a href="#">Crossfit<i class="fa-solid fa-circle-arrow-right"></i></a>
+                                  <a type="button" class="btn-training" data-toggle="modal" data-target="#crossFitModal">Crossfit<i class="fa-solid fa-circle-arrow-right"></i></a>
                               </div>
                         </div>
                         </div>
@@ -147,7 +147,9 @@
   </section>
     <!-- ***** Section Workout Programs End ***** -->
 
-    <!-- Modals for training programs not finished -->
+    <!-- Modals for training programs -->
+
+    <!-- Modal for Yoga -->
 <div class="modal fade" id="yogaModal" tabindex="-1" aria-labelledby="yogaModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -162,7 +164,158 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="banner-button" data-dismiss="modal">Close</button>
-        <button type="button" class="banner-button">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Body Pump -->
+<div class="modal fade" id="bodyPumpModal" tabindex="-1" aria-labelledby="bodyPumpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bodyPumpModalLabel">Body Pump</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>BODYPUMP is a fast-paced, barbell-based workout that's specifically designed to help you get lean, toned and fit. 
+          It uses a combination of motivating music, 
+          fantastic instructors and scientifically proven moves to help you achieve these targets more quickly than you would working out on your own.</p>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="banner-button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Full Body Workout -->
+<div class="modal fade" id="fullBodyModal" tabindex="-1" aria-labelledby="fullBodyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="fullBodyLabel">Full Body</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>In this workout Fagan created, you’ll be focusing on foundational movements for your upper body, lower body, and core. For your upper body, 
+          you’ll work the pushing movement with an incline push-up and a pulling movement with a Superman pull-down. You’ll also work on shoulder stability—an often-overlooked part of many workout plans that guards against injury and improves mobility—with the I-Y-T raise. 
+          You’ll use a unilateral (single-leg) squat variation with the reverse lunge and a horizontal hip extension exercise with the glute bridge to work your lower body. Then for your core, you’ll work it isometrically (without movement) with a high plank.
+        </p>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="banner-button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Boxing Workout -->
+<div class="modal fade" id="boxingModal" tabindex="-1" aria-labelledby="boxingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bodyPumpModalLabel">Boxing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Fitness boxing is also a great aerobic exercise. 
+          Aerobic exercise gets your heart pumping and helps lower the risk of high blood pressure, heart disease, stroke, and diabetes. 
+          It can strengthen bones and muscles, burn more calories, and lift mood.
+        </p>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="banner-button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for HIIT -->
+<div class="modal fade" id="hiitModal" tabindex="-1" aria-labelledby="hiitModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hiitLabel">HIIT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Overall, HIIT produces many of the same health benefits as other forms of exercise in a shorter amount of time. 
+          These benefits include decreases in body fat, heart rate, and blood pressure. 
+          HIIT may also help lower blood sugar and improve insulin sensitivity.
+        </p>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="banner-button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Running -->
+<div class="modal fade" id="runningModal" tabindex="-1" aria-labelledby="runningModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="runningLabel">Running</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Is a form of cardio exercise that's easily accessible, running is one of the most straightforward ways to get the important benefits of exercise. 
+          Since it improves aerobic fitness, running is a great way to help improve cardiovascular health. 
+          Plus, it burns calories and can build strength, among other things.
+        </p>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="banner-button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Dancing Workout -->
+<div class="modal fade" id="danceModal" tabindex="-1" aria-labelledby="danceModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="danceLabel">Dance Workout</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Health benefits of dancing
+          improved condition of your heart and lungs. Increased muscular strength, endurance and motor fitness. 
+          Increased aerobic fitness. Improved muscle tone and strength.
+        </p>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="banner-button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Cross Fit -->
+<div class="modal fade" id="crossFitModal" tabindex="-1" aria-labelledby="crossFitModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="danceLabel">Cross Fit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>The high-intensity, multi-joint movements in CrossFit may help you gain muscle strength and stamina. 
+          Adding additional weight to your workouts can further increase muscle gain by adding stress to your muscles.
+        </p>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="banner-button" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
