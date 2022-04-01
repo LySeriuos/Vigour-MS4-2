@@ -439,3 +439,35 @@ footer .list-inline-item a:hover{
 .navbar-shop{
   background-color: white;
 }
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: black  ;
+  background-color: #007bff;
+  background-color: white;
+  border: solid 1px #4AE290;
+}
+
+.form-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
