@@ -114,6 +114,7 @@
                               My Account 
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="user-options">
+                                <!-- Nav Menu changes by user authentication, if user is loged in he/she will see specified menu -->
                                 {% if request.user.is_authenticated %}
                               <li>                                  
                                     {% if request.user.is_superuser %}

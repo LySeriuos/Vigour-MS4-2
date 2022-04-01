@@ -10,6 +10,7 @@ html, body {
 }
 html {
   background: black;
+  height: 100%;
 }
 /* end of global css */
 /* Main header */
@@ -219,10 +220,18 @@ margin: 0;
 
 /* Start of Pricing section */
 .row-pricing {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-direction: row;
+  align-content: center;
   justify-content: center;
   align-items: center;
 }
+
 .card-1, .card-2, .card-3 {
   margin: 15px;
 }
@@ -459,7 +468,7 @@ footer .list-inline-item a:hover{
   flex-wrap: nowrap;
 }
 
-.row {
+.row-shop {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
