@@ -14,6 +14,36 @@ html {
 }
 /* end of global css */
 /* Main header */
+
+/* Nav Css */
+@media (min-width: 992px){
+	.dropdown-menu .dropdown-toggle:after{
+		border-top: .3em solid transparent;
+	    border-right: 0;
+	    border-bottom: .3em solid transparent;
+	    border-left: .3em solid;
+	}
+	.dropdown-menu .dropdown-menu{
+		margin-left:0; margin-right: 0;
+	}
+	.dropdown-menu li{
+		position: relative;
+	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{
+		display: block;
+	}
+}
+
+
 .main-banner, header, .navbar, nav a {
   background-color: black;
   color: #FFFFFF;
@@ -32,9 +62,9 @@ em {
   align-items: center;
   color: rgba(255, 255, 255, 0.9);
 }
-.nav-link:active {
+/* .nav-link:active {
   font-size: 130%;
-}
+} */
 .active {
   background-color: #FFFFFF;
   border: 1px solid #4AE290;
@@ -61,6 +91,9 @@ em {
   width: 18px;
   margin-left: 4px;
 }
+/* Mobile Nav */
+
+/* Banner index.html */
 .banner-button {
   color: black;
   background-color: white;
@@ -423,9 +456,9 @@ footer .row{
   color:#4AE290;
 }
 
-footer .list-inline-item a:hover{
+/* footer .list-inline-item a:hover{
   font-size: 120%;
-}
+} */
 
 
 /* End Of INDEX.HTML */
