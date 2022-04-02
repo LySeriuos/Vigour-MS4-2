@@ -249,6 +249,47 @@ margin: 0;
 .card-food {
   margin: 15px;
 }
+
+#slider3{
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-img-meal {
+  max-width: 400px;
+  height: auto;
+  width: 100%;
+  height: 434px;
+  max-width: 400px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  transition: 0.5s;
+  color: white;
+  margin: auto;
+}
+
+.meal-img-1 {
+  background-image: url("/media/sonny-mauricio-vegan.jpg");
+}
+.meal-img-2 {
+  background-image: url("/media/chris-ralston-meat.jpg");
+}
+.meal-img-3 {
+  background-image: url("/media/pesce-huang-vegeterian.jpg");
+}
+
+.container-fluid {
+  max-width: 1400px;
+}
+
 /* End of Meal section */
 
 /* Start of Pricing section */

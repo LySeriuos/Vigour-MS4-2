@@ -29,6 +29,34 @@ let slider1 = tns({
         }
 });
 
+let slider3 = tns({
+    container: ".slider3",
+    "slideBy" : "1",
+        // "speed" : 400,
+        "nav" : false,
+        autoplay : false,
+        // controls: true,
+        controlsPosition: "bottom",
+        autoplayButtonOutput : false,
+        prevButton: '.prev-meal',
+        nextButton: '.next-meal',
+        responsive: {
+            1600: {
+                items : 3,
+                gutter : 20
+            },
+            800: {
+                items : 2,
+                gutter : 20
+            },
+            768: {
+                items : 1,
+                gutter : 20
+            }
+        }
+});
+
+
 let slider2 = tns({
     container: ".slider2",
     "slideBy" : "1",
