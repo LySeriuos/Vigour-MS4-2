@@ -582,3 +582,39 @@ footer .row{
   justify-content: flex-start;
   align-items: center;
 }
+
+
+.side-nav-shop .nav-link{
+  color: black;
+}
+
+.side-nav-shop .active{
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+
+
+  .breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: white;
+    border: none;
+}
+
+.breadcrumb .breadcrumb-item a {
+  background-color: white;
+  color: #808080;
+  border: none;
+}
+
+.breadcrumb .active{
+  border: none;
+  
+  color: black;
+}
