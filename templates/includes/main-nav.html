@@ -1,0 +1,135 @@
+<ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">
+  <li class="nav-item">
+      <a class="navbar-brand" href="#">Vig<em>our</em></a>
+  </li>
+</ul>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+<span class="navbar-toggler-icon"></span>
+<span class="navbar-toggler-icon"></span>             
+</button>                
+<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-main">
+      <li class="nav-item">
+          <a class="navbar-brand" href="#">Vigour</a>
+      </li>
+  </ul> -->
+  <ul class="navbar-nav mx-auto navbar-main">
+      <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <!-- <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+      </li> -->
+      <li class="nav-item">
+          <a class="nav-link" href="#about-us">Workouts</a>
+      </li>
+      <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Community Blog</a>
+      </li> -->                      
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  E-Shop  </a>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#"> All Products <i class="fa-solid fa-caret-right"></i></a>
+        <ul class="submenu dropdown-menu">
+          <li><a class="dropdown-item" href=""> By Price Ascending</a></li>
+          <li><a class="dropdown-item" href=""> By Price Descending</a></li>
+          <li><a class="dropdown-item" href=""> By Category</a></li>                         	  
+        </ul>
+      </li>
+        <li><a class="dropdown-item" href="#"> Food Supplements<i class="fa-solid fa-caret-right"></i> </a>
+         <ul class="submenu dropdown-menu">
+            <li><a class="dropdown-item" href=""> For Healthy Diet</a></li>
+            <li><a class="dropdown-item" href=""> Proteins</a></li>
+            <li><a class="dropdown-item" href=""> Amino Acids</a></li>
+          <li><a class="dropdown-item" href=""> All other Supplements Supplements</a></li>
+          <li><a class="dropdown-item" href=""> Health Supplements</a></li>		
+          <li><a class="dropdown-item" href=""> Supplements For Slimming</a></li>		  
+          </ul>
+            </li>
+          <li><a class="dropdown-item" href="#"> Gym Accessories<i class="fa-solid fa-caret-right"></i> </a>
+           <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Waterbottles / Flasks</a></li>
+                <li><a class="dropdown-item" href=""> Supports / Sweatbands</a></li>
+                <li><a class="dropdown-item" href=""> Bags</a></li>
+                <li><a class="dropdown-item" href=""> Towels</a></li>		
+                <li><a class="dropdown-item" href=""> Other Accessories</a></li>		  
+            </ul>
+          </li>
+          <li><a class="dropdown-item" href="#"> Gym Equipment<i class="fa-solid fa-caret-right"></i> </a>
+           <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Weights</a></li>
+                <li><a class="dropdown-item" href=""> Sloves</a></li>
+                <li><a class="dropdown-item" href=""> Fitness Ribbons</a></li>
+            <li><a class="dropdown-item" href=""> Yoga Equipment</a></li>
+            <li><a class="dropdown-item" href=""> Other Equipment</a></li>	
+                  
+          </ul>
+            </li>
+          <li><a class="dropdown-item" href="#"> Outlet<i class="fa-solid fa-caret-right"></i> </a>
+           <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Gym Equipment</a></li>
+                <li><a class="dropdown-item" href=""> Gym Accessories</a></li>
+                <li><a class="dropdown-item" href=""> Food Suplements</a></li>									  
+          </ul>
+            </li>
+         </ul>
+        </li>	  
+    
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Community</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Customers Experience</a>
+                <a class="dropdown-item" href="#">Community Blog</a>
+                <a class="dropdown-item" href="#">Our Trainers</a>
+              </div>
+            </li> 
+                 
+      <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Our Trainers</a>
+      </li> -->
+      <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Contacts</a>
+      </li>
+      
+  </ul>                   
+  <ul class="navbar-nav mt-lg-0 navbar-side float-right align-items-center">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            My Account 
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="user-options">
+              <!-- Nav Menu changes by user authentication, if user is loged in he/she will see specified menu -->
+              {% if request.user.is_authenticated %}
+            <li>                                  
+                  {% if request.user.is_superuser %}
+                      <a href="" class="dropdown-item">Product Management</a>
+                  {% endif %}
+              </li>
+            <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+              {% else %}
+            <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+            <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+              {% endif %}
+          </ul>
+        </li>
+      <li class="list-inline-item">
+          <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+              <div class="text-center">
+                  <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                  <p class="my-0">
+                      {% if grand_total %}
+                      ${{ grand_total|floatformat:2 }}
+                      {% else %}
+                      $0.00
+                      {% endif %}
+                  </p>
+              </div>
+          </a>
+      </li>
+  </ul>
+</div>

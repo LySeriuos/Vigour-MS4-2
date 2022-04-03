@@ -626,3 +626,8 @@ footer .row{
 form .card-link{
   border: none;
 }
+
+.logo-font {
+  background-color: black;
+  color: #4AE290;
+}
