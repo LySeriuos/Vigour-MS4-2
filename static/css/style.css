@@ -276,6 +276,18 @@ margin: 0;
   margin: auto;
 }
 
+.prev-meal,
+.next-meal {
+background-color: #fff;
+border: none;
+padding: 0;
+margin: 0;
+}
+
+.next-meal .fa-circle-chevron-right {
+  color: black;
+}
+
 .meal-img-1 {
   background-image: url("/media/sonny-mauricio-vegan.jpg");
 }
@@ -304,6 +316,22 @@ margin: 0;
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+
+.subcontainer-price { 
+  margin: 50px auto;
+}
+
+.prev-price,
+.next-price {
+background-color: #fff;
+border: none;
+padding: 0;
+margin: 0;
+}
+
+.next-price .fa-circle-chevron-right {
+  color: black;
 }
 
 .card-1, .card-2, .card-3 {
