@@ -194,28 +194,28 @@ margin: 0;
 }
 
 .img-1 {
-  background-image: url("/media/evan-wise-body-pump-small.jpg");
+  background-image: url("/media/webImages/evan-wise-body-pump-small.jpg");
 }
 .img-2 {
-  background-image: url("/media/sonnie-hiles-yoga-small.jpg");
+  background-image: url("/media/webImages/sonnie-hiles-yoga-small.jpg");
 }
 .img-3 {
-  background-image: url("/media/lorenzo-hamers-full-body-small.jpg");
+  background-image: url("/media/webImages/lorenzo-hamers-full-body-small.jpg");
 }
 .img-4 {
-  background-image: url("/media/logan-weaver-boxing-small.jpg");
+  background-image: url("/media/webImages/logan-weaver-boxing-small.jpg");
 }
 .img-5 {
-  background-image: url("/media/graham-mansfield-hiit-small.jpg");
+  background-image: url("/media/webImages/graham-mansfield-hiit-small.jpg");
 }
 .img-6 {
-  background-image: url("/media/jack-lemon-running-small.jpg");
+  background-image: url("/media/webImages/jack-lemon-running-small.jpg");
 }
 .img-7 {
-  background-image: url("/media/thomas-yohei-dance-small.jpg");
+  background-image: url("/media/webImages/thomas-yohei-dance-small.jpg");
 }
 .img-8 {
-  background-image: url("/media/corey-young-crossfit-small.jpg");
+  background-image: url("/media/webImages/corey-young-crossfit-small.jpg");
 }
 @media(max-width:1600px){
   .container{
@@ -289,13 +289,13 @@ margin: 0;
 }
 
 .meal-img-1 {
-  background-image: url("/media/sonny-mauricio-vegan.jpg");
+  background-image: url("/media/webImages/sonny-mauricio-vegan.jpg");
 }
 .meal-img-2 {
-  background-image: url("/media/chris-ralston-meat.jpg");
+  background-image: url("/media/webImages/chris-ralston-meat.jpg");
 }
 .meal-img-3 {
-  background-image: url("/media/pesce-huang-vegeterian.jpg");
+  background-image: url("/media/webImages/pesce-huang-vegeterian.jpg");
 }
 
 .container-fluid {
@@ -387,22 +387,22 @@ margin: 0;
   margin: auto;
 }
 .com-img-1 {
-  background-image: url("/media/gordon-cowie-mark-a.jpg");
+  background-image: url("/media/webImages/gordon-cowie-mark-a.jpg");
 }
 .com-img-2 {
-  background-image: url("/media/taylor-lauren-k.jpg");
+  background-image: url("/media/webImages/taylor-lauren-k.jpg");
 }
 .com-img-3 {
-  background-image: url("/media/josh-duke-tom-j.jpg");
+  background-image: url("/media/webImages/josh-duke-tom-j.jpg");
 }
 .com-img-4{
-  background-image: url("/media/subtle-cinematics-ema-b.jpg");
+  background-image: url("/media/webImages/subtle-cinematics-ema-b.jpg");
 }
 .com-img-5 {
-  background-image: url("/media/sushil-ghimire-ashley.jpg");
+  background-image: url("/media/webImages/sushil-ghimire-ashley.jpg");
 }
 .com-img-8 {
-  background-image: url("/media/alexandra-tran-vigour.jpg");
+  background-image: url("/media/webImages/alexandra-tran-vigour.jpg");
 }
 
 .slide-img-community p {
