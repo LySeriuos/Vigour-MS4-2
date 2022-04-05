@@ -9,6 +9,11 @@ class Category(models.Model):
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
     subcategory = models.CharField(max_length=254, null=True, blank=True)
 
+# to adjust the verbose name or the plural form of it from the Django defaults
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     def __str__(self):
         return self.name
 
@@ -38,7 +43,8 @@ class Product(models.Model):
     list3 = models.CharField(max_length=254, null=True, blank=True)
     list4 = models.CharField(max_length=254, null=True, blank=True)
     daily_dose = models.CharField(max_length=254, null=True, blank=True)
-    old_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    old_price = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True)
