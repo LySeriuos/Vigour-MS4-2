@@ -16,7 +16,7 @@ def shop(request):
 
     products = Product.objects.all()
     query = None
-    category = None
+    categories = None
 
     if request.GET:
         if 'category' in request.GET:
@@ -26,12 +26,13 @@ def shop(request):
 
         if 'q' in request.GET:
             query = request.GET['q']
-        if not query:
-            messages.error(request, "You didn't enter any search criteria!")
-            return redirect(reverse('products'))
+            if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('products'))
 
-        queries = Q(name__icontains=query) | Q(description__icontains=query)
-        products = products.filter(queries)
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            products = products.filter(queries)
+
 
     context = {
         'products': products,
