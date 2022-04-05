@@ -6,7 +6,7 @@ from .models import Product
 
 def shop(request):
     """A view to return the shop page"""
-    
+
     products = Product.objects.all()
 
     context = {
@@ -16,7 +16,7 @@ def shop(request):
     return render(request, 'shop/shop.html', context)
 
 
-def shop_detail(request, product_id):
+def product_detail(request, product_id):
     """A view to show individual product details"""
     product = get_object_or_404(Product, pk=product_id)
 
@@ -24,4 +24,4 @@ def shop_detail(request, product_id):
         'product': product,
     }
 
-    return render(request, 'shop/shop.html', context)
+    return render(request, 'shop/product_detail.html', context)
