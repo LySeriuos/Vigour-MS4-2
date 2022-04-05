@@ -125,10 +125,16 @@
                               </div>
                           </div>
                       </div>
+                      <!-- this code is used to get a thematic break after every line of products
+                      it depends on screens size so if product is dividible from 1 
+                    the horizontal rule or <br> goes after every product on mobile screens
+                  this we need tto do because 'cards' is used in colummns but not in the rows-->
                       {% if forloop.counter|divisibleby:1 %}
                           <div class="col-12 d-sm-none mb-5">
                               <hr>
                           </div>
+                          <!-- if it dividable by 2, so the <br> goes after every twwo products on mobile sscreen sizes
+                          because on medium screens it will show two products in each line and so on-->
                       {% endif %}                        
                       {% if forloop.counter|divisibleby:2 %}
                           <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
