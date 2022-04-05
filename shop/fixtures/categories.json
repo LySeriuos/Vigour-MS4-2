@@ -1,7 +1,7 @@
 [
     {
        "pk":1,
-       "model":"products.category",
+       "model":"shop.category",
        "fields":{
           "name":"healthy_diet",
           "friendly_name":"Healthy Diet",
@@ -10,7 +10,7 @@
     },
     {
        "pk":2,
-       "model":"products.category",
+       "model":"shop.category",
        "fields":{
           "name":"proteins",
           "friendly_name":"Proteins",
@@ -19,7 +19,7 @@
     },
     {
        "pk":3,
-       "model":"products.category",
+       "model":"shop.category",
        "fields":{
           "name":"amino_acids",
           "friendly_name":"Amino Acids",
@@ -28,7 +28,7 @@
     },
     {
        "pk":4,
-       "model":"products.category",
+       "model":"shop.category",
        "fields":{
           "name":"health_supplements",
           "friendly_name":"Health Supplements",
@@ -37,7 +37,7 @@
     },
     {
        "pk":5,
-       "model":"products.category",
+       "model":"shop.category",
        "fields":{
           "name":"supplements_for_slimming",
           "friendly_name":"Supplements For Slimming",
@@ -46,7 +46,7 @@
     },
     {
        "pk":6,
-       "model":"products.category",
+       "model":"shop.category",
        "fields":{
           "name":"waterbottles",
           "friendly_name":"Water Bottles",
@@ -55,7 +55,7 @@
     },
     {
        "pk":7,
-       "model":"products.category",
+       "model":"shop.category",
        "fields":{
           "name":"sweatbands_supports",
           "friendly_name":"Sweatbands & Supports",
@@ -64,7 +64,7 @@
     },
     {
        "pk":8,
-       "model":"products.category",
+       "model":"shop.category",
        "fields":{
           "name":"bags",
           "friendly_name":"Bags",
@@ -73,7 +73,7 @@
     },
     {
        "pk":9,
-       "model":"products.category",
+       "model":"shop.category",
        "fields":{
           "name":"towels",
           "friendly_name":"Towels",
@@ -82,7 +82,7 @@
     },
     {
         "pk":10,
-        "model":"products.category",
+        "model":"shop.category",
         "fields":{
            "name":"weights",
            "friendly_name":"Weights",
@@ -92,7 +92,7 @@
      },
      {
         "pk":11,
-        "model":"products.category",
+        "model":"shop.category",
         "fields":{
            "name":"fitness_ribbons",
            "friendly_name":"Fitness Ribbons",
@@ -101,7 +101,7 @@
      },
      {
         "pk":12,
-        "model":"products.category",
+        "model":"shop.category",
         "fields":{
            "name":"yoga_equipment",
            "friendly_name":"Yoga Equipment",
@@ -110,11 +110,11 @@
      },
      {
         "pk":13,
-        "model":"products.category",
+        "model":"shop.category",
         "fields":{
            "name":"outlet",
            "friendly_name":"Outlet",
-           "subcategory": "all_products"
+           "subcategory": "all_shop"
         }
      }
  ]

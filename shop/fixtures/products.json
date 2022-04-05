@@ -1,7 +1,7 @@
 [
     {
        "pk":1,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5001340155",
           "name":"BCAA Amino, 400 g",
@@ -15,14 +15,14 @@
           "price":28.00,
           "category":3,
           "rating":4.6,
-          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/products/creator_17a082b9-a58f-42bc-96e4-db29c20c8e28_1024x1024.jpg?v=1646485593",
-          "image":"products/food_supplements/Amino_accids/Delta-Nutrition-BCAA-Amino.png",
+          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/shop/creator_17a082b9-a58f-42bc-96e4-db29c20c8e28_1024x1024.jpg?v=1646485593",
+          "image":"shop/food_supplements/Amino_accids/Delta-Nutrition-BCAA-Amino.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":2,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5001600425",
           "name":"GAAM Life Series BCAA, 250 g",
@@ -37,13 +37,13 @@
           "category":3,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-275_1.jpg?m=1581605474",
-          "image":"products/food_supplements/Amino_accids/GAAM-Life-Series-BCAA.jpg",
+          "image":"shop/food_supplements/Amino_accids/GAAM-Life-Series-BCAA.jpg",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":3,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5001730010",
           "name":"Amino EAA Xplode, 520 g",
@@ -57,14 +57,14 @@
           "price":39.50,
           "category":3,
           "rating":4.7,
-          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/products/a_177e44e9-e10e-4800-afcb-db90b187eeb3_1024x1024.webp?v=1646511561",
-          "image":"products/food_supplements/Amino_accids/Olimp-BCAA-Xplode.png",
+          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/shop/a_177e44e9-e10e-4800-afcb-db90b187eeb3_1024x1024.webp?v=1646511561",
+          "image":"shop/food_supplements/Amino_accids/Olimp-BCAA-Xplode.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":4,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5001890157",
           "name":"Amino EAA Xplode, 520 g",
@@ -78,14 +78,14 @@
           "price":54.99,
           "category":3,
           "rating":4.7,
-          "image_url":"https://cdn.shopify.com/s/files/1/1943/7603/products/prolific-supplement-pescience-867004_1800x1800.jpg?v=1648690122",
-          "image":"products/food_supplements/Amino_accids/PE-Prolific.png",
+          "image_url":"https://cdn.shopify.com/s/files/1/1943/7603/shop/prolific-supplement-pescience-867004_1800x1800.jpg?v=1648690122",
+          "image":"shop/food_supplements/Amino_accids/PE-Prolific.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":5,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002111605",
           "name":"Womens Best BCAA Amino, 200g",
@@ -100,13 +100,13 @@
           "category":3,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-0913_1.jpg?m=1505472810",
-          "image":"products/food_supplements/Amino_accids/Womens-Best-BCAA-Amino.png",
+          "image":"shop/food_supplements/Amino_accids/Womens-Best-BCAA-Amino.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":6,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002260206",
           "name":"Zero Syrup, 320 ml",
@@ -121,18 +121,18 @@
           "category":1,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-7221_1.jpg?m=1596101094",
-          "image":"products/food_supplements/For_healthy_diet/PB-BioTechUSA-Zero-Syrup.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-BioTechUSA-Zero-Syrup.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":7,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002440521",
           "name":"Healthyo Real Mayo, 230 g",
           "highlight":"Sweden's uncrowned food queen, Mat Tina & Healthyco releases a series of aiolis, mayonnaise, ketchup, BBQ sauce, etc. items without additives, all natural and above all delicious!",
-          "description":"The products in Tina's series are the ''fruit'' of several months of collaboration where the focus has been to develop Tina's own recipes within these categories in a natural way where the uses should be many!",
+          "description":"The shop in Tina's series are the ''fruit'' of several months of collaboration where the focus has been to develop Tina's own recipes within these categories in a natural way where the uses should be many!",
           "list1":"No preservatives",
           "list2":"No dyes",
           "list3":"No added sugar",
@@ -142,18 +142,18 @@
           "category":1,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-82689_1.jpg?m=1614345874",
-          "image":"products/food_supplements/For_healthy_diet/PB-Healthyo-Real-Mayo.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-Healthyo-Real-Mayo.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":8,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002601115",
           "name":"Slender Chef Spaghetti, 200g",
-          "highlight":"From the makers of the tastiest zero-calorie sauces on the market now comes Slender Chef Rice and Spaghetti. The perfect products for anyone looking to maintain a low-carb diet.",
-          "description":"The perfect products for anyone who wants to maintain a low-carb diet or simply switch up a few meals a week. Fortified with fibre and free of carbs and fat, you can now enjoy a really tasty Bolognese, while keeping your shape!",
+          "highlight":"From the makers of the tastiest zero-calorie sauces on the market now comes Slender Chef Rice and Spaghetti. The perfect shop for anyone looking to maintain a low-carb diet.",
+          "description":"The perfect shop for anyone who wants to maintain a low-carb diet or simply switch up a few meals a week. Fortified with fibre and free of carbs and fat, you can now enjoy a really tasty Bolognese, while keeping your shape!",
           "list1":"Vegan",
           "list2":"Low sodium",
           "list3":"High fibre content",
@@ -163,13 +163,13 @@
           "category":1,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-4517_1.jpg?m=1477401353",
-          "image":"products/food_supplements/For_healthy_diet/PB-Slender-Chef-Spaghetti.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-Slender-Chef-Spaghetti.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":9,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002690715",
           "name":"Walden Farms BBQ Sauce, 355 ml",
@@ -184,13 +184,13 @@
           "category":1,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1223_1.jpg?m=1403588723",
-          "image":"products/food_supplements/For_healthy_diet/PB-Walden-Farms-BBQ-Sauce.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-Walden-Farms-BBQ-Sauce.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":10,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002701115",
           "name":"Walden Farms Salad Dressing, 355 ml",
@@ -205,14 +205,14 @@
           "category":1,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1227_1.jpg?m=1403591455",
-          "image":"products/food_supplements/For_healthy_diet/PB-Walden-Farms-Salad-Dressing1.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-Walden-Farms-Salad-Dressing1.png",
           "subcategory":"food_supplements"
        }
        
     },
     {
        "pk":11,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002761055",
           "name":"Fairing Daily greens, 250 g",
@@ -227,13 +227,13 @@
           "category":4,
           "rating":4.0,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-8355_1.jpg?m=1520855636",
-          "image":"products/food_supplements/Health_supplements/PB-Fairing-Daily-greens.png",
+          "image":"shop/food_supplements/Health_supplements/PB-Fairing-Daily-greens.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":12,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002820069",
           "name":"GAAM Life Series Collagen, 250 g",
@@ -248,13 +248,13 @@
           "category":4,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-48268_1.jpg?m=1619180251",
-          "image":"products/food_supplements/Health_supplements/PB-GAAM-Life-Series-Collagen.png",
+          "image":"shop/food_supplements/Health_supplements/PB-GAAM-Life-Series-Collagen.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":13,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002820147",
           "name":"GAAM Life Series Vegan Beta Carotene, 60 caps",
@@ -269,13 +269,13 @@
           "category":4,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-10012_1.jpg?m=1602225044",
-          "image":"products/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Beta-carotene.png",
+          "image":"shop/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Beta-carotene.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":14,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002910572",
           "name":"GAAM Life Series Vegan Hyaluronic acid & vitamin C, 60 caps",
@@ -290,13 +290,13 @@
           "category":4,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-10002_1.jpg?m=1602225500",
-          "image":"products/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Hyaluronic-acid.webp",
+          "image":"shop/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Hyaluronic-acid.webp",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":15,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5002990740",
           "name":"GAAM Life Series Vegan Sleep Well, 60 caps",
@@ -311,13 +311,13 @@
           "category":4,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-10008_1.jpg?m=1602225564",
-          "image":"products/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Sleep-Well.png",
+          "image":"shop/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Sleep-Well.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":16,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003050248",
           "name":"GAAM 100% Casein Premium, 750 g",
@@ -332,13 +332,13 @@
           "category":2,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-57526_1.jpg?m=1635423528",
-          "image":"products/food_supplements/Proteins/PB-casein.png",
+          "image":"shop/food_supplements/Proteins/PB-casein.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":17,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003070787",
           "name":"Optimum Nutrition 100% Whey Gold Standard, 2.27 kg",
@@ -353,13 +353,13 @@
           "category":2,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-16164_1.jpg?m=1603280971",
-          "image":"products/food_supplements/Proteins/PB-optimum-nutrition.png",
+          "image":"shop/food_supplements/Proteins/PB-optimum-nutrition.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":18,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003090182",
           "name":"Scitec Nutrition 100% Whey Protein Professional, 920 g",
@@ -374,13 +374,13 @@
           "category":2,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1079_1.jpg?m=1567068167",
-          "image":"products/food_supplements/Proteins/PB-scitetc-nutrition.png",
+          "image":"shop/food_supplements/Proteins/PB-scitetc-nutrition.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":19,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003090186",
           "name":"Self Omninutrition Micro Whey Lactose Free, 1 kg",
@@ -395,13 +395,13 @@
           "category":2,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1420_1.jpg?m=1624531913",
-          "image":"products/food_supplements/Proteins/PB-Self Omninutrition.png",
+          "image":"shop/food_supplements/Proteins/PB-Self Omninutrition.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":20,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003161326",
           "name":"Womens Best Fit Pro Whey Protein, 1 kg",
@@ -416,13 +416,13 @@
           "category":2,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-0388_1.jpg?m=1588160787",
-          "image":"products/food_supplements/Proteins/PB-womens-best.png",
+          "image":"shop/food_supplements/Proteins/PB-womens-best.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":21,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003230723",
           "name":"GAAM BURN AM, 90 caps",
@@ -437,13 +437,13 @@
           "category":5,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-2754_1.jpg?m=1635763283",
-          "image":"products/food_supplements/Slimming_supplements/GAAMBURNAM90caps.png",
+          "image":"shop/food_supplements/Slimming_supplements/GAAMBURNAM90caps.png",
           "subcategory":"food_supplements"
         }
     },
     {
        "pk":22,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003270936",
           "name":"GAAM BURN PM, 90 caps",
@@ -458,13 +458,13 @@
           "category":5,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-28442_1.jpg?m=1635859301",
-          "image":"products/food_supplements/Slimming_supplements/GAAM-BURN-PM-90.png",
+          "image":"shop/food_supplements/Slimming_supplements/GAAM-BURN-PM-90.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":23,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003360384",
           "name":"GAAM Life Series Shape Meal, 1.2 kg",
@@ -479,13 +479,13 @@
           "category":5,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-752_1.jpg?m=1589198293",
-          "image":"products/food_supplements/Slimming_supplements/GAAM-Life-SeriesShapeMeal.png",
+          "image":"shop/food_supplements/Slimming_supplements/GAAM-Life-SeriesShapeMeal.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":24,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003440111",
           "name":"JNX Sports The Ripper, 150g",
@@ -500,13 +500,13 @@
           "category":5,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-2895_1.jpg?m=1611911682",
-          "image":"products/food_supplements/Slimming_supplements/JNXSportsTheRipper.png",
+          "image":"shop/food_supplements/Slimming_supplements/JNXSportsTheRipper.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":25,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003540313",
           "name":"Swedish Supplements Synephrine, 90 caps",
@@ -521,13 +521,13 @@
           "category":5,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-9515_1.jpg?m=1627982572",
-          "image":"products/food_supplements/Slimming_supplements/JNXSportsTheRipper.png",
+          "image":"shop/food_supplements/Slimming_supplements/JNXSportsTheRipper.png",
           "subcategory":"food_supplements"
        }
     },
     {
        "pk":26,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003560513",
           "name":"Better Bodies Gym Duffle Bag",
@@ -541,13 +541,13 @@
           "category":8,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-9202_1.jpg?m=1516788763",
-          "image":"products/Gym_accesories/gym bags/BetterBodiesGymDuffleBag.png",
+          "image":"shop/Gym_accesories/gym bags/BetterBodiesGymDuffleBag.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":27,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003560948",
           "name":"Better Bodies Stringbag",
@@ -561,13 +561,13 @@
           "category":8,
           "rating":4.0,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-0702_1.jpg?m=1530524278",
-          "image":"products/Gym_accesories/gym bags/BetterBodiesStringbag.png",
+          "image":"shop/Gym_accesories/gym bags/BetterBodiesStringbag.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":28,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003570628",
           "name":"GAAM Tactical Backpack 45 L",
@@ -581,13 +581,13 @@
           "category":8,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-18302_1.jpg?m=1639131386",
-          "image":"products/Gym_accesories/gym bags/GAAMTacticalBackpack.png",
+          "image":"shop/Gym_accesories/gym bags/GAAMTacticalBackpack.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":29,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003620308",
           "name":"Gorilla Wear Jerome Gym Bag",
@@ -601,13 +601,13 @@
           "category":8,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-5938_1.jpg?m=1513602465",
-          "image":"products/Gym_accesories/gym bags/GorillaWearJeromeGymBag.png",
+          "image":"shop/Gym_accesories/gym bags/GorillaWearJeromeGymBag.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":30,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003690115",
           "name":"Nike Brasilia Duffel Bag Black",
@@ -621,13 +621,13 @@
           "category":8,
           "rating":4.1,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-52123_1.jpg?m=1642167424",
-          "image":"products/Gym_accesories/gym bags/NikeBrasiliaDuffelBagBlack.png",
+          "image":"shop/Gym_accesories/gym bags/NikeBrasiliaDuffelBagBlack.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":31,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003690116",
           "name":"ACTLY Wrist Wraps",
@@ -641,13 +641,13 @@
           "category":7,
           "rating":4.1,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-93583_1.jpg?m=1638436263",
-          "image":"products/Gym_accesories/supports-sweatbands/ACTLWristWraps.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/ACTLWristWraps.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":32,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003780391",
           "name":"BEACE Head Sweatband",
@@ -661,13 +661,13 @@
           "category":7,
           "rating":4.5,
           "image_url":"https://m.media-amazon.com/images/I/71LuIiZjSLL._AC_SX569_.jpg",
-          "image":"products/Gym_accesories/supports-sweatbands/beace-sweatband.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/beace-sweatband.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":33,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003790542",
           "name":"C.P. Sports Knee Wraps 2m",
@@ -681,13 +681,13 @@
           "category":7,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-4102_1.jpg?m=1531469627",
-          "image":"products/Gym_accesories/supports-sweatbands/C.P.SportsKneeWraps2m.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/C.P.SportsKneeWraps2m.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":34,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003831225",
           "name":"Gasp Hardcore Wrist Wraps",
@@ -701,13 +701,13 @@
           "category":7,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-24223_1.jpg?m=1432202860",
-          "image":"products/Gym_accesories/supports-sweatbands/GaspHardcoreWristWraps.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/GaspHardcoreWristWraps.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":35,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003861402",
           "name":"C.P. Sports Headband",
@@ -721,13 +721,13 @@
           "category":7,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-6017_1.jpg?m=1515420649",
-          "image":"products/Gym_accesories/supports-sweatbands/Running-headband-spicy-orange.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/Running-headband-spicy-orange.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":36,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003910638",
           "name":"TOWEL MEDIUM ORANGE",
@@ -741,13 +741,13 @@
           "category":9,
           "rating":4.2,
           "image_url":"https://03.cdn37.se/Ww/images/2.765819/babolat-towel-medium-orange.jpeg",
-          "image":"products/Gym_accesories/Towels/BABOLATTOWELMEDIUMORANGE.png",
+          "image":"shop/Gym_accesories/Towels/BABOLATTOWELMEDIUMORANGE.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":37,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003950574",
           "name":"Gorilla Wear Classic Gym Towel Black & Red",
@@ -761,13 +761,13 @@
           "category":9,
           "rating":4.2,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-38426_1.jpg?m=1564735441",
-          "image":"products/Gym_accesories/Towels/ClassicGymTowel.png",
+          "image":"shop/Gym_accesories/Towels/ClassicGymTowel.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":38,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003950576",
           "name":"Womens Best Gym Training Towel",
@@ -781,13 +781,13 @@
           "category":9,
           "rating":4.2,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-2790_1.jpg?m=1531386098",
-          "image":"products/Gym_accesories/Towels/SporthanddukBadin.png",
+          "image":"shop/Gym_accesories/Towels/SporthanddukBadin.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":39,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003960062",
           "name":"MICROFIBRE DUCK CLOTH SIZE XL 110X175 CM GREEN NABAIJI",
@@ -801,13 +801,13 @@
           "category":9,
           "rating":4.2,
           "image_url":"https://contents.mediadecathlon.com/p1791391/k96de61fbf63f8e318b41483a1d182785/1791391_default.jpg?format=auto&quality=60&f=800x0",
-          "image":"products/Gym_accesories/Towels/SWIMMING-ULTRA-SOFT-MICROFIBRE-TOWEL.png",
+          "image":"shop/Gym_accesories/Towels/SWIMMING-ULTRA-SOFT-MICROFIBRE-TOWEL.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":40,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003960682",
           "name":"Adidas Logo Towel Small White",
@@ -821,13 +821,13 @@
           "category":9,
           "rating":4.5,
           "image_url":"https://img.tennis-warehouse.com/watermark/rs.php?path=ALTSW-1.jpg&nw=540",
-          "image":"products/Gym_accesories/Towels/TowelSmall-Beachtowels.png",
+          "image":"shop/Gym_accesories/Towels/TowelSmall-Beachtowels.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":41,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003960775",
           "name":"GAAM Shaker 700 ml Mint Green",
@@ -841,13 +841,13 @@
           "category":6,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-71816_1.jpg?m=1638344155",
-          "image":"products/Gym_accesories/water_bottles/GAAMShaker700mlMintGreen.png",
+          "image":"shop/Gym_accesories/water_bottles/GAAMShaker700mlMintGreen.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":42,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003990736",
           "name":"GAAM Alu Water Bottle 600 ml",
@@ -861,13 +861,13 @@
           "category":6,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-0750_1.jpg?m=1646729201",
-          "image":"products/Gym_accesories/water_bottles/GAAM-alu-water-bottle.png",
+          "image":"shop/Gym_accesories/water_bottles/GAAM-alu-water-bottle.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":43,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5003990746",
           "name":"GAAM Shaker 700 ml",
@@ -881,13 +881,13 @@
           "category":6,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-22021617_1.jpg?m=1646399999",
-          "image":"products/Gym_accesories/water_bottles/GAAMShaker700ml.png",
+          "image":"shop/Gym_accesories/water_bottles/GAAMShaker700ml.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":44,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004111503",
           "name":"Gorilla Wear Water Jug 2.2 L Black",
@@ -901,13 +901,13 @@
           "category":6,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-387722_1.jpg?m=1636978511",
-          "image":"products/Gym_accesories/water_bottles/GorillaWearWaterJug2.2L.png",
+          "image":"shop/Gym_accesories/water_bottles/GorillaWearWaterJug2.2L.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":45,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004230059",
           "name":"Smartshake Reforce Stainless Steel 900 ml",
@@ -921,13 +921,13 @@
           "category":6,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-796_1.jpg?m=1643352198",
-          "image":"products/Gym_accesories/water_bottles/SmartshakeReforceStainlessSteel.png",
+          "image":"shop/Gym_accesories/water_bottles/SmartshakeReforceStainlessSteel.png",
           "subcategory":"gym_accessories"
        }
     },
     {
        "pk":46,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004310089",
           "name":"GAAM Booty Builder",
@@ -941,13 +941,13 @@
           "category":11,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-89525_1.jpg?m=1638527965",
-          "image":"products/gym_equipment/fitness_ribbons/GAAMBootyBuilder.png",
+          "image":"shop/gym_equipment/fitness_ribbons/GAAMBootyBuilder.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":47,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004610254",
           "name":"GAAM Power Band 13 mm",
@@ -961,13 +961,13 @@
           "category":11,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-56793_1.jpg?m=1638531847",
-          "image":"products/gym_equipment/fitness_ribbons/GAAMPowerBand13mm.png",
+          "image":"shop/gym_equipment/fitness_ribbons/GAAMPowerBand13mm.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":48,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004650050",
           "name":"Better Bodies Resistance Band",
@@ -981,13 +981,13 @@
           "category":11,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-3452_1.jpg?m=1527229482",
-          "image":"products/gym_equipment/fitness_ribbons/BetterBodiesResistanceBand.png",
+          "image":"shop/gym_equipment/fitness_ribbons/BetterBodiesResistanceBand.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":49,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004821375",
           "name":"Virtufit Resistance Cable Medium",
@@ -1001,13 +1001,13 @@
           "category":11,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1822_1.jpg?m=1558420810",
-          "image":"products/gym_equipment/fitness_ribbons/VirtufitResistanceCableMedium.png",
+          "image":"shop/gym_equipment/fitness_ribbons/VirtufitResistanceCableMedium.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":50,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004900522",
           "name":"Better Bodies Glute Force",
@@ -1021,13 +1021,13 @@
           "category":11,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-3625_1.jpg?m=1544079300",
-          "image":"products/gym_equipment/fitness_ribbons/BetterBodiesGluteForce.png",
+          "image":"shop/gym_equipment/fitness_ribbons/BetterBodiesGluteForce.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":51,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
          "sku":"pp5004900524",
          "name":"First Place Competition Kettlebell 14kg",
@@ -1041,13 +1041,13 @@
          "category":10,
          "rating":4.6,
          "image_url":"https://www.performbetter.com/images/4098_10_1.jpg?resizeid=5&resizeh=1200&resizew=1200",
-         "image":"products/gym_equipment/Weights/FirstPlaceCompetitionKettlebell.png",
+         "image":"shop/gym_equipment/Weights/FirstPlaceCompetitionKettlebell.png",
          "subcategory":"gym_equipment"
        }
     },
     {
        "pk":52,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004910477",
           "name":"First Place Rubber Encased Hex Dumbbell - Sold As Singles 10kg",
@@ -1061,13 +1061,13 @@
           "category":10,
           "rating":4.6,
           "image_url":"https://www.performbetter.com/images/4057_1.jpg?resizeid=5&resizeh=1200&resizew=1200",
-          "image":"products/gym_equipment/Weights/FirstPlaceRubberEncasedHexDumbbell.png",
+          "image":"shop/gym_equipment/Weights/FirstPlaceRubberEncasedHexDumbbell.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":53,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004940703",
           "name":"PB Extreme Pro Style Rubber Dumbbells - Sold As Pairs, 10kg",
@@ -1081,13 +1081,13 @@
           "category":10,
           "rating":4.6,
           "image_url":"https://www.performbetter.com/images/4099_1.jpg?resizeid=5&resizeh=1200&resizew=1200",
-          "image":"products/gym_equipment/Weights/PBExtremeProStyleRubberDumbbells.png",
+          "image":"shop/gym_equipment/Weights/PBExtremeProStyleRubberDumbbells.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":54,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004991006",
           "name":"Single Urethane Group Set",
@@ -1101,13 +1101,13 @@
           "category":10,
           "rating":4.3,
           "image_url":"https://www.performbetter.com/images/2813-01_1.jpg?resizeid=5&resizeh=1200&resizew=1200",
-          "image":"products/gym_equipment/Weights/SingleUrethaneGroupSet.png",
+          "image":"shop/gym_equipment/Weights/SingleUrethaneGroupSet.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":55,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5004991162",
           "name":"Virtufit Adjustable Weight Vest 20 kg",
@@ -1121,13 +1121,13 @@
           "category":10,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-84712_1.jpg?m=1558339853",
-          "image":"products/gym_equipment/Weights/VirtufitAdjustableWeightVest20kg.png",
+          "image":"shop/gym_equipment/Weights/VirtufitAdjustableWeightVest20kg.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":56,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005000046",
           "name":"Tiguar Yogafilt",
@@ -1141,13 +1141,13 @@
           "category":12,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-17812_1.jpg?m=1591878183",
-          "image":"products/gym_equipment/Yoga_Equipment/TiguarYogafilt.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/TiguarYogafilt.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":57,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005070254",
           "name":"Tiguar Yogarem",
@@ -1161,13 +1161,13 @@
           "category":12,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-16986_1.jpg?m=1591868245",
-          "image":"products/gym_equipment/Yoga_Equipment/TiguarYogarem.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/TiguarYogarem.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":58,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005071145",
           "name":"Virtufit Gym Ball + Pump 65 cm",
@@ -1181,13 +1181,13 @@
           "category":12,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-8251_1.jpg?m=1558414550",
-          "image":"products/gym_equipment/Yoga_Equipment/VirtufitGymBall+Pump65cm.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/VirtufitGymBall+Pump65cm.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":59,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005140282",
           "name":"Virtufit Yoga Block Black",
@@ -1201,13 +1201,13 @@
           "category":12,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1792_1.jpg?m=1589951574",
-          "image":"products/gym_equipment/Yoga_Equipment/VirtufitYogaBlockBlack.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/VirtufitYogaBlockBlack.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":60,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005200166",
           "name":"Virtufit Yoga Mat 3 mm 183 x 61 cm",
@@ -1221,13 +1221,13 @@
           "category":12,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-18848_1.jpg?m=1595590474",
-          "image":"products/gym_equipment/Yoga_Equipment/VirtufitYogaMat3mm183x61cm.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/VirtufitYogaMat3mm183x61cm.png",
           "subcategory":"gym_equipment"
        }
     },
     {
        "pk":61,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005210241",
           "name":"Gorilla Wear Toiletry Bag",
@@ -1242,13 +1242,13 @@
           "category":13,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-2371_1.jpg?m=1531741992",
-          "image":"products/Outlet/GorillaWearToiletryBag.png",
+          "image":"shop/Outlet/GorillaWearToiletryBag.png",
           "subcategory":"outlet"
        }
     },
     {
        "pk":62,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005280104",
           "name":"HealthyCo Proteinella 400 g",
@@ -1263,13 +1263,13 @@
           "category":13,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-4836_1.jpg?m=1582725375",
-          "image":"products/Outlet/HealthyCoProteinella.png",
+          "image":"shop/Outlet/HealthyCoProteinella.png",
           "subcategory":"outlet"
        }
     },
     {
        "pk":63,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005310360",
           "name":"M-nutrition Keto Boost + Electrolytes 170 g",
@@ -1284,13 +1284,13 @@
           "category":13,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-37781_1.jpg?m=1635844672",
-          "image":"products/Outlet/M-nutritionKetoBoost+ElectrolytesSlimming.png",
+          "image":"shop/Outlet/M-nutritionKetoBoost+ElectrolytesSlimming.png",
           "subcategory":"outlet"
        }
     },
     {
        "pk":64,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005330595",
           "name":"Self Omninutrition Soy Protein 1 kg",
@@ -1304,14 +1304,14 @@
           "price":17.50,
           "category":13,
           "rating":4.0,
-          "image_url":"products/Outlet/SelfOmninutritionSoyProtein.png",
-          "image":"products/Outlet/SelfOmninutritionSoyProtein.png",
+          "image_url":"shop/Outlet/SelfOmninutritionSoyProtein.png",
+          "image":"shop/Outlet/SelfOmninutritionSoyProtein.png",
           "subcategory":"outlet"
        }
     },
     {
        "pk":65,
-       "model":"products.product",
+       "model":"shop.product",
        "fields":{
           "sku":"pp5005330596",
           "name":"Smartshake Revive 750 ml",
@@ -1326,7 +1326,7 @@
           "category":13,
           "rating":4.2,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-933_1.jpg?m=1569916486",
-          "image":"products/Outlet/SmartshakeRevive750ml.png",
+          "image":"shop/Outlet/SmartshakeRevive750ml.png",
           "subcategory":"outlet"
        }
     }
