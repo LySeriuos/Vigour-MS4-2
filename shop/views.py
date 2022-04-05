@@ -1,4 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
+from django.db.models import Q
 from .models import Product
 
 # Create your views here.
@@ -6,11 +8,29 @@ from .models import Product
 
 def shop(request):
     """A view to return the shop page"""
+    """check if GET is requested and if 'q' is in that request
+    I'll set a variable equal to a Q object. Where the name contains the query.
+    Or the description contains the query.
+    The pipe here is what generates the or statement.
+    And the i in front of contains makes the queries case insensitive.
+    !!!local variable 'query' referenced before assignment !!! """
 
     products = Product.objects.all()
+    query = None
+
+    if request.GET:
+        if 'q' in request.GET:
+            query = request.GET['q']
+        if not query:
+            messages.error(request, "You didn't enter any search criteria!")
+            return redirect(reverse('products'))
+
+        queries = Q(name__icontains=query) | Q(description__icontains=query)
+        products = products.filter(queries)
 
     context = {
         'products': products,
+        'search_term': query,
     }
 
     return render(request, 'shop/shop.html', context)

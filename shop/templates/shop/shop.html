@@ -1,162 +1,155 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block page_header %}
- <!-- ***** Main Banner Area Start ***** -->
- <section id="main-banner bg-image top" class="main-banner">
-  <div class="container mb-sm-0 mt-5 pt-3 text-center">
+<!-- ***** Main Banner Area Start ***** -->
+<section id="main-banner bg-image top" class="main-banner">
+   <div class="container mb-sm-0 mt-5 pt-3 text-center">
       <div class="row pb-0 pe-lg-0 align-items-center justify-content-center caption">
-          <div class="col-lg-5 p-3 p-lg-5 pt-lg-3 text-center">
+         <div class="col-lg-5 p-3 p-lg-5 pt-lg-3 text-center">
             <!-- Add Jinja for image and banner text from database in easy tomanipulate -->
-              <h2 class=" fw-bold lh-1 main-banner-text">Your Goal<br><em>Our Products.</em></h2>
-              <h6 id="banner-h6">We are here to help you get the best version of you!</h6>              
-          </div>
-          
-          <div class="col-lg-6 text-center">
+            <h2 class=" fw-bold lh-1 main-banner-text">Your Goal<br><em>Our Products.</em></h2>
+            <h6 id="banner-h6">We are here to help you get the best version of you!</h6>
+         </div>
+         <div class="col-lg-6 text-center">
             <!-- Can't load the image from media file -->
-              <img class="rounded-lg-3" src="/media/webImages/pedro-araujo-gym-gear-good.jpg" alt="">
-          </div>
+            <img class="rounded-lg-3" src="/media/webImages/pedro-araujo-gym-gear-good.jpg" alt="">
+         </div>
       </div>
-  </div>  
+   </div>
 </section>
-  <!-- ***** Main Banner Area End ***** -->
-
+<!-- ***** Main Banner Area End ***** -->
 {% endblock %}
-
 {% block content %}
 <!-- Special offer for users who has subscription -->
 <section>
-  <div id="special-offer" class="row text-center">
-    <div class="col bg-black text-white">
-      <h4 class="logo-font mb-1">10% discount for users who has subscriptions!</h4>
-    </div>
-
-
-  </div>
-
+   <div id="special-offer" class="row text-center">
+      <div class="col bg-black text-white">
+         <h4 class="logo-font mb-1">10% discount for users who has subscriptions!</h4>
+      </div>
+   </div>
 </section>
-
 <section>
-  <div class="container-fluid">
-     <!-- bread crumb for mobile phones to navigate easier on the site -->
-    <div class="row-shop-1">
-      <div class="col-12"></div>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">E-Shop</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
-        </ol>
-      </nav>
-    </div>
-
-    <div class="row">
-        <div class="col-3 d-none d-md-block m-auto">
-          <ul class="nav flex-column side-nav-shop">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          </div>
-          
-        <div class="col-12 col-md-9 mx-auto m-md-0">
-          <nav class="navbar navbar-expand-lg navbar-shop float-right">
-          <form class="form-inline my-2 my-lg-0" method="GET" action="">
-            <button class="btn card-link my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass m-0"></i></button>
-            <input class="form-control mr-sm-0" type="text" name="q"placeholder="Search" aria-label="Search">
-            
-            
-          </form>
-        </nav>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-<section>
-  
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col text-center mt-3">
-              <h2 class="logo-font">Products</h2>
-              <hr class="w-50 mb-1">
-          </div>
+   <div class="container-fluid">
+      <!-- bread crumb for mobile phones to navigate easier on the site -->
+      <div class="row-shop-1">
+         <div class="col-12"></div>
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="#">E-Shop</a></li>
+               <li class="breadcrumb-item"><a href="#">Library</a></li>
+               <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+         </nav>
       </div>
       <div class="row">
-          <div class="product-container col-10 offset-1">
-              <div class="row mt-1 mb-2"></div>
-              <div class="row">
-                  {% for product in products %}
-                      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                          <div class="card h-100 border-0">
-                              {% if product.image %}
-                              <!-- in django need to use '.' instead of '_' to get values of products.  -->
-                              <a href="{% url 'product_detail' product.id %}">
-                                  <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                              </a>
+         <div class="col-3 d-none d-md-block m-auto">
+            <ul class="nav flex-column side-nav-shop">
+               <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+               </li>
+            </ul>
+         </div>
+         <div class="col-12 col-md-9 mx-auto m-md-0">
+            <nav class="navbar navbar-expand-lg navbar-shop float-right">              
+              <!-- In Jango if you use something like product.objects.filter
+                  In order to filter a list of products. Everything will be ended together.
+                  In the case of our queries that would mean that when a user submits a query.
+                  In order for it to match the term would have to appear in both the product name and the product description.
+                  Instead, we want to return results where the query was matched in either
+                  the product name or the description.
+                  In order to accomplish this or logic, we need to use Q -->
+
+                  <!-- check if product exist in shop.html -->
+               <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
+                  <button class="btn card-link my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass m-0"></i></button>
+                  <input class="form-control mr-sm-0" type="text" name="q"placeholder="Search Products" aria-label="Search">           
+               </form>
+            </nav>
+         </div>
+      </div>
+   </div>
+</section>
+<section>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col text-center mt-3">
+            <h2 class="logo-font">Products</h2>
+            <hr class="w-50 mb-1">
+         </div>
+      </div>
+      <div class="row">
+         <div class="product-container col-10 offset-1">
+            <div class="row mt-1 mb-2"></div>
+            <div class="row">
+               {% for product in products %}
+               <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card h-100 border-0">
+                     {% if product.image %}
+                     <!-- in django need to use '.' instead of '_' to get values of products.  -->
+                     <a href="{% url 'product_detail' product.id %}">
+                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                     </a>
+                     {% else %}
+                     <a href="{% url 'product_detail' product.id %}">
+                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                     </a>
+                     {% endif %}
+                     <div class="card-body pb-0">
+                        <p class="mb-0">{{ product.name }}</p>
+                     </div>
+                     <div class="card-footer bg-white pt-0 border-0 text-left">
+                        <div class="row">
+                           <div class="col">
+                              <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                              {% if product.rating %}
+                              <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                               {% else %}
-                              <a href="{% url 'product_detail' product.id %}">
-                                  <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                              </a>
+                              <small class="text-muted">No Rating</small>
                               {% endif %}
-                              <div class="card-body pb-0">
-                                  <p class="mb-0">{{ product.name }}</p>
-                              </div>
-                              <div class="card-footer bg-white pt-0 border-0 text-left">
-                                  <div class="row">
-                                      <div class="col">
-                                          <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                                          {% if product.rating %}
-                                              <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                                          {% else %}
-                                              <small class="text-muted">No Rating</small>
-                                          {% endif %}
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- this code is used to get a thematic break after every line of products
-                      it depends on screens size so if product is dividible from 1 
-                    the horizontal rule or <br> goes after every product on mobile screens
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- this code is used to get a thematic break after every line of products
+                  it depends on screens size so if product is dividible from 1 
+                  the horizontal rule or <br> goes after every product on mobile screens
                   this we need tto do because 'cards' is used in colummns but not in the rows-->
-                      {% if forloop.counter|divisibleby:1 %}
-                          <div class="col-12 d-sm-none mb-5">
-                              <hr>
-                          </div>
-                          <!-- if it dividable by 2, so the <br> goes after every twwo products on mobile sscreen sizes
-                          because on medium screens it will show two products in each line and so on-->
-                      {% endif %}                        
-                      {% if forloop.counter|divisibleby:2 %}
-                          <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                              <hr>
-                          </div>
-                      {% endif %}
-                      {% if forloop.counter|divisibleby:3 %}
-                          <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                              <hr>
-                          </div>
-                      {% endif %}
-                      {% if forloop.counter|divisibleby:4 %}
-                          <div class="col-12 d-none d-xl-block mb-5">
-                              <hr>
-                          </div>
-                      {% endif %}
-                  {% endfor %}
-              </div>
-          </div>
+               {% if forloop.counter|divisibleby:1 %}
+               <div class="col-12 d-sm-none mb-5">
+                  <hr>
+               </div>
+               <!-- if it dividable by 2, so the <br> goes after every twwo products on mobile sscreen sizes
+                  because on medium screens it will show two products in each line and so on-->
+               {% endif %}                        
+               {% if forloop.counter|divisibleby:2 %}
+               <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                  <hr>
+               </div>
+               {% endif %}
+               {% if forloop.counter|divisibleby:3 %}
+               <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                  <hr>
+               </div>
+               {% endif %}
+               {% if forloop.counter|divisibleby:4 %}
+               <div class="col-12 d-none d-xl-block mb-5">
+                  <hr>
+               </div>
+               {% endif %}
+               {% endfor %}
+            </div>
+         </div>
       </div>
-  </div>
+   </div>
 </section>
-
 {% endblock %}
