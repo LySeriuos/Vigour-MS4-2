@@ -92,37 +92,38 @@
                             <li><a class="dropdown-item" href=""> By Category</a></li>                         	  
                           </ul>
                         </li>
-                          <li><a class="dropdown-item" href="#"> Food Supplements<i class="fa-solid fa-caret-right"></i> </a>
+                          <li><a class="dropdown-item" href="{% url 'products' %}?category=healthy_diet,proteins,amino_acids,health_supplements,supplements_for_slimming"> Food Supplements<i class="fa-solid fa-caret-right"></i> </a>
                            <ul class="submenu dropdown-menu">
-                              <li><a class="dropdown-item" href=""> For Healthy Diet</a></li>
-                              <li><a class="dropdown-item" href=""> Proteins</a></li>
-                              <li><a class="dropdown-item" href=""> Amino Acids</a></li>
-                            <li><a class="dropdown-item" href=""> Health Supplements</a></li>		
-                            <li><a class="dropdown-item" href=""> Supplements For Slimming</a></li>		  
+                              <li><a class="dropdown-item" href="{% url 'products' %}?category=healthy_diet"> For Healthy Diet</a></li>
+                              <li><a class="dropdown-item" href="{% url 'products' %}?category=proteins"> Proteins</a></li>
+                              <li><a class="dropdown-item" href="{% url 'products' %}?category=amino_acids"> Amino Acids</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=health_supplements"> Health Supplements</a></li>		
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=supplements_for_slimming"> Supplements For Slimming</a></li>		  
                             </ul>
                               </li>
-                            <li><a class="dropdown-item" href="#"> Gym Accessories<i class="fa-solid fa-caret-right"></i> </a>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=waterbottles,sweatbands_supports,bags,towels">Gym Accessories<i class="fa-solid fa-caret-right"></i> </a>
                              <ul class="submenu dropdown-menu">
-                                  <li><a class="dropdown-item" href=""> Waterbottles / Flasks</a></li>
-                                  <li><a class="dropdown-item" href=""> Supports / Sweatbands</a></li>
-                                  <li><a class="dropdown-item" href=""> Bags</a></li>
-                                  <li><a class="dropdown-item" href=""> Towels</a></li>				  
+                                  <li><a class="dropdown-item" href="{% url 'products' %}?category=waterbottles"> Waterbottles / Flasks</a></li>
+                                  <li><a class="dropdown-item" href="{% url 'products' %}?category=sweatbands_supports"> Supports / Sweatbands</a></li>
+                                  <li><a class="dropdown-item" href="{% url 'products' %}?category=bags"> Bags</a></li>
+                                  <li><a class="dropdown-item" href="{% url 'products' %}?category=towels"> Towels</a></li>				  
                               </ul>
                             </li>
-                            <li><a class="dropdown-item" href="#"> Gym Equipment<i class="fa-solid fa-caret-right"></i> </a>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=weights,fitness_ribbons,yoga_equipment"> Gym Equipment<i class="fa-solid fa-caret-right"></i> </a>
                              <ul class="submenu dropdown-menu">
-                                  <li><a class="dropdown-item" href=""> Weights</a></li>
-                                  <li><a class="dropdown-item" href=""> Fitness Ribbons</a></li>
-                              <li><a class="dropdown-item" href=""> Yoga Equipment</a></li>	
+                                  <li><a class="dropdown-item" href="{% url 'products' %}?category=weights"> Weights</a></li>
+                                  <li><a class="dropdown-item" href="{% url 'products' %}?category=fitness_ribbons"> Fitness Ribbons</a></li>
+                              <li><a class="dropdown-item" href="{% url 'products' %}?category=yoga_equipment"> Yoga Equipment</a></li>	
                                     
                             </ul>
                               </li>
-                            <li><a class="dropdown-item" href="#"> Outlet<i class="fa-solid fa-caret-right"></i> </a>
-                             <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=outlet"> Outlet<i class="fa-solid fa-caret-right"></i> </a>
+                             <!-- this is commented out to see if it's worth to filter outlet products -->
+                                <!-- <ul class="submenu dropdown-menu">
                                   <li><a class="dropdown-item" href=""> Gym Equipment</a></li>
                                   <li><a class="dropdown-item" href=""> Gym Accessories</a></li>
-                                  <li><a class="dropdown-item" href=""> Food Suplements</a></li>									  
-                            </ul>
+                                  <li><a class="dropdown-item" href=""> Food Supplements</a></li>									  
+                            </ul> -->
                               </li>
                            </ul>
                           </li>	  

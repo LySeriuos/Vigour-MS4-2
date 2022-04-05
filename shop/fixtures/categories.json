@@ -114,7 +114,7 @@
         "fields":{
            "name":"outlet",
            "friendly_name":"Outlet",
-           "subcategory": "all_shop"
+           "subcategory": "all_products"
         }
      }
  ]
