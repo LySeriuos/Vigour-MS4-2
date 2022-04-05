@@ -631,3 +631,15 @@ form .card-link{
   background-color: black;
   color: #4AE290;
 }
+
+/* Section of products */
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: white;
+  z-index: -1;
+}
