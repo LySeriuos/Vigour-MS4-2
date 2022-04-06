@@ -5,6 +5,15 @@ from .models import Product, Category
 
 # Create your views here.
 
+# Renamed sort itself to lower_name the original field name would be lost.
+
+# first we check whether sort is in request.get
+# If it is. We set it equal to both sort which will be none at this point.
+# And sortkey Then we rename sortkey to lower_name
+# In the event, the user is sorting by name.
+# Then we annotate the current list of products with a new field.
+# And check whether the direction is descending
+# in order to decide whether to reverse the order.
 
 def shop(request):
     """A view to return the shop page"""
@@ -17,8 +26,24 @@ def shop(request):
     products = Product.objects.all()
     query = None
     categories = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -27,17 +52,21 @@ def shop(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query) 
+            queries = Q(
+                name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'   
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'shop/shop.html', context)
