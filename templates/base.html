@@ -87,9 +87,10 @@
                           <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="{% url 'products' %}"> All Products <i class="fa-solid fa-caret-right"></i></a>
                           <ul class="submenu dropdown-menu">
-                            <li><a class="dropdown-item" href=""> By Price Ascending</a></li>
-                            <li><a class="dropdown-item" href=""> By Price Descending</a></li>
-                            <li><a class="dropdown-item" href=""> By Category</a></li>                         	  
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc"> By Price Ascending</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc"> By Price Descending</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc"> By Category</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=deesc"> By Rating</a></li>                            	  
                           </ul>
                         </li>
                           <li><a class="dropdown-item" href="{% url 'products' %}?category=healthy_diet,proteins,amino_acids,health_supplements,supplements_for_slimming"> Food Supplements<i class="fa-solid fa-caret-right"></i> </a>
