@@ -15,6 +15,7 @@ from .models import Product, Category
 # And check whether the direction is descending
 # in order to decide whether to reverse the order.
 
+
 def shop(request):
     """A view to return the shop page"""
     """check if GET is requested and if 'q' is in that request
@@ -66,7 +67,7 @@ def shop(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
-        'current_sorting': current_sorting,
+        'current_sorting': current_sorting
     }
 
     return render(request, 'shop/shop.html', context)
