@@ -29,6 +29,7 @@ def shop(request):
     categories = None
     sort = None
     direction = None
+    subcategories = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -48,6 +49,7 @@ def shop(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
+            subcategories = Category.objects.filter(subcategory__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
         if 'q' in request.GET:
@@ -61,13 +63,14 @@ def shop(request):
                 name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
-    current_sorting = f'{sort}_{direction}'   
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
-        'current_sorting': current_sorting
+        'current_sorting': current_sorting,
+        'current_subcategories': subcategories
     }
 
     return render(request, 'shop/shop.html', context)

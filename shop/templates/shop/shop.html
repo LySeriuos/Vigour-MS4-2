@@ -22,25 +22,42 @@
 {% block content %}
 <!-- Special offer for users who has subscription -->
 <section>
-   <div id="special-offer" class="row text-center">
+   <div class="container-fluid">
+   <!-- <div id="special-offer" class="row text-center">
       <div class="col bg-black text-white">
          <h4 class="logo-font mb-1">10% discount for users who has subscriptions!</h4>
       </div>
+   </div> -->
+     <!-- bread crumb for mobile phones to navigate easier on the site -->
+     <div class="row-shop-1">
+      <div class="col-12"></div>
+      <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'products' %}">All Products</a></li>
+            {% for c in current_categories %}
+            <li class="breadcrumb-item"><a href="{% url 'products' %}?category={{ c.name }}">{{ c.friendly_name }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+            {% endfor %}
+         </ol>
+      </nav>
    </div>
+</div>
 </section>
 <section>
    <div class="container-fluid">
-      <!-- bread crumb for mobile phones to navigate easier on the site -->
-      <div class="row-shop-1">
-         <div class="col-12"></div>
-         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-               <li class="breadcrumb-item"><a href="#">E-Shop</a></li>
-               <li class="breadcrumb-item"><a href="#">Library</a></li>
-               <li class="breadcrumb-item active" aria-current="page">Data</li>
-            </ol>
-         </nav>
-      </div>
+      <div class="row">
+         <div class="col text-center mt-3">
+            <h2 class="">Products</h2>
+            <!-- this doesn't work change to pills if needed -->
+            {% for c in current_categories %}
+            <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+            </a>
+        {% endfor %}
+         <!-- untill here -->
+            <hr class="w-50 mb-1">
+         </div>
+      </div>    
       <div class="row align-items-md-center">
         
             <div class="col-12 col-md-6 text-center align-items-md-center ">                        
@@ -78,22 +95,10 @@
        
       </div>
    </div>
+   <hr class="mb-1">
 </section>
 <section>
-   <div class="container-fluid">
-      <div class="row">
-         <div class="col text-center mt-3">
-            <h2 class="logo-font">Products</h2>
-            <!-- this doesn't work change to pills if needed -->
-            {% for c in current_categories %}
-            <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
-            </a>
-        {% endfor %}
-         <!-- untill here -->
-            <hr class="w-50 mb-1">
-         </div>
-      </div>
+   <div class="container-fluid">   
       <div class="row">
          <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2"></div>

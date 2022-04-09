@@ -43,11 +43,13 @@
       <div class="col-12"></div>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">E-Shop</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
+           <li class="breadcrumb-item"><a href="{% url 'products' %}">All Products</a></li>
+           {% for c in current_categories %}
+           <li class="breadcrumb-item"><a href="{% url 'products' %}?category={{ c.name }}">{{ c.friendly_name }}</a></li>
+           <li class="breadcrumb-item active" aria-current="page">Data</li>
+           {% endfor %}
         </ol>
-      </nav>
+     </nav>
     </div>
     </div>
   </section>
