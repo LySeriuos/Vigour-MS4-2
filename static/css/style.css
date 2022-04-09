@@ -643,3 +643,32 @@ form .card-link{
   background: white;
   z-index: -1;
 }
+
+/* too remove */
+
+.text-black {
+  color: #000 !important;
+}
+
+a.category-badge > span.badge:hover {
+  background: #212529 !important;
+  color: #fff !important;
+}
+
+.border-black {
+  border: 1px solid black !important;
+}
+
+.bg-black {
+  background: #000 !important;
+}
+
+.overlay {
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+position: fixed;
+background: white;
+z-index: -1;
+}
