@@ -15,8 +15,8 @@
           "price":28.00,
           "category":3,
           "rating":4.6,
-          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/products/creator_17a082b9-a58f-42bc-96e4-db29c20c8e28_1024x1024.jpg?v=1646485593",
-          "image":"/../media/products/food_supplements/Amino_accids/Delta-Nutrition-BCAA-Amino.png",
+          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/shop/creator_17a082b9-a58f-42bc-96e4-db29c20c8e28_1024x1024.jpg?v=1646485593",
+          "image":"shop/food_supplements/Amino_accids/Delta-Nutrition-BCAA-Amino.png",
           "subcategory":"food_supplements"
        }
     },
@@ -37,8 +37,9 @@
           "category":3,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-275_1.jpg?m=1581605474",
-          "image":"products/food_supplements/Amino_accids/GAAM-Life-Series-BCAA.jpg",
+          "image":"shop/food_supplements/Amino_accids/GAAM-Life-Series-BCAA.jpg",
           "subcategory":"food_supplements"
+
        }
     },
     {
@@ -57,8 +58,8 @@
           "price":39.50,
           "category":3,
           "rating":4.7,
-          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/products/a_177e44e9-e10e-4800-afcb-db90b187eeb3_1024x1024.webp?v=1646511561",
-          "image":"products/food_supplements/Amino_accids/Olimp-BCAA-Xplode.png",
+          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/shop/a_177e44e9-e10e-4800-afcb-db90b187eeb3_1024x1024.webp?v=1646511561",
+          "image":"shop/food_supplements/Amino_accids/Olimp-BCAA-Xplode.png",
           "subcategory":"food_supplements"
        }
     },
@@ -78,8 +79,8 @@
           "price":54.99,
           "category":3,
           "rating":4.7,
-          "image_url":"https://cdn.shopify.com/s/files/1/1943/7603/products/prolific-supplement-pescience-867004_1800x1800.jpg?v=1648690122",
-          "image":"products/food_supplements/Amino_accids/PE-Prolific.png",
+          "image_url":"https://cdn.shopify.com/s/files/1/1943/7603/shop/prolific-supplement-pescience-867004_1800x1800.jpg?v=1648690122",
+          "image":"shop/food_supplements/Amino_accids/PE-Prolific.png",
           "subcategory":"food_supplements"
        }
     },
@@ -100,7 +101,7 @@
           "category":3,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-0913_1.jpg?m=1505472810",
-          "image":"products/food_supplements/Amino_accids/Womens-Best-BCAA-Amino.png",
+          "image":"shop/food_supplements/Amino_accids/Womens-Best-BCAA-Amino.png",
           "subcategory":"food_supplements"
        }
     },
@@ -121,7 +122,7 @@
           "category":1,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-7221_1.jpg?m=1596101094",
-          "image":"products/food_supplements/For_healthy_diet/PB-BioTechUSA-Zero-Syrup.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-BioTechUSA-Zero-Syrup.png",
           "subcategory":"food_supplements"
        }
     },
@@ -142,7 +143,7 @@
           "category":1,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-82689_1.jpg?m=1614345874",
-          "image":"products/food_supplements/For_healthy_diet/PB-Healthyo-Real-Mayo.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-Healthyo-Real-Mayo.png",
           "subcategory":"food_supplements"
        }
     },
@@ -163,7 +164,7 @@
           "category":1,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-4517_1.jpg?m=1477401353",
-          "image":"products/food_supplements/For_healthy_diet/PB-Slender-Chef-Spaghetti.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-Slender-Chef-Spaghetti.png",
           "subcategory":"food_supplements"
        }
     },
@@ -184,7 +185,7 @@
           "category":1,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1223_1.jpg?m=1403588723",
-          "image":"products/food_supplements/For_healthy_diet/PB-Walden-Farms-BBQ-Sauce.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-Walden-Farms-BBQ-Sauce.png",
           "subcategory":"food_supplements"
        }
     },
@@ -205,7 +206,7 @@
           "category":1,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1227_1.jpg?m=1403591455",
-          "image":"products/food_supplements/For_healthy_diet/PB-Walden-Farms-Salad-Dressing1.png",
+          "image":"shop/food_supplements/For_healthy_diet/PB-Walden-Farms-Salad-Dressing1.png",
           "subcategory":"food_supplements"
        }
        
@@ -227,7 +228,7 @@
           "category":4,
           "rating":4.0,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-8355_1.jpg?m=1520855636",
-          "image":"products/food_supplements/Health_supplements/PB-Fairing-Daily-greens.png",
+          "image":"shop/food_supplements/Health_supplements/PB-Fairing-Daily-greens.png",
           "subcategory":"food_supplements"
        }
     },
@@ -248,7 +249,7 @@
           "category":4,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-48268_1.jpg?m=1619180251",
-          "image":"products/food_supplements/Health_supplements/PB-GAAM-Life-Series-Collagen.png",
+          "image":"shop/food_supplements/Health_supplements/PB-GAAM-Life-Series-Collagen.png",
           "subcategory":"food_supplements"
        }
     },
@@ -269,7 +270,7 @@
           "category":4,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-10012_1.jpg?m=1602225044",
-          "image":"products/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Beta-carotene.png",
+          "image":"shop/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Beta-carotene.png",
           "subcategory":"food_supplements"
        }
     },
@@ -290,7 +291,7 @@
           "category":4,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-10002_1.jpg?m=1602225500",
-          "image":"products/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Hyaluronic-acid.webp",
+          "image":"shop/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Hyaluronic-acid.webp",
           "subcategory":"food_supplements"
        }
     },
@@ -311,7 +312,7 @@
           "category":4,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-10008_1.jpg?m=1602225564",
-          "image":"products/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Sleep-Well.png",
+          "image":"shop/food_supplements/Health_supplements/PB-GAAM-Life-Series-Vegan-Sleep-Well.png",
           "subcategory":"food_supplements"
        }
     },
@@ -332,7 +333,7 @@
           "category":2,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-57526_1.jpg?m=1635423528",
-          "image":"products/food_supplements/Proteins/PB-casein.png",
+          "image":"shop/food_supplements/Proteins/PB-casein.png",
           "subcategory":"food_supplements"
        }
     },
@@ -353,7 +354,7 @@
           "category":2,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-16164_1.jpg?m=1603280971",
-          "image":"products/food_supplements/Proteins/PB-optimum-nutrition.png",
+          "image":"shop/food_supplements/Proteins/PB-optimum-nutrition.png",
           "subcategory":"food_supplements"
        }
     },
@@ -374,7 +375,7 @@
           "category":2,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1079_1.jpg?m=1567068167",
-          "image":"products/food_supplements/Proteins/PB-scitetc-nutrition.png",
+          "image":"shop/food_supplements/Proteins/PB-scitetc-nutrition.png",
           "subcategory":"food_supplements"
        }
     },
@@ -395,7 +396,7 @@
           "category":2,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1420_1.jpg?m=1624531913",
-          "image":"products/food_supplements/Proteins/PB-Self Omninutrition.png",
+          "image":"shop/food_supplements/Proteins/PB-Self Omninutrition.png",
           "subcategory":"food_supplements"
        }
     },
@@ -416,7 +417,7 @@
           "category":2,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-0388_1.jpg?m=1588160787",
-          "image":"products/food_supplements/Proteins/PB-womens-best.png",
+          "image":"shop/food_supplements/Proteins/PB-womens-best.png",
           "subcategory":"food_supplements"
        }
     },
@@ -437,7 +438,7 @@
           "category":5,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-2754_1.jpg?m=1635763283",
-          "image":"products/food_supplements/Slimming_supplements/GAAMBURNAM90caps.png",
+          "image":"shop/food_supplements/Slimming_supplements/GAAMBURNAM90caps.png",
           "subcategory":"food_supplements"
         }
     },
@@ -458,7 +459,7 @@
           "category":5,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-28442_1.jpg?m=1635859301",
-          "image":"products/food_supplements/Slimming_supplements/GAAM-BURN-PM-90.png",
+          "image":"shop/food_supplements/Slimming_supplements/GAAM-BURN-PM-90.png",
           "subcategory":"food_supplements"
        }
     },
@@ -479,7 +480,7 @@
           "category":5,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-752_1.jpg?m=1589198293",
-          "image":"products/food_supplements/Slimming_supplements/GAAM-Life-SeriesShapeMeal.png",
+          "image":"shop/food_supplements/Slimming_supplements/GAAM-Life-SeriesShapeMeal.png",
           "subcategory":"food_supplements"
        }
     },
@@ -500,7 +501,7 @@
           "category":5,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-2895_1.jpg?m=1611911682",
-          "image":"products/food_supplements/Slimming_supplements/JNXSportsTheRipper.png",
+          "image":"shop/food_supplements/Slimming_supplements/JNXSportsTheRipper.png",
           "subcategory":"food_supplements"
        }
     },
@@ -521,7 +522,7 @@
           "category":5,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-9515_1.jpg?m=1627982572",
-          "image":"products/food_supplements/Slimming_supplements/JNXSportsTheRipper.png",
+          "image":"shop/food_supplements/Slimming_supplements/JNXSportsTheRipper.png",
           "subcategory":"food_supplements"
        }
     },
@@ -541,7 +542,7 @@
           "category":8,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-9202_1.jpg?m=1516788763",
-          "image":"products/Gym_accesories/gym bags/BetterBodiesGymDuffleBag.png",
+          "image":"shop/Gym_accesories/gym_bags/BetterBodiesGymDuffleBag.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -561,7 +562,7 @@
           "category":8,
           "rating":4.0,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-0702_1.jpg?m=1530524278",
-          "image":"products/Gym_accesories/gym bags/BetterBodiesStringbag.png",
+          "image":"shop/Gym_accesories/gym_bags/BetterBodiesStringbag.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -581,7 +582,7 @@
           "category":8,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-18302_1.jpg?m=1639131386",
-          "image":"products/Gym_accesories/gym bags/GAAMTacticalBackpack.png",
+          "image":"shop/Gym_accesories/gym_bags/GAAMTacticalBackpack.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -601,7 +602,7 @@
           "category":8,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-5938_1.jpg?m=1513602465",
-          "image":"products/Gym_accesories/gym bags/GorillaWearJeromeGymBag.png",
+          "image":"shop/Gym_accesories/gym_bags/GorillaWearJeromeGymBag.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -621,7 +622,7 @@
           "category":8,
           "rating":4.1,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-52123_1.jpg?m=1642167424",
-          "image":"products/Gym_accesories/gym bags/NikeBrasiliaDuffelBagBlack.png",
+          "image":"shop/Gym_accesories/gym_bags/NikeBrasiliaDuffelBagBlack.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -641,7 +642,7 @@
           "category":7,
           "rating":4.1,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-93583_1.jpg?m=1638436263",
-          "image":"products/Gym_accesories/supports-sweatbands/ACTLWristWraps.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/ACTLWristWraps.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -661,7 +662,7 @@
           "category":7,
           "rating":4.5,
           "image_url":"https://m.media-amazon.com/images/I/71LuIiZjSLL._AC_SX569_.jpg",
-          "image":"products/Gym_accesories/supports-sweatbands/beace-sweatband.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/beace-sweatband.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -681,7 +682,7 @@
           "category":7,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-4102_1.jpg?m=1531469627",
-          "image":"products/Gym_accesories/supports-sweatbands/C.P.SportsKneeWraps2m.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/C.P.SportsKneeWraps2m.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -701,7 +702,7 @@
           "category":7,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-24223_1.jpg?m=1432202860",
-          "image":"products/Gym_accesories/supports-sweatbands/GaspHardcoreWristWraps.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/GaspHardcoreWristWraps.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -721,7 +722,7 @@
           "category":7,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-6017_1.jpg?m=1515420649",
-          "image":"products/Gym_accesories/supports-sweatbands/Running-headband-spicy-orange.png",
+          "image":"shop/Gym_accesories/supports-sweatbands/Running-headband-spicy-orange.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -741,7 +742,7 @@
           "category":9,
           "rating":4.2,
           "image_url":"https://03.cdn37.se/Ww/images/2.765819/babolat-towel-medium-orange.jpeg",
-          "image":"products/Gym_accesories/Towels/BABOLATTOWELMEDIUMORANGE.png",
+          "image":"shop/Gym_accesories/Towels/BABOLATTOWELMEDIUMORANGE.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -761,7 +762,7 @@
           "category":9,
           "rating":4.2,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-38426_1.jpg?m=1564735441",
-          "image":"products/Gym_accesories/Towels/ClassicGymTowel.png",
+          "image":"shop/Gym_accesories/Towels/ClassicGymTowel.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -781,7 +782,7 @@
           "category":9,
           "rating":4.2,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-2790_1.jpg?m=1531386098",
-          "image":"products/Gym_accesories/Towels/SporthanddukBadin.png",
+          "image":"shop/Gym_accesories/Towels/SporthanddukBadin.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -801,7 +802,7 @@
           "category":9,
           "rating":4.2,
           "image_url":"https://contents.mediadecathlon.com/p1791391/k96de61fbf63f8e318b41483a1d182785/1791391_default.jpg?format=auto&quality=60&f=800x0",
-          "image":"products/Gym_accesories/Towels/SWIMMING-ULTRA-SOFT-MICROFIBRE-TOWEL.png",
+          "image":"shop/Gym_accesories/Towels/SWIMMING-ULTRA-SOFT-MICROFIBRE-TOWEL.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -821,7 +822,7 @@
           "category":9,
           "rating":4.5,
           "image_url":"https://img.tennis-warehouse.com/watermark/rs.php?path=ALTSW-1.jpg&nw=540",
-          "image":"products/Gym_accesories/Towels/TowelSmall-Beachtowels.png",
+          "image":"shop/Gym_accesories/Towels/TowelSmall-Beachtowels.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -841,7 +842,7 @@
           "category":6,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-71816_1.jpg?m=1638344155",
-          "image":"products/Gym_accesories/water_bottles/GAAMShaker700mlMintGreen.png",
+          "image":"shop/Gym_accesories/water_bottles/GAAMShaker700mlMintGreen.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -861,7 +862,7 @@
           "category":6,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-0750_1.jpg?m=1646729201",
-          "image":"products/Gym_accesories/water_bottles/GAAM-alu-water-bottle.png",
+          "image":"shop/Gym_accesories/water_bottles/GAAM-alu-water-bottle.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -881,7 +882,7 @@
           "category":6,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-22021617_1.jpg?m=1646399999",
-          "image":"products/Gym_accesories/water_bottles/GAAMShaker700ml.png",
+          "image":"shop/Gym_accesories/water_bottles/GAAMShaker700ml.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -901,7 +902,7 @@
           "category":6,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-387722_1.jpg?m=1636978511",
-          "image":"products/Gym_accesories/water_bottles/GorillaWearWaterJug2.2L.png",
+          "image":"shop/Gym_accesories/water_bottles/GorillaWearWaterJug2.2L.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -921,7 +922,7 @@
           "category":6,
           "rating":4.8,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-796_1.jpg?m=1643352198",
-          "image":"products/Gym_accesories/water_bottles/SmartshakeReforceStainlessSteel.png",
+          "image":"shop/Gym_accesories/water_bottles/SmartshakeReforceStainlessSteel.png",
           "subcategory":"gym_accessories"
        }
     },
@@ -941,7 +942,7 @@
           "category":11,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-89525_1.jpg?m=1638527965",
-          "image":"products/gym_equipment/fitness_ribbons/GAAMBootyBuilder.png",
+          "image":"shop/gym_equipment/fitness_ribbons/GAAMBootyBuilder.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -961,7 +962,7 @@
           "category":11,
           "rating":4.4,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-56793_1.jpg?m=1638531847",
-          "image":"products/gym_equipment/fitness_ribbons/GAAMPowerBand13mm.png",
+          "image":"shop/gym_equipment/fitness_ribbons/GAAMPowerBand13mm.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -981,7 +982,7 @@
           "category":11,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-3452_1.jpg?m=1527229482",
-          "image":"products/gym_equipment/fitness_ribbons/BetterBodiesResistanceBand.png",
+          "image":"shop/gym_equipment/fitness_ribbons/BetterBodiesResistanceBand.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1001,7 +1002,7 @@
           "category":11,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1822_1.jpg?m=1558420810",
-          "image":"products/gym_equipment/fitness_ribbons/VirtufitResistanceCableMedium.png",
+          "image":"shop/gym_equipment/fitness_ribbons/VirtufitResistanceCableMedium.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1021,7 +1022,7 @@
           "category":11,
           "rating":4.6,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-3625_1.jpg?m=1544079300",
-          "image":"products/gym_equipment/fitness_ribbons/BetterBodiesGluteForce.png",
+          "image":"shop/gym_equipment/fitness_ribbons/BetterBodiesGluteForce.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1041,7 +1042,7 @@
          "category":10,
          "rating":4.6,
          "image_url":"https://www.performbetter.com/images/4098_10_1.jpg?resizeid=5&resizeh=1200&resizew=1200",
-         "image":"products/gym_equipment/Weights/FirstPlaceCompetitionKettlebell.png",
+         "image":"shop/gym_equipment/Weights/FirstPlaceCompetitionKettlebell.png",
          "subcategory":"gym_equipment"
        }
     },
@@ -1061,7 +1062,7 @@
           "category":10,
           "rating":4.6,
           "image_url":"https://www.performbetter.com/images/4057_1.jpg?resizeid=5&resizeh=1200&resizew=1200",
-          "image":"products/gym_equipment/Weights/FirstPlaceRubberEncasedHexDumbbell.png",
+          "image":"shop/gym_equipment/Weights/FirstPlaceRubberEncasedHexDumbbell.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1081,7 +1082,7 @@
           "category":10,
           "rating":4.6,
           "image_url":"https://www.performbetter.com/images/4099_1.jpg?resizeid=5&resizeh=1200&resizew=1200",
-          "image":"products/gym_equipment/Weights/PBExtremeProStyleRubberDumbbells.png",
+          "image":"shop/gym_equipment/Weights/PBExtremeProStyleRubberDumbbells.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1101,7 +1102,7 @@
           "category":10,
           "rating":4.3,
           "image_url":"https://www.performbetter.com/images/2813-01_1.jpg?resizeid=5&resizeh=1200&resizew=1200",
-          "image":"products/gym_equipment/Weights/SingleUrethaneGroupSet.png",
+          "image":"shop/gym_equipment/Weights/SingleUrethaneGroupSet.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1121,7 +1122,7 @@
           "category":10,
           "rating":4.7,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-84712_1.jpg?m=1558339853",
-          "image":"products/gym_equipment/Weights/VirtufitAdjustableWeightVest20kg.png",
+          "image":"shop/gym_equipment/Weights/VirtufitAdjustableWeightVest20kg.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1141,7 +1142,7 @@
           "category":12,
           "rating":4.9,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-17812_1.jpg?m=1591878183",
-          "image":"products/gym_equipment/Yoga_Equipment/TiguarYogafilt.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/TiguarYogafilt.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1161,7 +1162,7 @@
           "category":12,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-16986_1.jpg?m=1591868245",
-          "image":"products/gym_equipment/Yoga_Equipment/TiguarYogarem.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/TiguarYogarem.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1181,7 +1182,7 @@
           "category":12,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-8251_1.jpg?m=1558414550",
-          "image":"products/gym_equipment/Yoga_Equipment/VirtufitGymBall+Pump65cm.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/VirtufitGymBall+Pump65cm.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1201,7 +1202,7 @@
           "category":12,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-1792_1.jpg?m=1589951574",
-          "image":"products/gym_equipment/Yoga_Equipment/VirtufitYogaBlockBlack.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/VirtufitYogaBlockBlack.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1221,7 +1222,7 @@
           "category":12,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-18848_1.jpg?m=1595590474",
-          "image":"products/gym_equipment/Yoga_Equipment/VirtufitYogaMat3mm183x61cm.png",
+          "image":"shop/gym_equipment/Yoga_Equipment/VirtufitYogaMat3mm183x61cm.png",
           "subcategory":"gym_equipment"
        }
     },
@@ -1242,7 +1243,7 @@
           "category":13,
           "rating":4.3,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-2371_1.jpg?m=1531741992",
-          "image":"products/Outlet/GorillaWearToiletryBag.png",
+          "image":"shop/Outlet/GorillaWearToiletryBag.png",
           "subcategory":"outlet"
        }
     },
@@ -1263,7 +1264,7 @@
           "category":13,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-4836_1.jpg?m=1582725375",
-          "image":"products/Outlet/HealthyCoProteinella.png",
+          "image":"shop/Outlet/HealthyCoProteinella.png",
           "subcategory":"outlet"
        }
     },
@@ -1284,7 +1285,7 @@
           "category":13,
           "rating":4.5,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-37781_1.jpg?m=1635844672",
-          "image":"products/Outlet/M-nutritionKetoBoost+ElectrolytesSlimming.png",
+          "image":"shop/Outlet/M-nutritionKetoBoost+ElectrolytesSlimming.png",
           "subcategory":"outlet"
        }
     },
@@ -1304,8 +1305,8 @@
           "price":17.50,
           "category":13,
           "rating":4.0,
-          "image_url":"products/Outlet/SelfOmninutritionSoyProtein.png",
-          "image":"products/Outlet/SelfOmninutritionSoyProtein.png",
+          "image_url":"shop/Outlet/SelfOmninutritionSoyProtein.png",
+          "image":"shop/Outlet/SelfOmninutritionSoyProtein.png",
           "subcategory":"outlet"
        }
     },
@@ -1326,7 +1327,7 @@
           "category":13,
           "rating":4.2,
           "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-933_1.jpg?m=1569916486",
-          "image":"products/Outlet/SmartshakeRevive750ml.png",
+          "image":"shop/Outlet/SmartshakeRevive750ml.png",
           "subcategory":"outlet"
        }
     }

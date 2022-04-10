@@ -44,11 +44,15 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
            <li class="breadcrumb-item"><a href="{% url 'products' %}">All Products</a></li>
-           {% for c in current_categories %}
-           <li class="breadcrumb-item"><a href="{% url 'products' %}?category={{ c.name }}">{{ c.friendly_name }}</a></li>
-           <li class="breadcrumb-item active" aria-current="page">Data</li>
-           {% endfor %}
-        </ol>
+           {% if product.category %}
+           <li class="breadcrumb-item">
+             <a href="{% url 'products' %}?category={{ product.category.name }}">
+          {{ product.category.friendly_name }}
+             </a></li>
+          
+          {% endif %}
+           <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
+           </ol>
      </nav>
     </div>
     </div>

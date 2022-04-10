@@ -32,15 +32,21 @@ def shop(request):
     subcategories = None
 
     if request.GET:
+        # checking if 'sort is in request.GET form
         if 'sort' in request.GET:
+            # set qual to both sort. Sort has a value None.
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'name':
+                # convering name to lowercase
                 sortkey = 'lower_name'
+                # annotate the current list of products with a new field
                 products = products.annotate(lower_name=Lower('name'))
-
+            # check the direction
             if 'direction' in request.GET:
                 direction = request.GET['direction']
+                # if directioni is descending 
+                # so need to use '-' in front of {sort_key}
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)

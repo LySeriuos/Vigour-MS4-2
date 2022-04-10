@@ -30,17 +30,28 @@
    </div> -->
      <!-- bread crumb for mobile phones to navigate easier on the site -->
      <div class="row-shop-1">
-      <div class="col-12"></div>
+      <div class="col-12">
       <nav aria-label="breadcrumb">
          <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{% url 'products' %}">All Products</a></li>
             {% for c in current_categories %}
-            <li class="breadcrumb-item"><a href="{% url 'products' %}?category={{ c.name }}">{{ c.friendly_name }}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Data</li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="{% url 'products' %}?category={{ c.name }}">{{ c.friendly_name }}</a></li>            
             {% endfor %}
          </ol>
       </nav>
    </div>
+</div>
+<div class="row-shop-1">
+   <div class="col-12">
+      <p class="text-muted mt-3 text-center text-md-left">
+         {% if search_term %} {{ products|length }} Products found for <strong>"{{ search_term }}"</strong>
+     </p>
+     {% else %}
+     <p>
+        Total products: {{ products|length }}
+     </p>
+   </div>
+   {% endif %}
 </div>
 </section>
 <section>
@@ -86,6 +97,7 @@
                    Instead, we want to return results where the query was matched in either
                    the product name or the description.
                    In order to accomplish this or logic, we need to use Q -->
+                   
  
                    <!-- check if product exist in shop.html -->
                    <form class="form-inline my-2 my-lg-0 float-md-right" method="GET" action="{% url 'products' %}">
