@@ -16,4 +16,16 @@ def bag_contents(request):
 
     grand_total delivery + total 
 
-    
+    # all these items in the context will be available in templates across the site. 
+
+    context = {
+        'bag_items': bag_items,
+        'total': total,
+        'product_count': product_count,
+        'delivery': delivery,
+        'free_delivery_delta': free_delivery_delta,
+        'free_delivery_threshold': free_delivery_threshold,
+        'grand_total': grand_total,
+    }
+
+    return context
