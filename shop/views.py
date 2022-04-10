@@ -42,6 +42,10 @@ def shop(request):
                 sortkey = 'lower_name'
                 # annotate the current list of products with a new field
                 products = products.annotate(lower_name=Lower('name'))
+                # sorting by name instead of category's id
+            if sortkey == 'category':
+                # double underscore syntax allows us to drill into a related model
+                sortkey = "category__name"
             # check the direction
             if 'direction' in request.GET:
                 direction = request.GET['direction']
