@@ -108,21 +108,21 @@
                   <p><strong>Size:</strong></p>
                                     <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
                                         <option value="2kg">2 KG</option>
-                                        <option value="2kg">3 KG</option>
-                                        <option value="2kg">4 KG</option>
-                                        <option value="2kg"selected>5 KG</option>
-                                        <option value="2kg">6 KG</option>
-                                        <option value="2kg">7 KG</option>
-                                        <option value="2kg">8 KG</option>
-                                        <option value="2kg">9 KG</option>
-                                        <option value="2kg">10 KG</option>
-                                        <option value="2kg">12 KG</option>
-                                        <option value="2kg">14 KG</option>
-                                        <option value="2kg">16 KG</option>
-                                        <option value="2kg">18 KG</option>
-                                        <option value="2kg">20 KG</option>
-                                        <option value="2kg">22 KG</option>
-                                        <option value="2kg">30 KG</option>
+                                        <option value="3kg">3 KG</option>
+                                        <option value="4kg">4 KG</option>
+                                        <option value="5kg" selected>5 KG</option>
+                                        <option value="6kg">6 KG</option>
+                                        <option value="7kg">7 KG</option>
+                                        <option value="8kg">8 KG</option>
+                                        <option value="9kg">9 KG</option>
+                                        <option value="10kg">10 KG</option>
+                                        <option value="12kg">12 KG</option>
+                                        <option value="14kg">14 KG</option>
+                                        <option value="16kg">16 KG</option>
+                                        <option value="18kg">18 KG</option>
+                                        <option value="20kg">20 KG</option>
+                                        <option value="22kg">22 KG</option>
+                                        <option value="30kg">30 KG</option>
                                     </select>
                 </div>
               {% endif %}
@@ -136,7 +136,7 @@
                     </div>
                 </div>
 
-                <div class="col-12">
+                <div class="col{% if s %}-12 mt-2{% endif %}">
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
@@ -149,6 +149,7 @@
                 </div>
                 <!-- redirecting the user back to the same page once the product is added to their bag. -->
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                {% endwith %}
             </div>
         </form>
           <p class="mt-3 font-weight-bold">{{ product.highlight }}</p>
