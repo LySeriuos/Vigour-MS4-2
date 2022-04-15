@@ -23,5 +23,6 @@ def add_to_bag(request, item_id):
         bag[item_id] = quantity
 
     request.session['bag'] = bag
-    print(request.session['bag'])
+    # print(request.session['bag']) 
+    # use this to see if the quantity is added to the session cockies
     return redirect(redirect_url)
