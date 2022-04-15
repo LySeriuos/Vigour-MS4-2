@@ -59,6 +59,8 @@
                                 <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
                                 <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
                                 <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                <!-- check if total amount is enough to get free delivery
+                                if not buyer can add something to get it free -->
                                 {% if free_delivery_delta > 0 %}
                                     <p class="mb-1 text-danger">
                                         You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
@@ -66,7 +68,23 @@
                                 {% endif %}
                             </td>
                         </tr>
-                
+                        <tr>
+                            <!-- link to keep shoping or check out -->
+                            <td colspan="5" class="text-right">
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">Keep Shopping</span>
+                                </a>
+                                <a href="" class="btn btn-black rounded-0 btn-lg">
+                                    <span class="text-uppercase">Secure Checkout</span>
+                                    <span class="icon">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
         </div>
     </div>
 </div>
