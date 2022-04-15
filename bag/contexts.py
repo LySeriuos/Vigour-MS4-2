@@ -1,7 +1,8 @@
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
-from products.models import Product
+from shop.models import Product
+
 
 def bag_contents(request):
 
@@ -32,7 +33,8 @@ def bag_contents(request):
 
     grand_total = delivery + total
 
-    # all these items in the context will be available in templates across the site.
+    # all these items in the context will
+    # be available in templates across the site.
 
     context = {
         'bag_items': bag_items,

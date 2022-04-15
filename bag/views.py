@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
+
 
 def view_bag(request):
     """ A view to return the shoping bag page """
@@ -10,7 +11,8 @@ def view_bag(request):
 
 def add_to_bag(request, item_id):
     """ Add quantity of the specified product to the shoping bag """
-    """ need to convert it to an integer since it'll come from the template as a string. """
+    # need to convert it to an integer
+    # since it'll come from the template as a string.
 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -23,6 +25,6 @@ def add_to_bag(request, item_id):
         bag[item_id] = quantity
 
     request.session['bag'] = bag
-    # print(request.session['bag']) 
+    # print(request.session['bag'])
     # use this to see if the quantity is added to the session cockies
     return redirect(redirect_url)
