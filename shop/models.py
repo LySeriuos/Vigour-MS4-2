@@ -38,6 +38,7 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     highlight = models.CharField(max_length=254, null=True, blank=True)
     description = models.TextField()
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
     list1 = models.CharField(max_length=254, null=True, blank=True)
     list2 = models.CharField(max_length=254, null=True, blank=True)
     list3 = models.CharField(max_length=254, null=True, blank=True)
