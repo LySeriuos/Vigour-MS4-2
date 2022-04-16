@@ -137,4 +137,30 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'shop/includes/quantity_input_script.html' %}
+<script type="text/javascript">
+     // Update quantity on click
+     $('.update-link').click(function(e) {
+        //  Store the form in a variable. 
+        // Then call the forms submit method.
+        var form = $(this).prev('.update-form');
+        form.submit();
+    }) 
+
+    $('.remove-item').click(function(e) {
+        // the latter renders a hidden input field in a form
+        var csrfToken = "{{ csrf_token }}";
+        // The item id can be obtained by splitting the ID of the update link being clicked on
+        var itemId = $(this).attr('id').split('remove_')[1];
+        // https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+        var size = $(this).data('size');
+        var url = `/bag/remove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+    
+</script>
 {% endblock %}
