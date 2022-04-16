@@ -487,10 +487,9 @@ margin: 0;
  /* Start of Footer section */
 
 
- footer {
-  height: 100px;
-  background-color: black;
-  
+footer .row {
+  background: black;
+  margin: 0;
 }
 
 footer .list-inline a {
