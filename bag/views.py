@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 
 # Create your views here.
 
@@ -72,14 +72,42 @@ def update_bag(request, item_id):
         else:
             # just set it equal to the quantity.
             del bag[item_id]['items_by_size'][size]
+            if not bag[item_id]['items_by_size']:
+                bag.pop(item_id)
     else:
         if quantity > 0:
             bag[item_id] = quantity
         else:
-            bag.pop[item_id]
+            bag.pop(item_id)
             # remove the item
             # entirely by using the pop function
     request.session['bag'] = bag
     # print(request.session['bag'])
     # use this to see if the quantity is added to the session cockies
     return redirect(reverse('view_bag'))
+
+
+def remove_from_bag(request, item_id):
+    """ Remove itemfrom shoping bag """
+    try:
+        size = None
+        # if product size is in request.post it will be set equal to that.
+        if 'product_size' in request.POST:
+            size = request.POST['product_size']
+        # check if session exist and if doesn't create one with {}
+        bag = request.session.get('bag', {})
+
+        # if size is in request.post delete that size
+        # key in the items by size dictionary
+        if size:
+            del bag[item_id]['items_by_size'][size]
+            if not bag[item_id]['items_by_size']:
+                bag.pop(item_id)
+        else:
+            bag.pop(item_id)
+
+        request.session['bag'] = bag
+        return HttpResponse(sattus=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)
