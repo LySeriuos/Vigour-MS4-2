@@ -1,0 +1,26 @@
+<script type="text/javascript">
+  $('.increment-qty').click(function(e) {
+    //   prevent the default button action
+       e.preventDefault();
+    // from the button element go up the tree to the
+    // closest input group class.
+    // And then drill down to find the first element with the class quantity input.
+       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+    // cache the value that's currently in it in a variable called currentValue.
+       var currentValue = parseInt($(closestInput).val());
+    // set the input boxes new value to the current value plus one
+       $(closestInput).val(currentValue + 1);
+       var itemId = $(this).data('item_id');
+       handleEnableDisable(itemId);
+    });
+
+    // Decrement quantity
+    $('.decrement-qty').click(function(e) {
+       e.preventDefault();
+       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+       var currentValue = parseInt($(closestInput).val());
+       $(closestInput).val(currentValue - 1);
+       var itemId = $(this).data('item_id');
+       handleEnableDisable(itemId);
+    });  
+</script>
