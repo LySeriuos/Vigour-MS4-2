@@ -1,4 +1,14 @@
 <script type="text/javascript">
+   function handleEnableDisable(itemId) {
+    //    id attribute on the input box in the product detail page
+        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
+        // minus button disappearing if input value is less than 2
+        var minusDisabled = currentValue < 2;
+        // plus button disappearing if input value is greater than 98
+        var plusDisabled = currentValue > 98;
+        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
+    }  
   $('.increment-qty').click(function(e) {
     //   prevent the default button action
        e.preventDefault();
@@ -10,6 +20,8 @@
        var currentValue = parseInt($(closestInput).val());
     // set the input boxes new value to the current value plus one
        $(closestInput).val(currentValue + 1);
+    // Get the item id using the data method which pulls it from the data item id
+    // attribute we added on the button
        var itemId = $(this).data('item_id');
        handleEnableDisable(itemId);
     });
