@@ -12,17 +12,35 @@ def bag_contents(request):
     bag = request.session.get('bag', {})
 
     # bag = bag, each item has his own id
-    for item_id, quantity in bag.items():
-        product = get_object_or_404(Product, pk=item_id)
-        # total price equal to products times price per product
-        total += quantity * product.price
-        product_count += quantity
-        # add items to object list
-        bag_items.append({
-            'item_id': item_id,
-            'quantity': quantity,
-            'product': product,
-        })
+    for item_id, item_data in bag.items():
+        # The isinstance() function returns True if
+        # the specified object is of the specified type
+        if isinstance(item_data, int):
+            # execute this code if the item has no sizes
+            product = get_object_or_404(Product, pk=item_id)
+            # total price equal to products times price per product
+            total += item_data * product.price
+            product_count += item_data
+            # add items to object list
+            bag_items.append({
+                'item_id': item_id,
+                'quantity': item_data,
+                'product': product,
+            })
+        else:
+            product = get_object_or_404(Product, pk=item_id)
+            # need to iterate through the inner dictionary of items_by_size
+            for size, quantity in item_data['items_by_size'].items():
+                # incrementing the product count and total accordingly
+                total += quantity * product.price
+                product_count += quantity
+                # for each of these items, we'll add the size to the bag items returned to the template
+                bag_items.append({
+                    'item_id': item_id,
+                    'quantity': item_data,
+                    'product': product,
+                    'size': size,
+                })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
