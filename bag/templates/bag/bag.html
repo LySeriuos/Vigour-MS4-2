@@ -17,10 +17,6 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-            {{ bag_items }}
-            <br>
-            <br>
-            {{ request.session.bag }}
                 <div class="table-responsive rounded">
                     <!-- {{ bag_items }} using for checking the added objects to shoping bag before creating layout -->
                     <!-- table is from bootstrap -->
@@ -78,7 +74,7 @@
                         </tr>
                         <tr>
                             <!-- link to keep shoping or check out -->
-                            <td colspan="5" class="text-right">
+                            <td colspan="5" class="text-right text">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black text-black rounded-0 btn-lg">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>

@@ -19,7 +19,7 @@ def add_to_bag(request, item_id):
     size = None
     # if product size is in request.post it will be set equal to that.
     if 'product_size' in request.POST:
-        size = request.POST['size']
+        size = request.POST['product_size']
     # check if session exist and if doesn't create one with {}
     bag = request.session.get('bag', {})
 
@@ -34,9 +34,9 @@ def add_to_bag(request, item_id):
                 bag[item_id]['items_by_size'][size] += quantity
             else:
                 # just set it equal to the quantity.
-                bag[iten_id]['items_by_size'][size] = quantity
+                bag[item_id]['items_by_size'][size] = quantity
         else:
-            bag[ietm_id] = {'items_by_size': {size:quantity}}
+            bag[item_id] = {'items_by_size': {size:quantity}}
             # if item has no siz using this logic:
     else:
         if item_id in list(bag.keys()):
