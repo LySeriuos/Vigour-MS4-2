@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, revesre
+from django.shortcuts import render, redirect, reverse
 
 # Create your views here.
 
@@ -36,7 +36,7 @@ def add_to_bag(request, item_id):
                 # just set it equal to the quantity.
                 bag[item_id]['items_by_size'][size] = quantity
         else:
-            bag[item_id] = {'items_by_size': {size:quantity}}
+            bag[item_id] = {'items_by_size': {size: quantity}}
             # if item has no siz using this logic:
     else:
         if item_id in list(bag.keys()):
@@ -49,11 +49,11 @@ def add_to_bag(request, item_id):
     # use this to see if the quantity is added to the session cockies
     return redirect(redirect_url)
 
-    def update_bag(request, item_id):
+
+def update_bag(request, item_id):
     """ Update quantity of the specified product to the specified amount """
     # need to convert it to an integer
     # since it'll come from the template as a string.
-
     quantity = int(request.POST.get('quantity'))
     size = None
     # if product size is in request.post it will be set equal to that.
@@ -66,20 +66,19 @@ def add_to_bag(request, item_id):
     # do it as a dictionary with a key of 'items_by_size'.
     if size:
         if quantity > 0:
-            # if quantity is greater than zero set the items quantity accordingly
-            # or just remove the item.
+            # if quantity is greater than zero set the items quantity
+            # accordingly or just remove the item.
             bag[item_id]['items_by_size'][size] = quantity
         else:
-                # just set it equal to the quantity.
+            # just set it equal to the quantity.
             del bag[item_id]['items_by_size'][size]
     else:
-        if quantity < 0:
+        if quantity > 0:
             bag[item_id] = quantity
         else:
-            # emove the item
-            # entirely by using the pop function
             bag.pop[item_id]
-
+            # remove the item
+            # entirely by using the pop function
     request.session['bag'] = bag
     # print(request.session['bag'])
     # use this to see if the quantity is added to the session cockies
