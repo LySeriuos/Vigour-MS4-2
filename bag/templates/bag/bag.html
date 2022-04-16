@@ -79,7 +79,7 @@
                                     </div>
                                 </form>
                                 <a class="update-link text-info"><small>Update</small></a>
-                                <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small></a>
+                                <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                             </td>
                             <td class="py-3">
                                 <!-- it is not counting total price for products -->
@@ -152,9 +152,10 @@
         // The item id can be obtained by splitting the ID of the update link being clicked on
         var itemId = $(this).attr('id').split('remove_')[1];
         // https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
-        var size = $(this).data('size');
-        var url = `/bag/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+        var size = $(this).data('product_size');
+        // was issue: the URL doesn't end in a slash
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
         $.post(url, data)
          .done(function() {
