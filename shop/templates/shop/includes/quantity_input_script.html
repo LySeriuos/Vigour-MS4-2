@@ -8,7 +8,24 @@
         var plusDisabled = currentValue > 98;
         $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
         $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
-    }  
+    }
+
+      // Ensure proper enabling/disabling of all inputs on page load
+    //   disable the minus button by default. By getting all the quantity inputs on the page.
+      var allQtyInputs = $('.qty_input');
+    // Iterating through them. And for each one calling the enable/disable function
+    // on the oage load
+    for(var i = 0; i < allQtyInputs.length; i++){
+        var itemId = $(allQtyInputs[i]).data('item_id');
+        handleEnableDisable(itemId);
+    }
+
+    // Check enable/disable every time the input is changed
+    $('.qty_input').change(function() {
+        var itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
+    });  
+
   $('.increment-qty').click(function(e) {
     //   prevent the default button action
        e.preventDefault();
