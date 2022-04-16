@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, revesre
 
 # Create your views here.
 
@@ -48,3 +48,39 @@ def add_to_bag(request, item_id):
     # print(request.session['bag'])
     # use this to see if the quantity is added to the session cockies
     return redirect(redirect_url)
+
+    def update_bag(request, item_id):
+    """ Update quantity of the specified product to the specified amount """
+    # need to convert it to an integer
+    # since it'll come from the template as a string.
+
+    quantity = int(request.POST.get('quantity'))
+    size = None
+    # if product size is in request.post it will be set equal to that.
+    if 'product_size' in request.POST:
+        size = request.POST['product_size']
+    # check if session exist and if doesn't create one with {}
+    bag = request.session.get('bag', {})
+
+    # If the items not already in the bag we just need to add it.
+    # do it as a dictionary with a key of 'items_by_size'.
+    if size:
+        if quantity > 0:
+            # if quantity is greater than zero set the items quantity accordingly
+            # or just remove the item.
+            bag[item_id]['items_by_size'][size] = quantity
+        else:
+                # just set it equal to the quantity.
+            del bag[item_id]['items_by_size'][size]
+    else:
+        if quantity < 0:
+            bag[item_id] = quantity
+        else:
+            # emove the item
+            # entirely by using the pop function
+            bag.pop[item_id]
+
+    request.session['bag'] = bag
+    # print(request.session['bag'])
+    # use this to see if the quantity is added to the session cockies
+    return redirect(reverse('view_bag'))
