@@ -241,9 +241,15 @@
         </div>
     </footer>
     <!-- End of Footer --> 
-    <!-- script linking is not working properly!!!!!!!!!!! -->
+    
     {% block postloadjs %}
-    <script src="static/js/script.js"></script>    
+    <!-- https://getbootstrap.com/docs/4.6/components/toasts/ -->
+    <!-- Putting this in the base HTML template will ensure that every page that loads
+          will immediately call the show option on all toasts that have been rendered in the messages container 
+        -->
+    <script type="text/javascript">
+      $('.toast').toast(show);
+    </script>    
     {% endblock %}
   </body>
 </html>
