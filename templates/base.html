@@ -191,7 +191,10 @@
     </section>
     <!-- end of Navbar and hero-banner section -->  
     {% if messages %}
-        <div class="message-container"></div>
+        <div class="message-container">
+          {% for message in messages %}
+                {% include 'includes/toasts/toast_success.html' %}
+        </div>
     {% endif %}
 
     {% block page_header %}
