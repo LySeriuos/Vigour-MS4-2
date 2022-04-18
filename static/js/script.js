@@ -137,3 +137,5 @@ $(document).on('click', '.dropdown-menu', function (e) {
     })
     });
   }
+
+  $('.toast').toast('show');

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'home',
     'shop',
     'bag',
+    'checkout',
     ]
 
 MIDDLEWARE = [
@@ -74,10 +75,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                # anytime we need to access the bag contents in any template 
-                # across the entire site they'll be available without having 
+                # anytime we need to access the bag contents in any template
+                # across the entire site they'll be available without having
                 # to return them from different views across different apps.
-                'bag.contexts.bag_contents', 
+                'bag.contexts.bag_contents',
             ],
         },
     },
