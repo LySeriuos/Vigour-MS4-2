@@ -47,7 +47,7 @@ class Order(models.Model):
         if it hasn't been set already """
         if not_self.order_number:
             self.order_number = self._generate_order_number()
-        super().save(*args, **kwargs)    
+        super().save(*args, **kwargs) 
 
 # A line-item will be like an individual shopping bag item.
 # Relating to a specific order
@@ -66,3 +66,9 @@ class OrderLineItem(models.Model):
         null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(
         max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+
+    def save(self, *args, **kwargs):
+        """ Override the original save method to set the order number
+        if it hasn't been set already """
+        self.order_number = self.product.price * self.quantity
+        super().save(*args, **kwargs)
