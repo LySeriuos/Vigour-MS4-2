@@ -4,7 +4,7 @@ from django.db import models
 from django.db.models import Sum
 from django.conf import settings
 
-from products.models import Product
+from shop.models import Product
 
 
 # payment form
@@ -23,31 +23,39 @@ class Order(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     # And updating the delivery cost, order total,
     # and grand total after customer create order insatnce.
-    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
-    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
-    grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    delivery_cost = models.DecimalField(
+        max_digits=6, decimal_places=2, null=False, default=0)
+    order_total = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0)
+    grand_total = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0)
 
     def _generate_order_number(self):
         """ Generate random and unique order number ysing UUID """
-        return uuid.uuid4.hex.upper()
+        return uuid.uuid4().hex.upper()
 
     def update_total(self):
         """ Update grand total each time a line item is added,
         accounting for delivery costs """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        self.order_total = self.lineitems.aggregate(
+            Sum('lineitem_total'))['lineitem_total__sum']
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_cost = self.order_total * settings.STANDART_DELIVERY_PERCENTAGE / 100
         else:
             self.delivery_cost = 0
         self.grand_total = self.order_total + self.delivery_cost
-        self.save
+        self.save()
 
     def save(self, *args, **kwargs):
         """ Override the original save method to set the order number
         if it hasn't been set already """
-        if not_self.order_number:
+        if not self.order_number:
             self.order_number = self._generate_order_number()
-        super().save(*args, **kwargs) 
+        super().save(*args, **kwargs)
+
+    # standard string method, returning the order number for the order model
+    def __str__(self):
+        return self.order_number
 
 # A line-item will be like an individual shopping bag item.
 # Relating to a specific order
@@ -55,13 +63,15 @@ class Order(models.Model):
 # payment form to create an order instance.
 # After it will iterate through the items in the shopping bag.
 # Creating an order line item for each one. Then attaching it to the order.
+
+
 class OrderLineItem(models.Model):
     order = models.ForeignKey(
         Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(
         Product, null=False, blank=False, on_delete=models.CASCADE)
     product_size = models.CharField(
-        max_length=2, null=True, blank=True) # 2kg, 3kg, 4kg, 5kg, 6kg
+        max_length=2, null=True, blank=True)  # 2kg, 3kg, 4kg, 5kg, 6kg
     quantity = models.IntegerField(
         null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(
@@ -70,5 +80,8 @@ class OrderLineItem(models.Model):
     def save(self, *args, **kwargs):
         """ Override the original save method to set the order number
         if it hasn't been set already """
-        self.order_number = self.product.price * self.quantity
+        self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f'SKU {self.product.sku} on order {self.order.order_number}'
