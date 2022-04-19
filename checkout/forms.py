@@ -46,6 +46,7 @@ def __init__(self, *args, **kwargs):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             # css class
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
+            # removing the form fields labels.
             self.fields[field].label = False
 
         
