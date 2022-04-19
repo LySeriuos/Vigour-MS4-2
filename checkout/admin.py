@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Order, OrderLineItem
 
 
-# This inline item is going to allow us 
+# This inline item is going to allow us
 # to add and edit line items in the admin
 # right from inside the order model.
 class OrderLineItemAdminInline(admin.TabularInline):
@@ -33,4 +33,4 @@ class OrderAdmin(admin.ModelAdmin):
     ordering = ('-date',)
 
 # register the Order model and the OrderAdmin.
-admin.site.register(Order, OrderAdmin)    
+admin.site.register(Order, OrderAdmin)
