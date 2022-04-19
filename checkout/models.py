@@ -59,7 +59,7 @@ class Order(models.Model):
 
 # A line-item will be like an individual shopping bag item.
 # Relating to a specific order
-# Use the information they put into the 
+# Use the information they put into the
 # payment form to create an order instance.
 # After it will iterate through the items in the shopping bag.
 # Creating an order line item for each one. Then attaching it to the order.
@@ -84,7 +84,7 @@ class OrderLineItem(models.Model):
         super().save(*args, **kwargs)
 
 # returning just the order number for the order model.
-# And the SKU of the product along with the order number 
+# And the SKU of the product along with the order number
 # it's part of for each order line item
 
     def __str__(self):
