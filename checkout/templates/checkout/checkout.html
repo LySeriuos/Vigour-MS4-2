@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 
 {% block extra_css %}
@@ -9,16 +10,17 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container" style="min-block-size: 90vh;">
-    <div class="row">
+    <div class="row" style="margin-top: 100px">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Shopping Bag</h2>
+            <h2 class="logo-font mb-4 text-center text-black bg-white">Shopping Bag</h2>
             <hr>
         </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-md-6 order-lg-last mb-5">
+            <p class="text-muted">Order Summary ({{ product_count }})</p>
             <div class="row">
                 <div class="col-7 offset-2">
                     <p class="mb-1 mt-0 small text-muted">Items</p>
@@ -26,6 +28,7 @@
                 <div class="col-3 text right">
                     <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                 </div>
+            </div>
             <!-- Copied and uddated from toat_success -->
             {% for item in bag_items %}
             <div class="row">
