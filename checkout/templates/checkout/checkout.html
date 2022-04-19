@@ -37,6 +37,7 @@
                     {{ order_form.street_address2 | as_crispy_field }}
                     {{ order_form.county | as_crispy_field }}
                     <div class="form-check form-check-inline float-right mr-0">
+                        <!-- Information saving checkbox for logged users if not log in or register-->
                         {% if user.is_authenticated %}
                             <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
                             <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
@@ -47,6 +48,15 @@
                             </label>
                         {% endif %}
                     </div>
+                </fieldset>
+                <!-- Payment ready section -->
+                <fieldset class="px-3">
+                    <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                    <!-- A Stripe card element will go here -->
+                    <div class="mb-3" id="card-element"></div>
+
+                    <!-- Used to display form errors -->
+                    <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                 </fieldset>
                 </form>
             </div>
