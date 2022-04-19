@@ -30,4 +30,22 @@ def __init__(self, *args, **kwargs):
          'street_address1': 'Street Address 1',
          'street_address2': 'Street Address 2',
          'county': 'County',
-        }
+    }
+
+    # setting the autofocus attribute on the full name field to true
+    # The cursor will start in the full name field when the user loads the page
+    self.fields['full_name'].widget.attrs['autofocus'] = True
+        # terate through the forms fields adding a star to the placeholder
+        # if it's a required field on the model
+        for field in self.fields:
+            if self.fields[field].required:
+                placeholder = f'{placeholders[field]} *'
+            else:
+                placeholder = placeholders[field]
+        # Setting all the placeholder attributes to their values in the dictionary above.
+            self.fields[field].widget.attrs['placeholder'] = placeholder
+            # css class
+            self.fields[field].widget.attrs['class'] = 'stripe-style-input'
+            self.fields[field].label = False
+
+        
