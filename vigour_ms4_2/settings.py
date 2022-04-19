@@ -46,6 +46,11 @@ INSTALLED_APPS = [
     'shop',
     'bag',
     'checkout',
+
+    # Others
+
+    'crispy_forms',
+
     ]
 
 MIDDLEWARE = [
@@ -59,6 +64,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'vigour_ms4_2.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootsrap4'
 
 TEMPLATES = [
     {
@@ -80,6 +87,12 @@ TEMPLATES = [
                 # to return them from different views across different apps.
                 'bag.contexts.bag_contents',
             ],
+            # add a list called built-ins which will contain all
+            # the tags we want available in all our templates by default.
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
