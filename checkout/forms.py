@@ -37,16 +37,16 @@ def __init__(self, *args, **kwargs):
     self.fields['full_name'].widget.attrs['autofocus'] = True
         # terate through the forms fields adding a star to the placeholder
         # if it's a required field on the model
-        for field in self.fields:
-            if self.fields[field].required:
-                placeholder = f'{placeholders[field]} *'
-            else:
-                placeholder = placeholders[field]
-        # Setting all the placeholder attributes to their values in the dictionary above.
-            self.fields[field].widget.attrs['placeholder'] = placeholder
-            # css class
-            self.fields[field].widget.attrs['class'] = 'stripe-style-input'
-            # removing the form fields labels.
-            self.fields[field].label = False
+    for field in self.fields:
+        if self.fields[field].required:
+            placeholder = f'{placeholders[field]} *'
+        else:
+            placeholder = placeholders[field]
+    # Setting all the placeholder attributes to their values in the dictionary above.
+        self.fields[field].widget.attrs['placeholder'] = placeholder
+        # css class
+        self.fields[field].widget.attrs['class'] = 'stripe-style-input'
+        # removing the form fields labels.
+        self.fields[field].label = False
 
         
