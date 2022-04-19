@@ -16,3 +16,4 @@ def checkout(request):
     }
 
     return render(request, template, context)
+    
