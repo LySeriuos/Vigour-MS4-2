@@ -37,8 +37,10 @@ class Order(models.Model):
     def update_total(self):
         """ Update grand total each time a line item is added,
         accounting for delivery costs """
+        # The '0' will prevent an error if manually deleted all the line items from an order
+        # by making sure that this sets the order total to zero instead of none.
         self.order_total = self.lineitems.aggregate(
-            Sum('lineitem_total'))['lineitem_total__sum']
+            Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_cost = self.order_total * settings.STANDART_DELIVERY_PERCENTAGE / 100
         else:
@@ -71,7 +73,7 @@ class OrderLineItem(models.Model):
     product = models.ForeignKey(
         Product, null=False, blank=False, on_delete=models.CASCADE)
     product_size = models.CharField(
-        max_length=2, null=True, blank=True)  # 2kg, 3kg, 4kg, 5kg, 6kg
+        max_length=4, null=True, blank=True)  # 2kg, 3kg, 4kg, 5kg, 6kg
     quantity = models.IntegerField(
         null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(

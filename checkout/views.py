@@ -15,7 +15,7 @@ def checkout(request):
     # use command 'export STRIPE_PUBLIC_KEY=...' on windows
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
-
+    
     if request.method == 'POST':
         bag = request.session.get('bag', {})
 
@@ -56,7 +56,7 @@ def checkout(request):
                                 product_size=size,
                             )
                             order_line_item.save()
-                # in case a product isn't found 
+                # in case a product isn't found
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
@@ -70,7 +70,6 @@ def checkout(request):
         else:
             messages.error(request, 'There was an error with your form. \
                 Check if given information is correct.')
-                
     else:
         bag = request.session.get('bag', {})
         if not bag:
