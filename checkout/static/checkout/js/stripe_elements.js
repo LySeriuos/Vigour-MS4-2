@@ -6,11 +6,11 @@
     https://stripe.com/docs/stripe-js
 */
 
-var stripe_public_key = $('#id_stripe_public_key').text().slice(1, -1);
-var client_secret = $('#id_client_secret').text().slice(1, -1);
-var stripe = Stripe(stripe_public_key);
-var elements = stripe.elements();
-var style = {
+let stripe_public_key = $('#id_stripe_public_key').text().slice(1, -1);
+let client_secret = $('#id_client_secret').text().slice(1, -1);
+let stripe = Stripe(stripe_public_key);
+let elements = stripe.elements();
+let style = {
     base: {
         color: '#000',
         fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
@@ -25,15 +25,15 @@ var style = {
         iconColor: '#dc3545'
     }
 };
-var card = elements.create('card', {style: style});
+let card = elements.create('card', {style: style});
 card.mount('#card-element');
 
 // Real tiem validation errors on the card element
 
 card.addEventListener('change', function (event){
-    var errorDiv = document.getElementById('card-errors');
+    let errorDiv = document.getElementById('card-errors');
     if (event.error) {
-        var html = `
+        let html = `
         <span class="icon" role=alert>
         <i class='fas fa-times-circle' style='font-size:22px;color:red'></i>
         </span>
