@@ -94,6 +94,7 @@ def checkout(request):
             Did you forget to set it in your variables?')
 
     template = 'checkout/checkout.html'
+    print(f"CLIENT SECRET: {intent.client_secret}")
     context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
@@ -106,7 +107,7 @@ def checkout(request):
 def checkout_success(request, order_number):
     """Handle successful checkouts"""
     save_info = request.session.get('save_info')
-    order = get_object_or_404(Order, order_namber=order_number)
+    order = get_object_or_404(Order, order_number=order_number)
     messages.success(request, f'Ordered successfully!\
        Your order number is {order_number}.A confirmation \
            email will be sent to {order.email}.')
