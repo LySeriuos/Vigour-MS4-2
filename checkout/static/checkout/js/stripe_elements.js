@@ -71,22 +71,19 @@ form.addEventListener('submit', function(ev) {
             }
         }).then(function(result) {
             if (result.error) {
-                let errorDiv = document.getElementById('card-errors');
-                let html = `
-                    <span class="icon" role=alert>
-                    <i class='fas fa-times-circle' style='font-size:22px;color:red'></i>
+                var errorDiv = document.getElementById('card-errors');
+                var html = `
+                    <span class="icon" role="alert">
+                    <i class="fas fa-times"></i>
                     </span>
-                    <span>${result.error.message}</span>`
+                    <span>${result.error.message}</span>`;
                 $(errorDiv).html(html);
-                card.update({
-                    'disabled': false
-                });
+                card.update({ 'disabled': false});
                 $('#submit-button').attr('disabled', false);
             } else {
-                // The payment has been processed!
                 if (result.paymentIntent.status === 'succeeded') {
-                    form.submit();
+                    formObject.submit();
                 }
             }
         });
-});
+    });
