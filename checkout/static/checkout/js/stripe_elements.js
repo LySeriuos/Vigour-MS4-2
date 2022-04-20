@@ -41,41 +41,35 @@ card.addEventListener('change', function(event) {
     let errorDiv = document.getElementById('card-errors');
     if (event.error) {
         let html = `
-        <span class="icon" role=alert>
+        <span class="icon" role="alert">
         <i class='fas fa-times-circle' style='font-size:22px;color:red'></i>
         </span>
         <span>${event.error.message}</span>
-        `
-        $(errorDiv)
-            .html(html);
+        `;
+        $(errorDiv).html(html);
     } else {
-        errorDiv.textContent = ''
+        errorDiv.textContent = '';
     }
 });
 
 // Handle form Submit
 // https://stripe.com/docs/payments/accept-card-payments
 
-var form = document.getElementById('payment-form');
+let form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {
     ev.preventDefault();
     //  disable both the card element 
     // and the submit button to prevent multiple submissions
-    card.update({
-        'disabled': true
-    });
-    $('#submit-button')
-        .attr('disabled', true);
+    card.update({'disabled': true});
+    $('#submit-button').attr('disabled', true);
     // If the client secret was rendered server-side as a data-secret attribute
     // on the <form> element, you can retrieve it here by calling `form.dataset.secret`
     stripe.confirmCardPayment(clientSecret, {
             payment_method: {
-                card: card,
-                
+                card: card,                
             }
-        })
-        .then(function(result) {
+        }).then(function(result) {
             if (result.error) {
                 let errorDiv = document.getElementById('card-errors');
                 let html = `
@@ -83,22 +77,15 @@ form.addEventListener('submit', function(ev) {
                     <i class='fas fa-times-circle' style='font-size:22px;color:red'></i>
                     </span>
                     <span>${result.error.message}</span>`
-                $(errorDiv)
-                    .html(html);
-                ard.update({
+                $(errorDiv).html(html);
+                card.update({
                     'disabled': false
                 });
-                $('#submit-button')
-                    .attr('disabled', false);
+                $('#submit-button').attr('disabled', false);
             } else {
                 // The payment has been processed!
                 if (result.paymentIntent.status === 'succeeded') {
-                    form.onsubmit();
-                    // Show a success message to your customer
-                    // There's a risk of the customer closing the window before callback
-                    // execution. Set up a webhook or plugin to listen for the
-                    // payment_intent.succeeded event that handles any business critical
-                    // post-payment actions.
+                    form.submit();
                 }
             }
         });

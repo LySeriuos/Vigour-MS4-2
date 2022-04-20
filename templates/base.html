@@ -258,12 +258,7 @@
     </footer>
     <!-- End of Footer --> 
     
-    {% block postloadjs %}
-    <!-- https://getbootstrap.com/docs/4.6/components/toasts/ -->
-    <!-- Putting this in the base HTML template will ensure that every page that loads
-          will immediately call the show option on all toasts that have been rendered in the messages container 
-        -->
-        <script src="static/js/script.js"></script> 
+    {% block postloadjs %}   
     {% endblock %}
   </body>
 </html>

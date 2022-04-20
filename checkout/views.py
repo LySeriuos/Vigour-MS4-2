@@ -17,7 +17,7 @@ def checkout(request):
     bag = request.session.get('bag', {})
     if not bag:
         messages.error(request, "Your bag is empty")
-        return redirect(reverse('products'))
+        return redirect(reverse('shop'))
 
     # to get the total all I need to do is get 
     # the grand_total key out of the current bag
@@ -29,7 +29,6 @@ def checkout(request):
         amount=stripe_total,
         currency=settings.STRIPE_CURRENCY,
     )
-
 
     order_form = OrderForm()
 
