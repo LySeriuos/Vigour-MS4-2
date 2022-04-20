@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container" style="min-block-size: 90vh;">
+    <div class="row" style="margin-top: 100px">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4 text-center text-black bg-white">Thank you for your order!</h2>
+            <hr>
+            <p class="text-black">Here is your order infromation. Check our email box for confirmation leter! <strong>{{ order.email }}</strong>.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6 mb-5">
+            <p>Try our best diet and training programs if you don't have one!</p>
+            <a href="#our-program" class="banner-button text-center text-lg-left">JOIN NOW</a>  
+        </div>
+    </div>
+{% endblock %}
