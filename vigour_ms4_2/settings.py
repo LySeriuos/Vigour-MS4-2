@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-w9esh7wwv3nll9wg0sypnd#wer*r#%8z9x@s0k=*a#27j_y3qj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lyseriuos-vigour-ms4-2.herokuapp.com, localhost']
+ALLOWED_HOSTS = ['lyseriuos-vigour-ms4-2.herokuapp.com', 'localhost']
 
 
 # Application definition
