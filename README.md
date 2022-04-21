@@ -1,10 +1,9 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome LySeriuos,
+The Readme file 
+comming soon!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+https://www.figma.com/file/Xx5l1l6FwudhJC4zu5vnuF/vigour-ms4?node-id=52%3A1418
 
 ## Gitpod Reminders
 
