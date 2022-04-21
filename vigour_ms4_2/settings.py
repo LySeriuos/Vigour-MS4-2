@@ -134,14 +134,17 @@ WSGI_APPLICATION = 'vigour_ms4_2.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# Use this before deployment!
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse('postgres://guloahzzyyjbms:4534912190297e588eea760a82154c85090f445b81570ca843d996aa7c59a97f@ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/ddf8hdcsgkmgop')
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
