@@ -192,7 +192,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # when the USE_AWS setting is true.
 # Whenever collectstatic is run.
 # Static files will be collected into a static folder in our s3 bucket
-# Important tu use correct password
+
 
 if 'USE_AWS' in os.environ:
     # Bucket Config
