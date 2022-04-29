@@ -36,3 +36,17 @@
     color: #000;
     border: 1px solid #000;
 }
+
+/* set all select elements and their option children to be black by default */
+
+select,
+select option {
+  color: black;
+}
+
+/* grayed out if there's no country selected */
+
+select:invalid,
+select option[value=""] {
+  color:#aab7c4 !important;
+}
