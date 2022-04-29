@@ -7,12 +7,17 @@ from django.conf import settings
 from django_countries.fields import CountryField
 
 from shop.models import Product
+from profiles.models import UserProfile
 
 
 # payment form
 class Order(models.Model):
     # editable=False is to create unique order number, generated automatically
     order_number = models.CharField(max_length=32, null=False, editable=False)
+    # models.SET_NULL allow us to keep order history in the admin even if the profile is deleted.
+    # null or blank gives users possibility to buy who don't have an account.
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+                                    null=True, blank=True, related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
