@@ -103,8 +103,9 @@ def product_detail(request, product_id):
 def add_product(request):
     """ Add a product to the store """
     form = ProductForm()
-    template = 'products/add_product.html'
+    template = 'shop/add_product.html'
     context = {
         'form': form,
     }
+    
     return render(request, template, context)
