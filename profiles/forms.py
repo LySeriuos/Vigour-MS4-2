@@ -26,7 +26,7 @@ class UserProfileForm(forms.ModelForm):
         }
 
         # setting the autofocus attribute on the full name field to true
-        # The cursor will start in the full name field when the user loads the page
+        # The cursor will start in the full name field when the user loads page
         self.fields["default_phone_number"].widget.attrs["autofocus"] = True
         # Iterate through the forms fields adding a star to the placeholder
         # if it's a required field on the model
