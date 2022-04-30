@@ -24,4 +24,25 @@
             <a href="#our-program" class="banner-button text-center text-lg-left">JOIN NOW</a>  
         </div>
     </div>
+    <div class="row">
+        <div class="col-12 col-lg-7 text-right">
+            {% if from_profile %}
+                <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+                    <span class="icon mr-2">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                    <span class="text-uppercase">Back to Profile</span>
+                </a>
+            {% else %}
+            <!-- link to training and diet plans -->
+                <a href="" class="btn btn-black rounded-0 my-2">
+                    <span class="icon mr-2">
+                        <i class="fas fa-gifts"></i>
+                    </span>
+                    <span class="text-uppercase">Do you have best training or diet o both programs?</span>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
 {% endblock %}
