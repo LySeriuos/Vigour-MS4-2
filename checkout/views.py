@@ -105,10 +105,10 @@ def checkout(request):
                     'street_address2': profile.default_street_address2,
                     'county': profile.default_county,
                 })
-            # if user is logged in but there is no information in his profile leave empty form
+            # if user is logged in but there is no information in his profile
+            # leave empty form
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
-                
         else:
             order_form = OrderForm()
         
