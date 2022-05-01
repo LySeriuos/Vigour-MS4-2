@@ -5,6 +5,8 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from shop.models import Product
+from profiles.forms import UserProfileForm
+from profiles.models import UserProfile
 from bag.contexts import bag_contents
 
 import stripe
@@ -120,8 +122,18 @@ def checkout_success(request, order_number):
         if save_info:
             profile_data = {
                 'default_phone_number': order.phone_number,
-
+                'default_country': order.country,
+                'default_postode': order.postcode,
+                'default_town_or_city': order.town_or_city,
+                'default_street_address1': order.street_address1,
+                'default_street_address2': order.street_address2,
+                'default_county': order.county,
             }
+            # updating the profile form which is above
+            # check if it is valid and if it is save it.
+            user_profile_form = UserProfileForm(profile_data, instance=profile)
+            if user_profile_form.is_valid():
+                user_profile_form.save()
 
     
 
