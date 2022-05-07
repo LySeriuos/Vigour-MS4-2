@@ -17,7 +17,7 @@
             <p class="text-black">Here is your order infromation. Check your email box for confirmation leter! <strong>{{ order.email }}</strong>.</p>
         </div>
     </div>
-    <div class="reciept-wrapper">
+    <div class="reciept-wrapper table-responsive">
         <h4>Order info:</h4>
         <table class="table">
             <!-- caption is for screen readers -->
@@ -25,34 +25,93 @@
             <tbody>
                 <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Order Number</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
+                      <td scope="col">Order Number:</td>
                       <td>{{ order.order_number }}</td>
                     </tr>
-                  </tbody>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <td scope="col">Order Date:</td>
+                      <td>{{ order.date }}</td>
+                    </tr>
+                  </thead>                  
               <thead>
                 <tr>
                   <th scope="col">Ordered Items:</th>
                   <th scope="col">Product Name</th>
-                  <th scope="col">Size</th>
-                  <th scope="col">Quantity</th>
                 </tr>
               </thead>
               <tbody>
                 {% for item in order.lineitems.all %}
                 <tr>
-                  <th scope="row">{{ forloop.counter}}</th>
+                  <td class="text-center" scope="row">{{ forloop.counter}}</td>
                   <td>{{ item.product.name }}</td>
-                  <td>{% if item.product_size %} - Size {{ item.product_size|upper }}{% endif %}</td>
-                  <td>{{ item.quantity }} X ${{ item.product.price }}</td>
+                  {% if item.product_size %}
+                  <tr>
+                    <td>Size:</td>
+                    <td>{% if item.product_size %} - Size {{ item.product_size|upper }}{% endif %}</td>
+                  </tr>
+                  {% endif %}
+                  <tr>
+                    <td class="text-right">Quantity:</td>
+                    <td>{{ item.quantity }} X ${{ item.product.price }}</td>
+                  </tr>
                 </tr>
                 {% endfor %}
             </tbody>
+            <thead>
+                <tr>
+                  <th scope="col">Delivering infromation:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">Adress</td>
+                  <td>{{ order.street_address1 }}</td>
+                </tr>
+                {% if order.street_address2 %}
+                <tr>
+                    <td scope="row">Detailed adress</td>
+                    <td>{{ order.street_address2 }}</td>
+                  </tr>
+                {% endif %}
+                <tr>
+                  <td scope="row">Postcode</td>
+                  <td>{{ order.postcode }}</td>
+                </tr>
+                <tr>
+                  <td scope="row">Country</td>
+                  <td>{{ order.country }}</td>
+                </tr>
+                <tr>
+                    <td scope="row">County</td>
+                    <td>{{ order.county }}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Phone Number</td>
+                    <td>{{ order.phone_number }}</td>
+                  </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th scope="col">Payment infromation:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">Order Total</td>
+                  <td>${{ order.order_total }}</td>
+                </tr>
+              
+                <tr>
+                  <td scope="row">Price For Delivery</td>
+                  <td>${{ order.delivery_cost }}</td>
+                </tr>
+                <tr>
+                  <td scope="row">Total Amount</td>
+                  <td>${{ order.grand_total }}</td>
+                </tr>                
+              </tbody>              
           </table>
 
     <div class="row">
