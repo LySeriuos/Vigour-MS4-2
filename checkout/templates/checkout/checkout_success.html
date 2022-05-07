@@ -23,7 +23,7 @@
                 <thead>
                     <tr>
                       <td scope="col" class="text-right">Order Number:</td>
-                      <td>{{ order.order_number }}</td>
+                      <td class="">{{ order.order_number }}</td>
                     </tr>
                   </thead>
                   <thead>
@@ -57,7 +57,7 @@
             </tbody>
             <thead>
                 <tr>
-                  <th scope="col">Delivering infromation:</th>
+                  <th scope="col">Delivery Info:</th>
                 </tr>
               </thead>
               <tbody>
@@ -79,6 +79,7 @@
                   <td scope="row" class="text-right">Country:</td>
                   <td>{{ order.country }}</td>
                 </tr>
+                {% if order.county %}
                 <tr>
                     <td scope="row" class="text-right">County:</td>
                     <td>{{ order.county }}</td>
@@ -87,10 +88,11 @@
                     <td scope="row" class="text-right">Phone Number:</td>
                     <td>{{ order.phone_number }}</td>
                   </tr>
+                {% endif %}
               </tbody>
               <thead>
                 <tr>
-                  <th scope="col">Payment infromation:</th>
+                  <th scope="col">Payment Info:</th>
                 </tr>
               </thead>
               <tbody>
@@ -109,7 +111,7 @@
                 </tr>                
               </tbody>              
           </table>   
-    <div class="row m-5">
+    <div class="row m-5 justify-content-center">
         <div class="col-12 col-lg-7 text-right">
             {% if from_profile %}
                 <a href="{% url 'profile' %}" class="banner-button">
