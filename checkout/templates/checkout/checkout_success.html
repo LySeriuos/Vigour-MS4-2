@@ -17,7 +17,7 @@
             <p class="text-black">Here is your order infromation. Check your email box for confirmation leter! <strong>{{ order.email }}</strong>.</p>
         </div>
     </div>
-    <div class="reciept-wrapper table-responsive">
+    <div class="reciept-wrapper">
         <h4>Order info:</h4>
         <table class="table">
             <!-- caption is for screen readers -->
@@ -25,13 +25,13 @@
             <tbody>
                 <thead>
                     <tr>
-                      <td scope="col">Order Number:</td>
+                      <td scope="col" class="text-right">Order Number:</td>
                       <td>{{ order.order_number }}</td>
                     </tr>
                   </thead>
                   <thead>
                     <tr>
-                      <td scope="col">Order Date:</td>
+                      <td scope="col" class="text-right">Order Date:</td>
                       <td>{{ order.date }}</td>
                     </tr>
                   </thead>                  
@@ -44,7 +44,7 @@
               <tbody>
                 {% for item in order.lineitems.all %}
                 <tr>
-                  <td class="text-center" scope="row">{{ forloop.counter}}</td>
+                  <td class="text-right" scope="row">{{ forloop.counter}}.</td>
                   <td>{{ item.product.name }}</td>
                   {% if item.product_size %}
                   <tr>
@@ -66,29 +66,29 @@
               </thead>
               <tbody>
                 <tr>
-                  <td scope="row">Adress</td>
+                  <td scope="row" class="text-right">Adress:</td>
                   <td>{{ order.street_address1 }}</td>
                 </tr>
                 {% if order.street_address2 %}
                 <tr>
-                    <td scope="row">Detailed adress</td>
+                    <td scope="row" class="text-right">Detailed Adress:</td>
                     <td>{{ order.street_address2 }}</td>
                   </tr>
                 {% endif %}
                 <tr>
-                  <td scope="row">Postcode</td>
+                  <td scope="row" class="text-right">Postcode:</td>
                   <td>{{ order.postcode }}</td>
                 </tr>
                 <tr>
-                  <td scope="row">Country</td>
+                  <td scope="row" class="text-right">Country:</td>
                   <td>{{ order.country }}</td>
                 </tr>
                 <tr>
-                    <td scope="row">County</td>
+                    <td scope="row" class="text-right">County:</td>
                     <td>{{ order.county }}</td>
                   </tr>
                   <tr>
-                    <td scope="row">Phone Number</td>
+                    <td scope="row" class="text-right">Phone Number:</td>
                     <td>{{ order.phone_number }}</td>
                   </tr>
               </tbody>
@@ -99,16 +99,16 @@
               </thead>
               <tbody>
                 <tr>
-                  <td scope="row">Order Total</td>
+                  <td scope="row" class="text-right">Order Total:</td>
                   <td>${{ order.order_total }}</td>
                 </tr>
               
                 <tr>
-                  <td scope="row">Price For Delivery</td>
+                  <td scope="row" class="text-right">Price For Delivery:</td>
                   <td>${{ order.delivery_cost }}</td>
                 </tr>
                 <tr>
-                  <td scope="row">Total Amount</td>
+                  <td scope="row" class="text-right">Total Amount:</td>
                   <td>${{ order.grand_total }}</td>
                 </tr>                
               </tbody>              
