@@ -11,17 +11,14 @@
 <div class="container" style="min-block-size: 90vh;">
     <div class="row" style="margin-top: 100px">
         <div class="col">
-            <hr>
             <h2 class="logo-font mb-4 text-center text-black bg-white">Thank you for your order!</h2>
-            <hr>
-            <p class="text-black">Here is your order infromation. Check your email box for confirmation leter! <strong>{{ order.email }}</strong>.</p>
+            <p class="text-muted text-center mb-4">Check your email box for confirmation leter! Email was sent to <strong>{{ order.email }}</strong>.</p>
+            
         </div>
     </div>
     <div class="reciept-wrapper">
-        <h4>Order info:</h4>
-        <table class="table">
-            <!-- caption is for screen readers -->
-            <caption>Order Summary</caption>  
+        <h4>Order Details:</h4>
+        <table class="table"> 
             <tbody>
                 <thead>
                     <tr>
@@ -31,20 +28,19 @@
                   </thead>
                   <thead>
                     <tr>
-                      <td scope="col" class="text-right">Order Date:</td>
-                      <td>{{ order.date }}</td>
+                      <td class="text-right">Order Date:</td>
+                      <td >{{ order.date }}</td>
                     </tr>
                   </thead>                  
               <thead>
                 <tr>
                   <th scope="col">Ordered Items:</th>
-                  <th scope="col">Product Name</th>
                 </tr>
               </thead>
               <tbody>
                 {% for item in order.lineitems.all %}
                 <tr>
-                  <td class="text-right" scope="row">{{ forloop.counter}}.</td>
+                  <td class="text-right" scope="row">{{ forloop.counter}}. Product Name:</td>
                   <td>{{ item.product.name }}</td>
                   {% if item.product_size %}
                   <tr>
@@ -112,30 +108,23 @@
                   <td>${{ order.grand_total }}</td>
                 </tr>                
               </tbody>              
-          </table>
-
-    <div class="row">
-        <div class="col-12 col-md-6 mb-5">
-            <p>Try our best diet and training programs if you don't have one!</p>
-            <a href="#our-program" class="banner-button text-center text-lg-left">JOIN NOW</a>  
-        </div>
-    </div>
-    <div class="row">
+          </table>   
+    <div class="row m-5">
         <div class="col-12 col-lg-7 text-right">
             {% if from_profile %}
-                <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+                <a href="{% url 'profile' %}" class="banner-button">
                     <span class="icon mr-2">
                         <i class="fas fa-angle-left"></i>
                     </span>
                     <span class="text-uppercase">Back to Profile</span>
                 </a>
             {% else %}
-            <!-- link to training and diet plans -->
-                <a href="" class="btn btn-black rounded-0 my-2">
+            <!-- link to registration -->
+                <a href="/accounts/signup/" class="banner-button m-2">
                     <span class="icon mr-2">
-                        <i class="fas fa-gifts"></i>
+                      <i class="fa-solid fa-hand-peace"></i>
                     </span>
-                    <span class="text-uppercase">Do you have best training or diet o both programs?</span>
+                    <span class="text-uppercase">Not a member? Click here to register!</span>
                 </a>
             {% endif %}
         </div>

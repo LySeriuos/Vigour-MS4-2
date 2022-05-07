@@ -50,3 +50,16 @@ select:invalid,
 select option[value=""] {
   color:#aab7c4 !important;
 }
+
+.table td, .table th, .thead th {
+  border-bottom:none;
+  border-top: none;
+}
+
+.table thead th,
+.reciept-wrapper h4,
+.order-line-border,
+.table {
+  vertical-align: bottom;
+  border-bottom: 1px solid #4AE290;
+}
