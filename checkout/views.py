@@ -17,7 +17,7 @@ import json
 # before calling card paymnet method in stripe javascript
 # make POST request to this view and give it client secret
 # from the client intent
-def chache_checkout_data(request):
+def cache_checkout_data(request):
     try:
         # payment intent id
         pid = request.POST.get('client_secret').split(_secret)[0]
@@ -34,7 +34,7 @@ def chache_checkout_data(request):
         messages.error(request, 'Sorry, your payment can not be \
              processed. Please try again later.')
         return HttpResponse(content=e, status=400)
-        
+
 
 @require_POST
 def checkout(request):
