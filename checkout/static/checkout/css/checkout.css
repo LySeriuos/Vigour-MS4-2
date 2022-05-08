@@ -71,6 +71,7 @@ hr {
   border-top: 1px solid #4AE290;
 }
 
+/* for spinner overlay not active now */
 #loading-spinner-overlay {
   display: none;
   position: fixed;
