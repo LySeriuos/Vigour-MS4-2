@@ -31,5 +31,3 @@ class StripeWebHook_Handler:
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)
-
-            
