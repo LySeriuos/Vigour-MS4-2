@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
@@ -10,8 +11,32 @@ from profiles.models import UserProfile
 from bag.contexts import bag_contents
 
 import stripe
+import json
 
 
+# before calling card paymnet method in stripe javascript
+# make POST request to this view and give it client secret
+# from the client intent
+def chache_checkout_data(request):
+    try:
+        # payment intent id
+        pid = request.POST.get('client_secret').split(_secret)[0]
+        # set up stripe with the secret key
+        stripe.api_key = settings.STRIPE_SECRET_KEY
+        # give it the 'pid' and tell what to moodify
+        stripe.PaymentIntent.modify(pid, metadata={
+            'bag': json.dumps(request.session.get('bag', {})),
+            'save_info': request.POST.get('save_info'),
+            'username': request.user
+        })
+        return HttpResponse(status=200)
+    except Exception as e:
+        messages.error(request, 'Sorry, your payment can not be \
+             processed. Please try again later.')
+        return HttpResponse(content=e, status=400)
+        
+
+@require_POST
 def checkout(request):
     # to set piblic and secret keys
     # use command 'export STRIPE_PUBLIC_KEY=...' on windows
