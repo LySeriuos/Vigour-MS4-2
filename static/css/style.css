@@ -43,6 +43,10 @@ html {
 	}
 }
 
+.text-info {
+  color: #4AE290!important;
+}
+
 
 .main-banner, header, .navbar, nav a {
   background-color: black;
