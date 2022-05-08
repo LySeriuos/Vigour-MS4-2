@@ -1,13 +1,16 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
+
 from shop.models import Product
-from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
+from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
 
 import stripe
@@ -20,7 +23,7 @@ import json
 def cache_checkout_data(request):
     try:
         # payment intent id
-        pid = request.POST.get('client_secret').split(_secret)[0]
+        pid = request.POST.get('client_secret').split('_secret')[0]
         # set up stripe with the secret key
         stripe.api_key = settings.STRIPE_SECRET_KEY
         # give it the 'pid' and tell what to moodify
