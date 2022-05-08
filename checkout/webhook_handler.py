@@ -1,4 +1,4 @@
-from django.hhtp import HttpResponse
+from django.http import HttpResponse
 
 
 class StripeWebHook_Handler:
@@ -31,3 +31,5 @@ class StripeWebHook_Handler:
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)
+
+            
