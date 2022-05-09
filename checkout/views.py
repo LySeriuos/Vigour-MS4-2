@@ -20,6 +20,7 @@ import json
 # before calling card paymnet method in stripe javascript
 # make POST request to this view and give it client secret
 # from the client intent
+@require_POST
 def cache_checkout_data(request):
     try:
         # payment intent id
@@ -39,7 +40,6 @@ def cache_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
-@require_POST
 def checkout(request):
     # to set piblic and secret keys
     # use command 'export STRIPE_PUBLIC_KEY=...' on windows
