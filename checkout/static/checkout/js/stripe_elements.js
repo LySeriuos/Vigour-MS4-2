@@ -56,6 +56,7 @@ form.addEventListener('submit', function(ev) {
 
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // get csrfToken from the input that Django generates in payment form
+    // from using {% csrf_token %} in the form
     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
     // object to pass this info to the new view and 
     // pass the client secret for the payment intent

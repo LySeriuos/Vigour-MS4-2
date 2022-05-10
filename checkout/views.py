@@ -182,9 +182,7 @@ def checkout_success(request, order_number):
             # check if it is valid and if it is save it.
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
-                user_profile_form.save()
-
-    
+                user_profile_form.save() 
 
     messages.success(request, f'Ordered successfully!\
        Your order number is {order_number}.A confirmation \

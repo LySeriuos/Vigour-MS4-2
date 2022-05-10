@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 
 
-class StripeWebHook_Handler:
+class StripeWH_Handler:
     """Handle Stripe webhooks"""
 
     # function for getting atributes from stripe
