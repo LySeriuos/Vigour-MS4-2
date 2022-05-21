@@ -2,6 +2,7 @@ from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse
 )
 from django.views.decorators.http import require_POST
+from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
 from django.conf import settings
 
@@ -17,12 +18,12 @@ import stripe
 import json
 
 
-# before calling card paymnet method in stripe javascript
-# make POST request to this view and give it client secret
-# from the client intent
 @require_POST
 def cache_checkout_data(request):
     try:
+        # before calling card paymnet method in stripe javascript
+        # make POST request to this view and give it client secret
+        # from the client intent
         # payment intent id
         pid = request.POST.get('client_secret').split('_secret')[0]
         # set up stripe with the secret key
@@ -40,6 +41,7 @@ def cache_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
+@csrf_exempt
 def checkout(request):
     # to set piblic and secret keys
     # use command 'export STRIPE_PUBLIC_KEY=...' on windows
@@ -155,6 +157,7 @@ def checkout(request):
     return render(request, template, context)
 
 
+@csrf_exempt
 def checkout_success(request, order_number):
     """Handle successful checkouts"""
     save_info = request.session.get('save_info')

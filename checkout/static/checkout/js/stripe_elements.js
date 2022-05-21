@@ -53,6 +53,8 @@ form.addEventListener('submit', function(ev) {
     $('#submit-button').attr('disabled', true);
     // trigger overlay and fades form when user clicks submit button 
     $('#payment-form').fadeToggle(100);
+    $('#loading-spinner-overlay').fadeToggle(100);
+
 
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // get csrfToken from the input that Django generates in payment form

@@ -1,4 +1,9 @@
 from django.http import HttpResponse
+from django.conf import settings
+
+from .models import Order, OrderLineItem
+from shop.models import Product
+from profiles.models import UserProfile
 
 
 class StripeWH_Handler:
@@ -20,7 +25,7 @@ class StripeWH_Handler:
         """
         Handle a handle_payment_intent_succeeded webhook from stripe
         """
-        intent = event.data.object
+        intent = stripe.PaymentIntent.modify(event)
         print(intent)
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',

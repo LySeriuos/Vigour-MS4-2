@@ -38,7 +38,7 @@ def order_history(request, order_number):
         'A confirmation Email was sent direct after payment to your mailbox'
     ))
 
-    template = 'checkout/chekout_success.html'
+    template = 'checkout/checkout_success.html'
     # from_profile is to check if user got in order history by profile.html
     context = {
         'order': order,
