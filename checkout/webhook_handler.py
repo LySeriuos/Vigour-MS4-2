@@ -67,7 +67,8 @@ class StripeWH_Handler:
                 # if order exists iåt will give a success message
         if order_exists:            
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=f'Webhook received: {event["type"]} | SUCCESS: '
+                        'Verified order already in database',
                 status=200)
                 # and if it doesn't exists it will create new one
         else:                    
@@ -82,7 +83,7 @@ class StripeWH_Handler:
                         street_address1=shipping_details.address1,
                         street_address2=shipping_details.address2,
                 )
-            # get the Product ID out of the bag
+                # get the Product ID out of the bag
                 for item_id, item_data in json.loads(bag).items():
                     product = Product.objects.get(id=item_id)
                     # if its value is an integer it means the item that doesn't have sizes.
@@ -101,19 +102,20 @@ class StripeWH_Handler:
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                 product_size=size,
+                                product_size=size,
                             )
                             order_line_item.save()
-                            except_line_item.save()
             except Exception as e:
-                    if order: 
-                        order.delete()
-                        return HttpResponse(
-                            content=f'Webhook received: {event["type"]} | ERROR: {e}',
-                            status=500)
+                if order:
+                    order.delete()
+                return HttpResponse(
+                    content=f'Webhook received: {event["type"]} | ERROR: {e}',
+                    status=500)
                          
-        return HttpResponse(content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
-                            status=500)
+        return HttpResponse(
+            content=f'Webhook received: {event["type"]} | SUCCESS:' 
+                    'Created order in webhook',
+            status=200)
 
 
     def handle_payment_intent_payment_failed(self, event):
