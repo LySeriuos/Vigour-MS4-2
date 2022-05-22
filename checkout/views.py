@@ -26,6 +26,7 @@ def cache_checkout_data(request):
         # from the client intent
         # payment intent id
         pid = request.POST.get('client_secret').split('_secret')[0]
+
         # set up stripe with the secret key
         stripe.api_key = settings.STRIPE_SECRET_KEY
         # give it the 'pid' and tell what to moodify
@@ -64,7 +65,14 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            # prevent for multiple save events!
+            order = order_form.save(commit=False)
+            # splited to get pid number
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+
+            order.original = json.dumps(bag)
+            order.save()
             for item_id, item_data in bag.items():
                 try:
                     # get the Product ID out of the bag
