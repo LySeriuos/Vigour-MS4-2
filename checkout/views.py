@@ -173,7 +173,7 @@ def checkout_success(request, order_number):
     # connecting order to user's profile
 
     if request.user.is_authenticated:
-
+        # Attach the user's profile to the order
         profile = UserProfile.objects.get(user=request.user)
         order.user_profile = profile
         order.save()
@@ -183,7 +183,7 @@ def checkout_success(request, order_number):
             profile_data = {
                 'default_phone_number': order.phone_number,
                 'default_country': order.country,
-                'default_postode': order.postcode,
+                'default_postcode': order.postcode,
                 'default_town_or_city': order.town_or_city,
                 'default_street_address1': order.street_address1,
                 'default_street_address2': order.street_address2,
