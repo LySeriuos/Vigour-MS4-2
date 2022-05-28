@@ -44,8 +44,8 @@
                   <td>{{ item.product.name }}</td>
                   {% if item.product_size %}
                   <tr>
-                    <td>Size:</td>
-                    <td>{% if item.product_size %} - Size {{ item.product_size|upper }}{% endif %}</td>
+                    <td class="text-right">Size:</td>
+                    <td>{% if item.product_size %} {{ item.product_size|upper }}{% endif %}</td>
                   </tr>
                   {% endif %}
                   <tr>
