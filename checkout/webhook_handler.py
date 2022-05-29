@@ -150,7 +150,7 @@ class StripeWH_Handler:
                             quantity=item_data,
                         )
                         order_line_item.save()
-                        # if the item has sizes. It will iterate through each size 
+                        # if the item has sizes. It will iterate through each size
                         # and creates a line item accordingly.
                     else:
                         for size, quantity in item_data['items_by_size'].items():

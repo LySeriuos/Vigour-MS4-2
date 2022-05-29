@@ -9,7 +9,7 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 
-from shop.models import Product
+
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
@@ -48,7 +48,7 @@ def checkout(request):
     # use command 'export STRIPE_PUBLIC_KEY=...' on windows
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
-    
+
     if request.method == 'POST':
         bag = request.session.get('bag', {})
 
@@ -116,7 +116,7 @@ def checkout(request):
             messages.error(request, "Your bag is empty")
             return redirect(reverse('products'))
 
-        # to get the total all I need to do is get 
+        # to get the total all I need to do is get
         # the grand_total key out of the current bag
         current_bag = bag_contents(request)
         total = current_bag['grand_total']
@@ -126,7 +126,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-        
+
         # get the user information from user's profile
         # if user is logged in get his delivery information and fill the delivery form automatically
         # if user is not logged in just leave it empty to fill up
@@ -150,7 +150,7 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
-        
+
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your variables?')
@@ -194,7 +194,7 @@ def checkout_success(request, order_number):
             # check if it is valid and if it is save it.
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
-                user_profile_form.save() 
+                user_profile_form.save()
 
     messages.success(request, f'Ordered successfully!\
        Your order number is {order_number}.A confirmation \
