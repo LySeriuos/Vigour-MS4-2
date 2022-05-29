@@ -125,9 +125,13 @@ def edit_product(request, product_id):
     """ Edit a product in the store """
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
+        # get the product information to the form
         form = ProductForm(request.POST, request.FILES, instance=product)
+        # checking if changed information is valid
         if form.is_valid():
+            # save the product form
             form.save()
+            # send the message of success or fail
             messages.success(request, 'The product is updated!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
@@ -142,3 +146,11 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, product_id):
+    """ Delete a product from the store """
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'The Product is deleted!')
+    return redirect(reverse('shop'))
