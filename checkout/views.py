@@ -126,6 +126,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
+        
         # get the user information from user's profile
         # if user is logged in get his delivery information and fill the delivery form automatically
         # if user is not logged in just leave it empty to fill up
