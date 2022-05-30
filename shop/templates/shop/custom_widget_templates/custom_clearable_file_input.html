@@ -10,10 +10,10 @@
         </div>
     {% endif %}
     <br>
-    {{ widget.input_text }}:
+    {{ widget.input_text }}
 {% endif %}
 <!-- this will be showing selected files name -->
-<span type="btn btn-black rounded-0 btn-file">
+<span class="btn btn-black rounded-0 btn-file">
     Select Image <input id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
 </span>
 <strong><p class="text-danger" id="filename"></p></strong>
