@@ -122,6 +122,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 # email is required for the registration
 ACCOUNT_EMAIL_REQUIRED = True
 # checking if user uses real email by sending confirmation email to check that
+# use 'none to prevent 500 errors during login in heroku
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 # this requires to enter email two times to check if there is any typos
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
