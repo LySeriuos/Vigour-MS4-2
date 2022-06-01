@@ -747,6 +747,10 @@ z-index: -1;
   cursor: pointer;
 }
 
+.to-delete{
+  border: none;
+}
+
 .custom-checkbox .custom-control-label::before {
   border-radius: 0;
   border-color: #dc3545;
