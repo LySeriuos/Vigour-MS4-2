@@ -143,7 +143,7 @@ WSGI_APPLICATION = 'vigour_ms4_2.wsgi.application'
 # Use this before deployment!
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse('postgres://ppmjynliatzdlj:9220f437dfa0eab9ff32533db641acd56d4850fe58585d5606c27c72ede29586@ec2-52-214-23-110.eu-west-1.compute.amazonaws.com:5432/d279qi7pihjc83')
     }
 else:
     DATABASES = {
