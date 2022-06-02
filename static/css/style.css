@@ -196,7 +196,7 @@ margin: 0;
 .next .fa-circle-chevron-right {
   color: black;
 }
-
+src="{{ MEDIA_URL }}noimage.png"
 .img-1 {
   background-image: url("/media/webImages/evan-wise-body-pump-small.jpg");
 }
