@@ -1,4 +1,5 @@
 // Tiny slider JS for training programs
+import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
 
 let slider1 = tns({
     container: ".slider1",
@@ -120,6 +121,8 @@ let slider2 = tns({
             }
         }
 });
+
+import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
 
 // Dropdown multi level for main nav
 $(document).on('click', '.dropdown-menu', function (e) {
