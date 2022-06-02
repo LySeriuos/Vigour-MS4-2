@@ -1,4 +1,5 @@
 // Tiny slider JS for training programs
+
 let slider1 = tns({
     container: ".slider1",
     "slideBy" : "1",
