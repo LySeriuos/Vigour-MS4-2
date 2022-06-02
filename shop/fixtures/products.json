@@ -58,7 +58,7 @@
           "price":39.50,
           "category":3,
           "rating":4.7,
-          "image_url":"https://www.tillskottsbolaget.se/bilder/artiklar/zoom/OLIMP75834_1.jpg?m=1614199820",
+          "image_url":"https://www.gymgrossisten.com/dw/image/v2/BDJH_PRD/on/demandware.static/-/Sites-hsng-master-catalog/default/dw92dd0763/Hi-res/o/l/olimp_amino.jpg?sw=655&sh=655&sm=fit&sfrm=png",
           "image":"shop/food_supplements/Amino_accids/Olimp-BCAA-Xplode.png",
           "subcategory":"food_supplements"
        }
@@ -68,7 +68,7 @@
        "model":"shop.product",
        "fields":{
           "sku":"pp5001890157",
-          "name":"Amino EAA Xplode, 520 g",
+          "name":"PEScience, Prolific, Pre-Workout, Raspberry Lemonade, 9.88 oz (280 g)",
           "highlight":"From one of our favourite brands in the Mix, we have SO MUCH love for the guys at PEScience, another incredible supplement, well put together, well presented, does what it's supposed to and of course tastes out of this world!!",
           "description":"Prolific is the pre-workout powerhouse that covers the full spectrum of the ultimate workout experience, from energy and focus, to performance and pump. Prolific will hit you like the first time, every time, making it the last preworkout you'll ever need, without ever feeling that tingly itchy skin. Deliciously flavored and mixes easily.",
           "list1":"Two Forms of Caffeine",
@@ -79,7 +79,7 @@
           "price":54.99,
           "category":3,
           "rating":4.7,
-          "image_url":"https://cdn.shopify.com/s/files/1/1943/7603/shop/prolific-supplement-pescience-867004_1800x1800.jpg?v=1648690122",
+          "image_url":"https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/pec/pec42646/y/8.jpg",
           "image":"shop/food_supplements/Amino_accids/PE-Prolific.png",
           "subcategory":"food_supplements"
        }
