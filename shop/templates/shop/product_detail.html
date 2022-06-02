@@ -67,11 +67,11 @@
           <!-- copied from shop.html page and updated -->
           {% if product.image %}
           <a href="{{ product.image.url }}" target="_blank">
-              <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+              <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
           </a>
           {% else %}
           <a href="">
-              <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}/webImages/no-image.jpg" alt="{{ product.name }}">
+              <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}webImages/no-image.jpg" alt="{{ product.name }}">
           </a>
           {% endif %}
         </div>
