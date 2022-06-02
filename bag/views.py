@@ -5,6 +5,7 @@ from shop.models import Product
 
 # Create your views here.
 
+
 def view_bag(request):
     """ A view to return the shoping bag page """
 

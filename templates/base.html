@@ -139,7 +139,7 @@
                                 <div class="dropdown-menu">
                                   <a class="dropdown-item" href="#customers">Customers Experience</a>
                                   <a class="dropdown-item" href="#">Community Blog</a>
-                                  <a class="dropdown-item" href="#">Our Trainers</a>
+                                  <a class="dropdown-item" href="{% url 'trainers' %}">Our Trainers</a>
                                 </div>
                               </li> 
                                    
@@ -264,7 +264,7 @@
     <!-- just extra line -->
     
     {% block postloadjs %} 
-    <script src="{% static 'js/script.js' %}"></script> 
+    <script src="{% static 'js/script.js' %}" type="text/javascript"></script> 
     {% endblock %}
   </body>
 </html>
