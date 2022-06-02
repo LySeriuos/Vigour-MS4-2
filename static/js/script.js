@@ -1,5 +1,6 @@
 // Tiny slider JS for training programs
 
+
 let slider1 = tns({
     container: ".slider1",
     "slideBy" : "1",
@@ -120,6 +121,7 @@ let slider2 = tns({
             }
         }
 });
+
 
 // Dropdown multi level for main nav
 $(document).on('click', '.dropdown-menu', function (e) {

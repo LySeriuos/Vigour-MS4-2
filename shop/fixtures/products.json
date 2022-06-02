@@ -15,7 +15,7 @@
           "price":28.00,
           "category":3,
           "rating":4.6,
-          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/shop/creator_17a082b9-a58f-42bc-96e4-db29c20c8e28_1024x1024.jpg?v=1646485593",
+          "image_url":"https://www.proteinbolaget.se/img/bilder/artiklar/zoom/PB-623_1.jpg?m=1568363456",
           "image":"shop/food_supplements/Amino_accids/Delta-Nutrition-BCAA-Amino.png",
           "subcategory":"food_supplements"
        }
@@ -58,7 +58,7 @@
           "price":39.50,
           "category":3,
           "rating":4.7,
-          "image_url":"https://cdn.shopify.com/s/files/1/0612/4139/3360/shop/a_177e44e9-e10e-4800-afcb-db90b187eeb3_1024x1024.webp?v=1646511561",
+          "image_url":"https://www.tillskottsbolaget.se/bilder/artiklar/zoom/OLIMP75834_1.jpg?m=1614199820",
           "image":"shop/food_supplements/Amino_accids/Olimp-BCAA-Xplode.png",
           "subcategory":"food_supplements"
        }
@@ -1305,7 +1305,7 @@
           "price":17.50,
           "category":13,
           "rating":4.0,
-          "image_url":"shop/Outlet/SelfOmninutritionSoyProtein.png",
+          "image_url":"https://bodygain.se/wp-content/uploads/2019/07/EB9EE346-3B0E-4FBB-A38A-E65F5E72FEC7.png",
           "image":"shop/Outlet/SelfOmninutritionSoyProtein.png",
           "subcategory":"outlet"
        }
