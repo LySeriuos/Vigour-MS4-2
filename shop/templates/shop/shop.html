@@ -12,8 +12,7 @@
          </div>
          <div class="col-lg-6 text-center">
             <!-- Can't load the image from media file -->
-            <img class="rounded-lg-3" src="{{ MEDIA_URL }}pedro-araujo-gym-gear-good.jpg" alt="">
-            
+            <img class="rounded-lg-3" src="{{ MEDIA_URL }}webImages/pedro-araujo-gym-gear-good.jpg" alt="">            
          </div>
       </div>
    </div>
@@ -127,7 +126,7 @@
                      {% if product.image %}
                      <!-- in django need to use '.' instead of '_' to get values of products.  -->
                      <a href="{% url 'product_detail' product.id %}">
-                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                     <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
                      </a>
                      {% else %}
                      <a href="{% url 'product_detail' product.id %}">
