@@ -3,35 +3,128 @@
 
 {% block page_header %}
  <!-- ***** Main Banner Area Start ***** -->
+
  <section id="main-banner bg-image top" class="main-banner">
-  <div class="container my-5 pt-3 text-center">
-      <div class="row pb-0 pe-lg-0 align-items-center justify-content-center caption">
-          <div class="col-lg-5 p-3 p-lg-5 pt-lg-3 text-center">
-              <h2 class=" fw-bold lh-1 main-banner-text">Get the best part of your day<br><em>-you fit here.</em></h2>
-              <h6 id="banner-h6">We provide serious training and diet plans for everybody!</h6>
-              <div class="d-grid gap-2 d-md-flex justify-content-sm-center mb-4 mb-lg-3 main-button scroll-to-section">
-                  <a href="#our-program" class="banner-button text-center text-lg-left">JOIN NOW</a>                      
-              </div>
-          </div>
+  <div class="container-fluid-trainers">  
+      
           
-          <div class="col-lg-6 text-center">
+          <div class="col-12">            
             <!-- Can't load the image from media file -->
-              <img class="rounded-lg-3" src="{{ MEDIA_URL }}webImages/logan-weaver-R4V1WIY9n-8-unsplash-girl-boxing-main.jpg" alt="">
+              <img class="trainers" src="{{ MEDIA_URL }}webImages/BeFunky-collage-small.jpg" alt="">
+              <div class="text-block">
+                <p>Our Trainers is here to help you to be the Best Version of Yourself!</p>
+              </div>           
           </div>
       </div>
-  </div>
+  
 </section>
 <!-- ***** Main Banner Area End ***** -->    
  {% endblock %}
 
 {% block content %}
 
-<div class="container">
-    <div class="col-md-6">
+<div class="container-fluid mt-5">
+    <div class="row row-trainers mt-5">
+    <div class="col-md-4">
+        <h2 class="h2-color-trainers display-4">Ryan Vail</h2>
+        <p><small>Most runners can be forgiven for letting their minds drift to excuses when conditions get tough or their bodies begin to fatigue, it just so happens that this is when Ryan Vail is at his best.</small></p>
+        <ul>
+            <li>Running</li>
+            <li>Trail Running</li>
+            <li>Ultra Marathons</li>
+        </ul>
+        
+        
+    </div>
+    <div class="col-md-6"> 
+        <img class="coach-img float-center" src="{{ MEDIA_URL }}webImages/ryan.jpg" alt="">
+        <p class="h1 trainer-highlight mt-3">Hello! I’m Ryan Vail. I push variety when it comes to training.</p>
+        <p> To be successful, you have to enjoy running, which means changing up workouts, paces, locations, etc. Keep it fresh!
 
+            All running demands intense focus and repetition, none more than the life of an elite marathoner.<span id="dots">...</span>
+            <span id="more">All running demands toughness, none more than the world cross country championships.
+            
+            Having run a 2:10 marathon (5min per mile!) and finished in the top of major marathons from London to Berlin to New York City, Ryan has grown to live, love and excel at the marathon lifestyle.
+            
+            Having raced for the United States at the World Cross Country Championship, a race many consider the most competitive in the world, on five separate occasions, Ryan has shown that despite the conditions, from thick mud and rain to intense heat and humidity, he always delivers.
+            
+            Ryan is passionate about bringing what he’s learned about running, preparation and competition from around the world, to athletes of all paces and races.
+            
+            Having seen it all and risen to the test, Ryan aims to help others love the lifestyle that had given him so much success.</span></p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
     </div>
-    <div class="col-md-6">        
+</div>
+<hr style="width:100%", size="3", color=black>
+<div class="row row-trainers mt-5">
+    <div class="col-md-6 overflow-hidden"> 
+        <img class="coach-img float-center" src="{{ MEDIA_URL }}webImages/kerstin.jpg" alt="">
+        <p class="h1 trainer-highlight mt-3">Hello! I’m Kerstin. I love when movement practices lead into silent contemplation and stillness.</p>
+        <p class="text"> This is the way I practice, and this is what I teach. I started my own Yoga journey during university times as I studied architecture & art history. Yoga first caught my attention on a trip through South India in my early twenties. <span id="dots2">...</span>
+            <span id="more2">
+            My introduction to Yoga included a classical static style of Hatha Yoga integrated into a holistic way of living, including breathing practices, diet, cleansing routines, mantra chanting, etc. My interest in Yoga & meditation, and the call to dedicate more of my time & energy to Self discovery, 
+            led me to journey through India & South East Asia for more than a decade. And that adventure continues even today!
+            In 2007, Yoga moved from being a cherished side aspect of my life, to being its center. Since then, many years have been dedicated to classical Hatha & Yin Yoga practice & studies, to meditation, contemplation & retreats, and to investigation into the Essence of Life. 
+            
+            My Hatha Yoga & meditation practice is inspired by Krishnamacharya's Vinyasa Krama, and I am moved by the pointing of Mooji, that profoundly pulls the Yoga teachings off the mat into a moment by moment inquiry.” 
+           <br>
+           <br>
+            <b>CERTIFICATION</b>
+            <br>
+            <br>
+            Kirsten teaches classical Hatha Yoga & pranayama, Yin Yoga & meditation. She is certified by the Yoga Alliance as an Experienced Registered Yoga Teacher at the highest level (E-RYT-500).
+            
+            Since 2008, she has been presenting drop-in asana classes, workshops & meditation retreats, as well as a variety of 200-Hour & 500-Hour Yoga Teacher Trainings. On her way, she supported her teachers to setup & run Yoga centers in Mexico & Thailand, before she co-founded the Akasha Yoga Academy with her dear friend Burkhard in 2011. </span></p>
+            <button onclick="myFunction22()" id="myBtn2">Read more</button>
     </div>
+    <div class="col-md-4">
+        <h2 class="h2-color-trainers display-4 text-right">Kirsten </h2>
+        <p class="text-right"><small>In my experience, breath-based movement is an effective & joyful way to re-center and to touch base with the Heart of the moment.</small></p>
+     </div>    
+</div>
+
+<hr style="width:100%", size="3", color=black>
+
+<div class="row row-trainers mt-5">
+    <div class="col-md-4">
+        <h2 class="h2-color-trainers display-4">Joe Wicks</h2>
+        <p><small>My new motto is basically you’ll never regret a workout, you’re always going to feel better so exercise to feel good.</small></p>
+        <ul>
+            <li>Running</li>
+            <li>Trail Running</li>
+            <li>Ultra Marathons</li>
+        </ul>
+        
+        
+    </div>
+    <div class="col-md-6 overflow-hidden"> 
+        <img class="coach-img float-center" src="{{ MEDIA_URL }}webImages/joewicks.jpg" alt="">
+        <p class="h1 trainer-highlight mt-3">Hello! I’m Joe Wicks. To be honest, I don’t even see exercise as a physical thing anymore.</p>
+        <p>
+            Through lockdown I just see it more now as an essential mental health tool. I mean I like being fit and lean – it’s great, it feels good – but what’s more important is that I need the mental stuff. 
+            When I don’t exercise I can just feel my mood’s lower,
+             I’m not as productive, I’m procrastinating. Forget about the muffin tops, the moobs, the body image. You’ll lose all that as a byproduct if you’re tapping into the mental health benefits of exercise.”
+
+“ It’s not about body fat and looking good for the camera. It’s about looking after your mind. Sometimes you can wake up feeling really flat, 
+but 20 minutes later you completely change your mindset through fitness.”
+<br>
+           <br>
+            <b>Life Goals</b>
+            <br>
+            <br>
+        
+            Joe Wicks worked as a teaching assistant after completing his sports science degree. After realising it was not his ideal job, he became a personal trainer for the next five years.
+
+            In 2012, he appeared as a contestant on the Channel 4 game show The Bank Job. He went out first after being the only player left in the vault when the time ran out.
+            
+            Wicks has been a guest on several UK daytime talk shows, including Good Morning Britain, This Morning, Loose Women and Lorraine.
+            
+            A segment on Channel 4 named Joe Wicks: The Body Coach aired in 2016 with Wicks as the presenter. As of 2020 there have been 3 episodes.
+            
+            Wicks launched a range of kitchenware in 2018.</span></p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+</div>
+
 </div>
 
 {% endblock %}

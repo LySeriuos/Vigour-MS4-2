@@ -763,3 +763,75 @@ z-index: -1;
 }
 
 /* Product Form End*/
+
+/* Start Our Trainers */
+
+.trainers {
+  margin-top: 100px;
+  /* position: fixed; */
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: 100px auto 0px auto;
+  /* top: auto; */
+  top: 50%;
+  width: 100%;
+  z-index: -1;  
+  opacity: 0.7;
+}
+
+.container-fluid-trainers {
+  max-width: 100%;
+  position: relative;
+}
+
+.text-block {  
+  color: white;
+  padding-left: 200px;
+  padding-right: 200px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+  
+}
+
+.text-block p{
+  background-color: #000 0.5;
+  
+}
+
+.coach-img {
+  max-height: 500px;
+  width: max-content;
+  filter: grayscale();
+}
+
+.row-trainers {
+  display: flex;
+  justify-content: center;
+}
+
+.h2-color-trainers {
+  color: #4AE290;
+  font-weight: 500;
+}
+
+.trainer-highlight {
+  font-weight: 500;
+}
+
+#myBtn2,
+#myBtn{
+  color: white;
+  background-color: black;
+  border: 2px solid #4AE290;
+  padding: 10px;
+}
+
+#more,
+#more2 {
+  display: none;
+}
+/* End Our Trainers */
