@@ -804,7 +804,7 @@ z-index: -1;
 
 .coach-img {
   max-height: 500px;
-  width: max-content;
+  max-width: 670px;
   filter: grayscale();
 }
 

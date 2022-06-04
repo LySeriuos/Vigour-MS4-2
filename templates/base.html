@@ -265,6 +265,9 @@
     
     {% block postloadjs %} 
     <script src="{% static 'js/script.js' %}" type="text/javascript"></script> 
+    <script type="text/javascript">
+      $('.toast').toast('show');
+  </script>
     {% endblock %}
   </body>
 </html>
