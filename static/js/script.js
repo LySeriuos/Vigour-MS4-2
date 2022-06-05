@@ -145,6 +145,7 @@ $(document).on('click', '.dropdown-menu', function (e) {
 
 //   collapsible text for trainers page
 
+
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");

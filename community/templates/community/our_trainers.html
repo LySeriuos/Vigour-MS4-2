@@ -36,6 +36,7 @@
             <li>{{ trainer.program1 }}</li>
             <li>{{ trainer.program2 }}</li>
             <li>{{ trainer.program3 }}</li>
+            
         </ul>
         
         
@@ -43,9 +44,13 @@
     <div class="col-md-6 overflow-hidden"> 
         <img class="coach-img float-center" src="{{ trainer.trainer_image_url }}" alt="">
         <p class="h1 trainer-highlight mt-3">{{ trainer.trainer_highlight }}</p>
-        <p> {{ trainer.trainer_text }}<span id="dots">...</span>
-            <span id="more">{{ trainer.trainer_text_hidden }}</span></p>
-            <button onclick="myFunction()" id="myBtn">Read more</button>
+        <details>
+            <summary> {{ trainer.trainer_text }} </summary>
+               <p> {{ trainer.trainer_text_hidden }}</p>
+               {% if trainer.trainer_goals %}
+               {{ trainer.trainer_goals }}
+               {% endif %}
+            </details>
     </div>
     <hr style="width:100%", size="3", color=black>
 </div>
@@ -56,9 +61,13 @@
     <div class="col-md-6 overflow-hidden"> 
         <img class="coach-img float-center" src="{{ trainer.trainer_image_url }}" alt="">
         <p class="h1 trainer-highlight mt-3">{{ trainer.trainer_highlight }}</p>
-        <p> {{ trainer.trainer_text }}<span id="dots">...</span>
-            <span id="more">{{ trainer.trainer_text_hidden }}</span></p>
-            <button onclick="myFunction22()" id="myBtn2">Read more</button>
+        <details>
+        <summary> {{ trainer.trainer_text }} </summary>
+           <p> {{ trainer.trainer_text_hidden }}</p>
+           {% if trainer.trainer_goals %}
+           {{ trainer.trainer_goals }}
+           {% endif %}
+        </details>
     </div>
     <div class="col-md-4">
         <h2 class="h2-color-trainers display-4 text-right">{{ trainer.trainer_name }} </h2>
@@ -124,5 +133,82 @@ but 20 minutes later you completely change your mindset through fitness.”
 </div> -->
 
 </div>
-
 {% endblock %}
+{% block postloadjs %} 
+ 
+<script type="text/javascript">
+var ready
+ready = function(){
+    $(".panel-collapsable")
+    .children(".panel-heading")
+        .click(function(){
+            var group = $(this).parent().parent()
+            if (group.hasClass("panel-group one-at-a-time")){
+                group.children(".panel").children(".panel-body")
+                    .collapse('hide')
+            }
+            $(this)
+                .next('.panel-body')
+                .collapse('toggle')
+        })
+}
+$(document).ready(ready);
+$(document).on('page:load', ready);
+
+//   window.addEventListener('load', (event) =>{
+//     var texts = document.getElementsByClassName('trainerId');
+// for(var i=0; i< texts.length; i++){
+    
+// console.log(texts[i].textContent)
+
+
+
+
+// function myFunction() {
+//     if (texts[i].textContent == 1) {
+//     alert("yes!")
+//     var dots = document.getElementById("dots");
+//     var moreText = document.getElementById("more");
+//     var btnText = document.getElementById("myBtn");    
+  
+//     if (dots.style.display === "none") {
+//       dots.style.display = "inline";
+//       btnText.innerHTML = "Read more";
+//       moreText.style.display = "none";
+//     } else {
+//       dots.style.display = "none";
+//       btnText.innerHTML = "Read less";
+//       moreText.style.display = "inline";
+//     }
+//   };
+// }
+  
+// if (texts[i].textContent == 2) {
+// alert("yes2")
+// function myFunction2() {
+//     var dots2 = document.getElementById('dots').setAttribute('id', 'dots2');
+//     // var dots2 = document.getElementById("dots2");
+//     var moreText2 = document.getElementById('more').setAttribute('id', 'more2');
+//     // var moreText2 = document.getElementById("more2");
+//     var btnText2 = document.getElementById('myBtn').setAttribute('id', 'myBtn2');
+//     // var btnText2 = document.getElementById("myBtn2");    
+
+//     if (dots2.style.display === "none") {
+//         dots2.style.display = "inline";
+//         btnText2.innerHTML = "Read more";
+//         moreText2.style.display = "none";
+//     } else {
+//         dots2.style.display = "none";
+//         btnText2.innerHTML = "Read less";
+//         moreText2.style.display = "inline";
+//     }
+//    };
+// }
+// }});
+
+
+ 
+   
+</script>
+{% endblock %}
+
