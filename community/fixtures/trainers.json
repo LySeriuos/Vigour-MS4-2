@@ -1,65 +1,79 @@
-[
-    {
-        "trainer_name": "Ryan Vail",
-        "trainer_about": "Most runners can be forgiven for letting their minds drift to excuses when conditions get tough or their bodies begin to fatigue, it just so happens that this is when Ryan Vail is at his best.",
-        "program1": "Running",
-        "program2": "Trail Running",
-        "program3": "Ultra running",
-        "trainer_highlight": "Hello! I’m Ryan Vail. I push variety when it comes to training.",
-        "trainer_text": "To be successful, you have to enjoy running, which means changing up workouts, paces, locations, etc. Keep it fresh! All running demands intense focus and repetition, none more than the life of an elite marathoner.",
-        "trainer_text_hidden": " All running demands toughness, none more than the world cross country championships. Having run a 2:10 marathon (5min per mile!) and finished in the top of major marathons from London to Berlin to New York City, Ryan has grown to live, love and excel at the marathon lifestyle. Having raced for the United States at the World Cross Country Championship, a race many consider the most competitive in the world, on five separate occasions, Ryan has shown that despite the conditions, from thick mud and rain to intense heat and humidity, he always delivers. Ryan is passionate about bringing what he’s learned about running, preparation and competition from around the world, to athletes of all paces and races. Having seen it all and risen to the test, Ryan aims to help others love the lifestyle that had given him so much success.",
-        "trainer_image_url": "https://cdn.pixabay.com/photo/2016/10/18/06/03/run-1749410_960_720.jpg",
-        "image": "media/webImages/ryan.jpg"
+[       {
+        "model":"community.trainers",
+        "fields":{
+            "trainer_name": "Ryan Vail",
+            "trainer_about": "Most runners can be forgiven for letting their minds drift to excuses when conditions get tough or their bodies begin to fatigue, it just so happens that this is when Ryan Vail is at his best.",
+            "program1": "Running",
+            "program2": "Trail Running",
+            "program3": "Ultra running",
+            "trainer_highlight": "Hello! I’m Ryan Vail. I push variety when it comes to training.",
+            "trainer_text": "To be successful, you have to enjoy running, which means changing up workouts, paces, locations, etc. Keep it fresh! All running demands intense focus and repetition, none more than the life of an elite marathoner.",
+            "trainer_text_hidden": " All running demands toughness, none more than the world cross country championships. Having run a 2:10 marathon (5min per mile!) and finished in the top of major marathons from London to Berlin to New York City, Ryan has grown to live, love and excel at the marathon lifestyle. Having raced for the United States at the World Cross Country Championship, a race many consider the most competitive in the world, on five separate occasions, Ryan has shown that despite the conditions, from thick mud and rain to intense heat and humidity, he always delivers. Ryan is passionate about bringing what he’s learned about running, preparation and competition from around the world, to athletes of all paces and races. Having seen it all and risen to the test, Ryan aims to help others love the lifestyle that had given him so much success.",
+            "trainer_image_url": "https://cdn.pixabay.com/photo/2016/10/18/06/03/run-1749410_960_720.jpg",
+            "image": "media/webImages/ryan.jpg"
+        }
     },
     {
-        "trainer_name": "Kerstin Ekman",
-        "trainer_about": "Hello! I’m Kerstin. I love when movement practices lead into silent contemplation and stillness.",
-        "program1": "Vinyasa yoga",
-        "program2": "Hatha yoga",
-        "program3": "Pranayama",
-        "trainer_highlight": "Hello! I’m Kerstin. I love when movement practices lead into silent contemplation and stillness.",
-        "trainer_text": "This is the way I practice, and this is what I teach. I started my own Yoga journey during university times as I studied architecture & art history. Yoga first caught my attention on a trip through South India in my early twenties.",
-        "trainer_text_hidden": "My introduction to yoga included a classical static style of hatha yoga integrated into a holistic way of living, including breathing practices, diet, cleansing routines, mantra chanting, etc. My interest in yoga & meditation, and the call to dedicate more of my time & energy to self discovery, led me to journey through india & south east asia for more than a decade. And that adventure continues even today! In 2007, yoga moved from being a cherished side aspect of my life, to being its center. Since then, many years have been dedicated to classical hatha & yin yoga practice & studies, to meditation, contemplation & retreats, and to investigation into the essence of life. My hatha yoga & meditation practice is inspired by krishnamacharya's vinyasa krama, and i am moved by the pointing of mooji, that profoundly pulls the yoga teachings off the mat into a moment by moment inquiry.",
-        "trainer_goals": "Kirsten teaches classical hatha yoga & pranayama, yin yoga & meditation. She is certified by the yoga alliance as an experienced registered yoga  teacher at the highest level (e-ryt-500). Since 2008, she has been presenting drop-in asana classes, workshops & meditation retreats, as well as a variety of 200-hour & 500-hour yoga teacher trainings. On her way, she supported her teachers to setup & run yoga centers in mexico & thailand, before she co-founded the akasha yoga academy with her dear friend burkhard in 2011.",
-        "trainer_image_url": "https://cdn.pixabay.com/photo/2016/04/07/01/02/yoga-1313110_960_720.jpg",
-        "image": "media/webImages/kerstin.jpg"
+        "model":"community.trainers",
+        "fields":{
+            "trainer_name": "Kerstin Ekman",
+            "trainer_about": "Hello! I’m Kerstin. I love when movement practices lead into silent contemplation and stillness.",
+            "program1": "Vinyasa yoga",
+            "program2": "Hatha yoga",
+            "program3": "Pranayama",
+            "trainer_highlight": "Hello! I’m Kerstin. I love when movement practices lead into silent contemplation and stillness.",
+            "trainer_text": "This is the way I practice, and this is what I teach. I started my own Yoga journey during university times as I studied architecture & art history. Yoga first caught my attention on a trip through South India in my early twenties.",
+            "trainer_text_hidden": "My introduction to yoga included a classical static style of hatha yoga integrated into a holistic way of living, including breathing practices, diet, cleansing routines, mantra chanting, etc. My interest in yoga & meditation, and the call to dedicate more of my time & energy to self discovery, led me to journey through india & south east asia for more than a decade. And that adventure continues even today! In 2007, yoga moved from being a cherished side aspect of my life, to being its center. Since then, many years have been dedicated to classical hatha & yin yoga practice & studies, to meditation, contemplation & retreats, and to investigation into the essence of life. My hatha yoga & meditation practice is inspired by krishnamacharya's vinyasa krama, and i am moved by the pointing of mooji, that profoundly pulls the yoga teachings off the mat into a moment by moment inquiry.",
+            "trainer_goals": "Kirsten teaches classical hatha yoga & pranayama, yin yoga & meditation. She is certified by the yoga alliance as an experienced registered yoga  teacher at the highest level (e-ryt-500). Since 2008, she has been presenting drop-in asana classes, workshops & meditation retreats, as well as a variety of 200-hour & 500-hour yoga teacher trainings. On her way, she supported her teachers to setup & run yoga centers in mexico & thailand, before she co-founded the akasha yoga academy with her dear friend burkhard in 2011.",
+            "trainer_image_url": "https://cdn.pixabay.com/photo/2016/04/07/01/02/yoga-1313110_960_720.jpg",
+            "image": "media/webImages/kerstin.jpg"
+        }
+    },
+        {
+        "model":"community.trainers",
+        "fields":{
+            "trainer_name": "Joe Wicks",
+            "trainer_about": "My new motto is basically you’ll never regret a workout, you’re always going to feel better so exercise to feel good.",
+            "program1": "HIIT Boxing Workout",
+            "program2": "HIIT",
+            "program3": "Crossfit",
+            "trainer_highlight": "Hello! I’m Joe Wicks. To be honest, I don’t even see exercise as a physical thing anymore.",
+            "trainer_text": "Through lockdown i just see it more now as an essential mental health tool. I mean i like being fit and lean its great, it feels good but whats more important is that i need the mental stuff.",
+            "trainer_text_hidden": "When i dont exercise i can just feel my moods lower, im not as productive, im procrastinating. Forget about the muffin tops, the moobs, the body image. Youll lose all that as a byproduct if youre tapping into the mental health benefits of exercise. Its not about body fat and looking good for the camera. Its about looking after your mind. Sometimes you can wake up feeling really flat, but 20 minutes later you completely change your mindset through fitness.",
+            "trainer_goals": "Joe wicks worked as a teaching assistant after completing his sports science degree. After realising it was not his ideal job, he became a personal trainer for the next five years. In 2012, he appeared as a contestant on the channel 4 game show the bank job. He went out first after being the only player left in the vault when the time ran out. Wicks has been a guest on several uk daytime talk shows, including good morning britain, this morning, loose women and lorraine. A segment on channel 4 named joe wicks: the body coach aired in 2016 with wicks as the presenter. As of 2020 there have been 3 episodes. Wicks launched a range of kitchenware in 2018.",
+            "trainer_image_url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F452689be-4443-11eb-901d-af02e798b787.jpg?crop=3086%2C2057%2C15%2C1181",
+            "image": "media/webImages/joewicks.jpg.jpg"
+        }
     },
     {
-        "trainer_name": "Joe Wicks",
-        "trainer_about": "My new motto is basically you’ll never regret a workout, you’re always going to feel better so exercise to feel good.",
-        "program1": "HIIT Boxing Workout",
-        "program2": "HIIT",
-        "program3": "Crossfit",
-        "trainer_highlight": "Hello! I’m Joe Wicks. To be honest, I don’t even see exercise as a physical thing anymore.",
-        "trainer_text": "Through lockdown i just see it more now as an essential mental health tool. I mean i like being fit and lean its great, it feels good but whats more important is that i need the mental stuff.",
-        "trainer_text_hidden": "When i dont exercise i can just feel my moods lower, im not as productive, im procrastinating. Forget about the muffin tops, the moobs, the body image. Youll lose all that as a byproduct if youre tapping into the mental health benefits of exercise. Its not about body fat and looking good for the camera. Its about looking after your mind. Sometimes you can wake up feeling really flat, but 20 minutes later you completely change your mindset through fitness.",
-        "trainer_goals": "Joe wicks worked as a teaching assistant after completing his sports science degree. After realising it was not his ideal job, he became a personal trainer for the next five years. In 2012, he appeared as a contestant on the channel 4 game show the bank job. He went out first after being the only player left in the vault when the time ran out. Wicks has been a guest on several uk daytime talk shows, including good morning britain, this morning, loose women and lorraine. A segment on channel 4 named joe wicks: the body coach aired in 2016 with wicks as the presenter. As of 2020 there have been 3 episodes. Wicks launched a range of kitchenware in 2018.",
-        "trainer_image_url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F452689be-4443-11eb-901d-af02e798b787.jpg?crop=3086%2C2057%2C15%2C1181",
-        "image": "media/webImages/joewicks.jpg.jpg"
+        "model":"community.trainers",
+        "fields":{
+            "trainer_name": "Nick Mitchell",
+            "trainer_about": "So almost every client that came through our doors was forced to suspend their disbelief because they thought it was too good to be true in the fitness industry.",
+            "program1": "Begginers Training",
+            "program2": "Body Building",
+            "program3": "Home Training",
+            "trainer_highlight": "Hello! I’m Nick Mitchell. I think it’s essential to listen to your brain and respect your body in whatever capacity suits you best.",
+            "trainer_text": "Almost every client that came through our doors was forced to suspend their disbelief because they thought it was too good to be true in the fitness industry,",
+            "trainer_text_hidden": "Of course, there is no quick or easy way to lose weight or improve your fitness and Mitchell understands this—and this may be why Ultimate Performance continues to perform well in the industry. The organisation uses intelligent processes, well-rounded schedules and meticulous planning and pays attention to detail with each of its clients as they help them achieve their goals quickly and effectively. It uses a combination of online and physical training, nutritious meal plans and targeted resistance training to get its clients to where they need or want to be with their body composition goals. Mitchell is also always on top of everything that happens in the fitness industry and regularly updates methods and technology, making him the top choice for high profile clients such as summer and winter Olympic medallists.",
+            "trainer_goals": "Nick is the founder of Ultimate Performance. He’s based in London but with facilities operating on four different continents globally. He’s authored four books on body transformation and runs a team of 250 elite trainers. Nick recognises that to be a truly great personal trainer, you cannot neglect the business skills required. These are the same skills which gave allowed him to grow a huge international business while genuinely impacting the personal lives of his clients and helping them transform their bodies, mindset and lives into what they really want.",
+            "trainer_image_url": "https://cdn-images-1.medium.com/max/800/1*dQaXuEZ-wtCpjcJt9vyE1Q.png",
+            "image": "media/webImages/nick.jpg.jpg"
+        }
     },
     {
-        "trainer_name": "Nick Mitchell",
-        "trainer_about": "So almost every client that came through our doors was forced to suspend their disbelief because they thought it was too good to be true in the fitness industry.",
-        "program1": "Begginers Training",
-        "program2": "Body Building",
-        "program3": "Home Training",
-        "trainer_highlight": "Hello! I’m Nick Mitchell. I think it’s essential to listen to your brain and respect your body in whatever capacity suits you best.",
-        "trainer_text": "Almost every client that came through our doors was forced to suspend their disbelief because they thought it was too good to be true in the fitness industry,",
-        "trainer_text_hidden": "Of course, there is no quick or easy way to lose weight or improve your fitness and Mitchell understands this—and this may be why Ultimate Performance continues to perform well in the industry. The organisation uses intelligent processes, well-rounded schedules and meticulous planning and pays attention to detail with each of its clients as they help them achieve their goals quickly and effectively. It uses a combination of online and physical training, nutritious meal plans and targeted resistance training to get its clients to where they need or want to be with their body composition goals. Mitchell is also always on top of everything that happens in the fitness industry and regularly updates methods and technology, making him the top choice for high profile clients such as summer and winter Olympic medallists.",
-        "trainer_goals": "Nick is the founder of Ultimate Performance. He’s based in London but with facilities operating on four different continents globally. He’s authored four books on body transformation and runs a team of 250 elite trainers. Nick recognises that to be a truly great personal trainer, you cannot neglect the business skills required. These are the same skills which gave allowed him to grow a huge international business while genuinely impacting the personal lives of his clients and helping them transform their bodies, mindset and lives into what they really want.",
-        "trainer_image_url": "https://cdn-images-1.medium.com/max/800/1*dQaXuEZ-wtCpjcJt9vyE1Q.png",
-        "image": "media/webImages/nick.jpg.jpg"
-    },
-    {
-        "trainer_name": "Rosie Moore",
-        "trainer_about": "At work, you are probably a pro at setting yourself hard targets and delivering on your promises. So why can’t you do the same in your own life?",
-        "program1": "Nutrition Plans",
-        "program2": "Healthy Diet",
-        "trainer_highlight": "Hello! I’m Rosie Moore. I will work with you to develop the right program for your unique schedule that prioritizes your goals while avoiding trends and cliched programs that have failed you before.",
-        "trainer_text": "ou are closer than you think to the ideal vision of yourself. The energy, body and wellness you crave is within your reach. All you need is an expert helping hand to steer you towards it. From my years of experience as an online nutrition coach, I’ve seen the best meal plans and exercise plans fail people like you. Not due to lack of detail, customization or expertise, but lack of execution.",
-        "trainer_text_hidden": "Early in my career, I thought that I could draw up a robust and detailed workout regimen and eating plan for my clients and they would see their weight drop, bodies get lean and stress less. This was not happening though. What I’ve since learned is that lasting transformations are a result of deliberate and practiced positive habits. Numerous studies in behavior change have shown that it takes an average of 66 days to form one new habit. Now, a large part of my support is in holding you accountable, ensuring that you keep showing up and DOING the work, week after week until it becomes part of your lifestyle.",
-        "trainer_goals": "BSc Biology, ACE and RTS Personal Trainer, E-RYT 200 Yoga Teacher, Pn2 Precision Nutrition Coach Level 2, CHWC Wellcoaches Health Coach Certified Pre/Post Natal Instructor.",
-        "trainer_image_url": "https://rosiemoore.com/wp-content/uploads/2021/01/rosie-moore-fitness-coach.jpg",
-        "image": "media/webImages/rosie.jpg"
+        "model":"community.trainers",
+        "fields":{
+            "trainer_name": "Rosie Moore",
+            "trainer_about": "At work, you are probably a pro at setting yourself hard targets and delivering on your promises. So why can’t you do the same in your own life?",
+            "program1": "Nutrition Plans",
+            "program2": "Healthy Diet",
+            "trainer_highlight": "Hello! I’m Rosie Moore.I know that you are closer than you think to the ideal vision of yourself.",
+            "trainer_text": "I will work with you to develop the right program for your unique schedule that prioritizes your goals while avoiding trends and cliched programs that have failed you before. The energy, body and wellness you crave is within your reach. All you need is an expert helping hand to steer you towards it. From my years of experience as an online nutrition coach, I’ve seen the best meal plans and exercise plans fail people like you. Not due to lack of detail, customization or expertise, but lack of execution.",
+            "trainer_text_hidden": "Early in my career, I thought that I could draw up a robust and detailed workout regimen and eating plan for my clients and they would see their weight drop, bodies get lean and stress less. This was not happening though. What I’ve since learned is that lasting transformations are a result of deliberate and practiced positive habits. Numerous studies in behavior change have shown that it takes an average of 66 days to form one new habit. Now, a large part of my support is in holding you accountable, ensuring that you keep showing up and DOING the work, week after week until it becomes part of your lifestyle.",
+            "trainer_goals": "BSc Biology, ACE and RTS Personal Trainer, E-RYT 200 Yoga Teacher, Pn2 Precision Nutrition Coach Level 2, CHWC Wellcoaches Health Coach Certified Pre/Post Natal Instructor.",
+            "trainer_image_url": "https://rosiemoore.com/wp-content/uploads/2021/01/rosie-moore-fitness-coach.jpg",
+            "image": "media/webImages/rosie.jpg"
+        }
     }
  ]
