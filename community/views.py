@@ -9,7 +9,7 @@ def community(request):
 
     trainer = Trainers.objects.all()
     context = {
-        "trainer": trainer
+        "trainer": trainer,
         }
 
     return render(request, 'community/our_trainers.html', context)

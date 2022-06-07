@@ -1,4 +1,5 @@
-[       {
+[       
+    {
         "model":"community.trainers",
         "fields":{
             "trainer_name": "Ryan Vail",
