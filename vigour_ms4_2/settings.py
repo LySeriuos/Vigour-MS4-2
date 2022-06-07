@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'profiles',
     'django_countries',
     'community',
+    'blogs',
 
     # Others
 
