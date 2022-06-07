@@ -8,9 +8,9 @@ class Trainers(models.Model):
     program2 = models.CharField(max_length=254)
     program3 = models.CharField(max_length=254, null=True, blank=True)
     trainer_highlight = models.TextField(null=True, blank=True)
-    trainer_text = models.TextField()
-    trainer_text_hidden = models.TextField()
-    trainer_goals = models.CharField(max_length=254, null=True, blank=True)
+    trainer_text = models.TextField(null=True, blank=True)
+    trainer_text_hidden = models.TextField(null=True, blank=True)
+    trainer_goals = models.TextField(max_length=254, null=True, blank=True)
     trainer_image_url = models.URLField(max_length=1024)
     image = models.ImageField(null=True, blank=True)
         
