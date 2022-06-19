@@ -24,18 +24,65 @@
 <section>
    <div class="container-fluid">
       <div class="row">
-         <div class="col text-center mt-3">
-            <h2 class="">Blogs</h2>
+         <div class="col-10">
+            <h2 class="text-center m-5">Our Members Stories</h2>
+            
             <!-- this doesn't work change to pills if needed -->
             {% for blog in blogs %}
-            {{ blog.title }}
-            {{ blog.content }}
-            {{ blog.author }}
-            
+            <div class="row">
+            <div class="col-4 text-left mt-3">
+               <ul class="list-unstyled">       
+         
+            <li> {{ blog.author }}</li>           
+            <li><small> {{ blog.date }}</small></li>
+            <li> {{ blog.id }}</li>
+
+            {% if request.user %}
+            <small class="ml-3">
+                <a href="{% url 'edit_blog' blog.id %}">Edit</a>                  
+            </small>
+            <small>
+            <a type="button" class="" data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </a>
+          </small>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure to delete {{ blog.title }}?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    The {{ blog.title }} will be deleted and it will be not possible to return it!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a class="btn btn-primary" type="button" href="{% url 'delete_blog' blog.id %}">Delete</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        {% endif %}
+         
+         </ul>
+      </div>
+      <div class="col-8 text-center">
+         <ul class="list-unstyled">
+            <li class="m-3"> <h3>{{ blog.title }}</h3></li>
+            <li> <p>{{ blog.content }}</p></li>
+         </ul>
+      </div>
+      <hr class="w-50 mb-1">
+   </div>
             {% endfor %}
          <!-- untill here -->
-            <hr class="w-50 mb-1">
-         </div>
+        
+      </div>
       </div>    
       
                  
@@ -44,101 +91,7 @@
    
    <hr class="mb-1">
 </section>
-<section>
-   <div class="container-fluid">   
-      <div class="row">
-         <div class="product-container col-10 offset-1">
-            <div class="row mt-1 mb-2"></div>
-            <div class="row">
-               {% for product in products %}
-               <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                  <div class="card h-100 border-0">
-                     {% if product.image %}
-                     <!-- in django need to use '.' instead of '_' to get values of products.  -->
-                     <a href="{% url 'product_detail' product.id %}">
-                     <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
-                     </a>
-                     {% else %}
-                     <a href="{% url 'product_detail' product.id %}">
-                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}webImages/no-image.jpg" alt="{{ product.name }}">
-                     </a>
-                     {% endif %}
-                     <div class="card-body pb-0">
-                        <p class="mb-0">{{ product.name }}</p>
-                     </div>
-                     <div class="card-footer bg-white pt-0 border-0 text-left">
-                        <div class="row">
-                           <div class="col">
-                              <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                              {% if product.old_price %}
-                              <p class="lead mb-0 text-left text-danger"><del>${{ product.old_price }}</del></p>
-                              {% endif %}
-                              {% if product.category %}
-                              <p class="small mt-1 mb-0">
-                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                              <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                 </a>
-                              </p>
-                              {% endif %}
 
-                              {% if product.rating %}
-                              <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                              {% else %}
-                              <small class="text-muted">No Rating</small>
-                              {% endif %}
-                              <!-- if user is super user he/she can edit, delete or update the product -->
-
-                              <!-- because of eeasy to delete accidently it is not active -->
-                              
-                              <!-- {% if request.user.is_superuser %}
-                              <small class="ml-3">
-                              <a href="{% url 'edit_product' product.id %}">Edit</a>
-                              <a class="" href="{% url 'delete_product' product.id %}">Delete</a>
-                              </small>
-                              {% endif %} -->
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- this code is used to get a thematic break after every line of products
-                  it depends on screens size so if product is dividible from 1 
-                  the horizontal rule or <br> goes after every product on mobile screens
-                  this we need tto do because 'cards' is used in colummns but not in the rows-->
-               {% if forloop.counter|divisibleby:1 %}
-               <div class="col-12 d-sm-none mb-5">
-                  <hr>
-               </div>
-               <!-- if it dividable by 2, so the <br> goes after every twwo products on mobile sscreen sizes
-                  because on medium screens it will show two products in each line and so on-->
-               {% endif %}                        
-               {% if forloop.counter|divisibleby:2 %}
-               <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                  <hr>
-               </div>
-               {% endif %}
-               {% if forloop.counter|divisibleby:3 %}
-               <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                  <hr>
-               </div>
-               {% endif %}
-               {% if forloop.counter|divisibleby:4 %}
-               <div class="col-12 d-none d-xl-block mb-5">
-                  <hr>
-               </div>
-               {% endif %}
-               {% endfor %}
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<!-- Scroll to Top button HTML -->
-<div class="btt-button shadow-sm rounded-0 border border-black">
-   <a class="btt-link d-flex h-100">
-       <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-   </a>	
-</div>
 {% endblock %}
 
 {% block postloadjs %}
@@ -167,8 +120,8 @@
 
            window.location.replace(currentUrl);
        } else {
-           currentUrl.searchParams.delete("sort");
-           currentUrl.searchParams.delete("direction");
+         //   currentUrl.searchParams.delete("sort");
+         //   currentUrl.searchParams.delete("direction");
 
            window.location.replace(currentUrl);
        }

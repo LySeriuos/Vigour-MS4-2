@@ -42,7 +42,7 @@ def shop(request):
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'name':
-                # convering name to lowercase
+                # converting name to lowercase
                 sortkey = 'lower_name'
                 # annotate the current list of products with a new field
                 products = products.annotate(lower_name=Lower('name'))
